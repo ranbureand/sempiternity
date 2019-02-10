@@ -4,17 +4,16 @@ layout: base
 title: 'Indice'
 subtitle: '10 Pezzi Più o Meno Brevi'
 
-permalink: '/indice/'
+permalink: '/indice'
 
 description: 'L’indice della raccolta di pezzi più o meno brevi.'
-
 ---
 
       <section class="content">
 
         <header class="head">
 
-          <img class="icon" src="http://www.sempiternity.net/workspace/media/motifs/index_00.png" alt="Sempiternity Index" />
+          <img class="icon" src="{{ site.baseurl }}/media/motifs/index_00.png" alt="Indice di Sempiternity" />
 
           <h2 class="title">{{ page.title }}</h2>
 
@@ -26,7 +25,7 @@ description: 'L’indice della raccolta di pezzi più o meno brevi.'
           {%- assign posts = site.posts | where: 'publish', 'yes' %}
           {% for post in posts %}
             <li>
-              <a class="piece" href="{{ post.url }}">
+              <a class="piece" href="{{ post.url | prepend: site.baseurl }}">
                 <strong class="title">{{ post.title }}</strong>
                 <div class="subtitle">{{ post.description }}</div>
               </a>
