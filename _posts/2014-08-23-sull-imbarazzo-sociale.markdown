@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Sull’imbarazzo sociale'
-title_handle: 'sull-imbarazzo-sociale'
-#permalink: '/sull-imbarazzo-sociale/'
 
 description: 'Il nostro era stato invitato dal barone di R. a una cena ufficiale….'
 

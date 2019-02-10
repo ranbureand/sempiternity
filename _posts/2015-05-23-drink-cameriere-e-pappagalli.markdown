@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Drink, cameriere e pappagalli'
-title_handle: 'drink-cameriere-e-pappagalli'
-#permalink: '/drink-cameriere-e-pappagalli/'
 
 description: 'Viaggiatori! Siete assetati alla fine di una lunga giornata di viaggio?'
 

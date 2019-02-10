@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Typographic Styles'
-title_handle: 'typographic-styles'
-#permalink: '/typographic-styles/'
 
 description: 'Typographic Styles'
 

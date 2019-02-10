@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Cinquantamila al doppio drago'
-title_handle: 'cinquantamila-al-doppio-drago'
-#permalink: '/cinquantamila-al-doppio-drago/'
 
 description: '«Abbiamo trovato un reperto durante le nostre ricerche nel deserto dei Gobi….»'
 

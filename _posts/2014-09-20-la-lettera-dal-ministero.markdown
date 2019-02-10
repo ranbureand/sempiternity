@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'La lettera dal Ministero'
-title_handle: 'la-lettera-dal-ministero'
-#permalink: '/la-lettera-dal-ministero/'
 
 description: ''
 

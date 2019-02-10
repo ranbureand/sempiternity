@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Nella foresta'
-title_handle: 'nella-foresta'
-#permalink: '/nella-foresta/'
 
 description: '«Il sentiero! Lo abbiamo trovato, vedi?»'
 

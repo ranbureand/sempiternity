@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Blueberry Hill nei videogiochi'
-title_handle: 'blueberry-hill-nei-videogiochi'
-#permalink: '/blueberry-hill-nei-videogiochi/'
 
 description: 'Una donna delle pulizie fa la sua entrata nella stanza buia….'
 

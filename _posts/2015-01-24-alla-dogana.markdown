@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Alla dogana'
-title_handle: 'alla-dogana'
-#permalink: '/alla-dogana/'
 
 description: '«Deve stare attento perché la missione è di vitale importanza….»'
 

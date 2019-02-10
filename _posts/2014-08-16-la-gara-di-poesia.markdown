@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'La gara di poesia'
-title_handle: 'la-gara-di-poesia'
-#permalink: '/la-gara-di-poesia/'
 
 description: 'Era un bravo poeta, seppur alquanto distratto….'
 

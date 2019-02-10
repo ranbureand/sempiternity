@@ -2,8 +2,6 @@
 layout: piece
 
 title: 'Un amore impossibile'
-title_handle: 'un-amore-impossibile'
-#permalink: '/un-amore-impossibile/'
 
 description: 'Lui era un barone tedesco ai tempi della Restaurazione, lei….'
 
