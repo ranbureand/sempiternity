@@ -25,5 +25,5 @@ layout: base
       {%- endfor %}
 
       <div class="pagination">
-        <a class="page-prev" href="{{ site.posts[2].url }}"><strong>{{ site.posts[1].title }}</strong><br />{{ site.posts[1].excerpt }}</a>
+        <a class="page-prev" href="{{ site.posts[2].url | prepend: site.baseurl }}"><strong>{{ site.posts[1].title }}</strong><br />{{ site.posts[1].excerpt }}</a>
       </div>
