@@ -1,0 +1,172 @@
+/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Navigation
+*/
+
+.pagination {
+	overflow: hidden;
+
+	margin-top: rhythm(-$m-small-line/2);
+	margin-bottom: rhythm($m-medium-line*4 - $m-small-line/2);
+
+	@include align();
+	@include min-screen(col(9)) {
+		max-width: col(9);
+		margin-top: rhythm(-$d-small-line/2);
+		margin-bottom: rhythm($d-medium-line*4 - $d-small-line/2);
+	}
+}
+
+[class*="page"] {
+	position: relative;
+
+	display: block;
+
+	padding: rhythm($m-small-line/2, $m-small-size) em($m-gut/2, $m-small-size);
+
+	text-align: center;
+
+	@include align();
+	@include adjust-font-size-to($m-small-size, $m-small-line);
+	&:before {
+		position: absolute;
+		right: 0;
+		left: 0;
+
+		width: 100%;
+		height: em($icon-size*2, $m-small-size);
+
+		content: "";
+
+		background-image: url("../../media/graphics/arrow_00.svg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: em($icon-size, $m-small-size);
+
+		@include apply-origin(center center, false);
+	}
+	strong {
+		&:after {
+			font-weight: $normal;
+
+			margin-left: 0.1em;
+
+			content: "]";
+		}
+		&:before {
+			font-weight: $normal;
+
+			margin-right: 0.1em;
+
+			content: "[";
+		}
+	}
+	&:hover {
+		strong {
+			&:after {
+				content: "[";
+			}
+			&:before {
+				content: "]";
+			}
+		}
+	}
+	@include min-screen(em(480)) {
+		max-width: 70%;
+	}
+	@include min-screen(col(9)) {
+		max-width: 50%;
+		padding: rhythm($d-small-line/2, $d-small-size) em($d-gut/2, $d-small-size);
+
+		@include adjust-font-size-to($d-small-size, $d-small-line);
+		&:before {
+			width: em($d-gut*3/2, $d-small-size);
+			height: 100%;
+		}
+		&:after {
+			position: absolute;
+			top: rhythm($d-small-line/8, $d-small-size);
+
+			width: col(1, $d-small-size);
+			height: $border-width;
+
+			content: "";
+
+			border-top: $border-width solid $border-color;
+		}
+	}
+	@include max-screen(col(9)) {
+		&:not(:first-child) {
+			&:after {
+				position: absolute;
+				top: rhythm(-$m-small-line*3/4, $m-small-size);
+				right: 0;
+				left: 0;
+
+				width: 25%;
+				height: $border-width;
+				margin-right: auto;
+				margin-left: auto;
+
+				content: "";
+
+				border-top: $border-width solid $border-color;
+			}
+		}
+	}
+}
+
+.page-next {
+	margin-bottom: rhythm($m-small-line*2 - $m-small-line/2, $m-small-size);
+	padding-top: em($icon-size*2, $m-small-size);
+
+	&:before {
+		top: 0;
+
+		@include rotate(-90deg);
+	}
+	@include min-screen(col(9)) {
+		float: right;
+
+		margin-bottom: 0;
+		padding-top: rhythm($d-small-line/2, $m-small-size);
+		padding-right: em($d-gut*3/2, $d-small-size);
+
+		text-align: right;
+		&:before {
+			left: auto;
+
+			@include rotate(0deg);
+		}
+		&:after {
+			right: em($d-gut*3/2, $d-small-size);
+		}
+	}
+}
+
+.page-prev {
+	padding-bottom: em($icon-size*2, $m-small-size);
+
+	&:before {
+		bottom: 0;
+
+		@include rotate(90deg);
+	}
+	@include min-screen(col(9)) {
+		float: left;
+
+		padding-bottom: rhythm($d-small-line/2, $m-small-size);
+		padding-left: em($d-gut*3/2, $d-small-size);
+
+		text-align: left;
+		&:before {
+			right: auto;
+
+			@include rotate(180deg);
+		}
+		&:after {
+			left: em($d-gut*3/2, $d-small-size);
+		}
+	}
+}

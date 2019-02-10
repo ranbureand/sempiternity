@@ -1,0 +1,134 @@
+/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Sundries
+*/
+
+@each $hour, $deg in $background-colors {
+	.h#{$hour} {
+		::-moz-selection {
+			background-color: darken(adjust-hue($background-color, $deg), 8%);
+		}
+		::selection {
+			background-color: darken(adjust-hue($background-color, $deg), 8%);
+		}
+		.container,
+		.container:after,
+		.container:before {
+			background-color: adjust-hue($background-color, $deg);
+		}
+	}
+}
+
+@mixin clip-head($col-number) {
+	$points: ();
+
+	@for $i from 0 through $col-number {
+		$dump: ();
+
+		@if $i % 2 == 0 {
+			$dump: 100/$col-number*$i*1% 0%, 
+		} @else {
+			$dump: 100/$col-number*$i*1% 100%, 
+		}
+
+		$points: join($points, $dump, comma);
+	}
+
+	-webkit-clip-path: polygon(0 100%, $points, 100% 100%);
+	clip-path: polygon(0 100%, $points, 100% 100%);
+}
+
+@mixin clip-feet($col-number) {
+	$points: ();
+
+	@for $i from 0 through $col-number {
+		$dump: ();
+
+		@if $i % 2 == 0 {
+			$dump: 100/$col-number*$i*1% 100%, 
+		} @else {
+			$dump: 100/$col-number*$i*1% 0%, 
+		}
+
+		$points: join($points, $dump, comma);
+	}
+
+	-webkit-clip-path: polygon(0% 0%, $points, 100% 0%);
+	clip-path: polygon(0% 0%, $points, 100% 0%);
+}
+
+.container {
+	position: relative;
+
+	min-height: 100%;
+	margin-top: rhythm($m-small-line/2);
+	margin-bottom: rhythm($m-small-line/2);
+	padding-bottom: rhythm($m-small-line*2);
+
+	&:before, &:after {
+		position: absolute;
+		left: 0;
+
+		display: block;
+
+		width: 100%;
+
+		content: "";
+	}
+	&:before {
+		top: rhythm(-$m-small-line/2);
+
+		height: rhythm($m-small-line/2);
+
+		@include clip-head(48);
+	}
+	&:after {
+		bottom: rhythm(-$m-small-line/2);
+
+		height: rhythm($m-small-line/2);
+
+		@include clip-feet(48);
+	}
+	@include min-screen(col(9)) {
+		padding-bottom: rhythm($d-small-line*2);
+		&:before {
+			top: rhythm(-$d-small-line/2);
+
+			height: rhythm($d-small-line/2);
+		}
+		&:after {
+			bottom: rhythm(-$d-small-line/2);
+
+			height: rhythm($d-small-line/2);
+		}
+	}
+}
+
+.warning {
+	padding: rhythm($m-small-line/2) em($m-gut/2) rhythm($m-small-line/2) em($m-gut/2);
+
+	@include min-screen(col(9)) {
+		padding: rhythm($d-small-line/2) em($d-gut/2) rhythm($d-small-line/2) em($d-gut/2);
+	}
+}
+
+.edit {
+	position: absolute;
+	z-index: 1;
+	top: rhythm(-$m-small-line, $m-small-size);
+	right: 0;
+	left: 0;
+
+	display: block;
+
+	text-align: center;
+
+	@include adjust-font-size-to($m-small-size, $m-small-line);
+	@include link;
+	@include min-screen(col(9)) {
+		top: rhythm(-$d-small-line, $d-small-size);
+
+		@include adjust-font-size-to($d-small-size, $d-small-line);
+	}
+}

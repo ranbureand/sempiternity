@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sempiternity 00</title>
+	<link rel="stylesheet" href="styles/css/style.css">
+	<script type="text/javascript" src="scripts/js/paper-full.min.js"></script>
+	<script type="text/javascript" src="scripts/js/jquery-2.1.1.min.js"></script>
+	<script type="text/paperscript" canvas="battlefield">
+		project.currentStyle = {
+			fillColor: 'black'
+		};
+
+		var radius = 15;
+		var clones = 15;
+		var angle = 180 / clones;
+
+		for(var i = 0; i < clones; i++) {
+			radius = radius - i/10;
+			var circle = new Path.Circle({
+				center: [145, 80],
+				radius: radius
+			});
+			circle.rotate((angle + i/2) * -i, new Point(80, 80));
+		};
+
+		// export
+		function downloadDataUri(options) {
+			if (!options.url)
+				options.url = "http://download-data-uri.appspot.com/";
+			$('<form method="post" action="' + options.url
+				+ '" style="display:none"><input type="hidden" name="filename" value="'
+				+ options.filename + '"/><input type="hidden" name="data" value="'
+				+ options.data + '"/></form>').appendTo('body').submit().remove();
+		}
+
+		$('#export-button').click(function() {
+			var svg = project.exportSVG({ asString: true });
+			downloadDataUri({
+				data: 'data:image/svg+xml;base64,' + btoa(svg),
+				filename: 'export.svg'
+			});
+		});
+	</script>
+</head>
+<body>
+	<canvas id="battlefield" width="160" height="160"></canvas>
+	<p><input id="export-button" type="button" value="Download as SVG"/></p>
+</body>
+</html>

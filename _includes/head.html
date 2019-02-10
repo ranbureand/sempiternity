@@ -1,0 +1,50 @@
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--
+
+    Welcome, websurfer.
+
+    The content of this site is:
+
+    + conceived
+    + typesetted in Kramdown
+
+    with love and by Luca Buran.
+
+    While the form of this site is:
+
+    + designed and developed in the browser
+    + generated through Jekyll
+    + scripted in JavaScript
+    + styled from scratch in SCSS
+    + typesetted in …
+
+    with love and patience by Andrea Buran.
+
+    -->
+
+    <title>{% if page.title %}{{ page.title | escape }} / {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines}}{% else %}{{ site.description }}{% endif %}"/>
+
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://sempiternity.net/{{ site.baseurl }}">
+    <meta property="og:image" content="http://sempiternity.net/android-chrome-192x192.png">
+
+    <link rel="stylesheet" href="{{ "/styles/css/main.css?v=" | append: site.version | prepend: site.baseurl }}"/>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v={{ site.version }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v={{ site.version }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v={{ site.version }}">
+    <link rel="manifest" href="/site.webmanifest?v={{ site.version }}">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg?v={{ site.version }}" color="#8f6efa">
+    <link rel="shortcut icon" href="/favicon.ico?v={{ site.version }}">
+    <meta name="apple-mobile-web-app-title" content="Jots">
+    <meta name="application-name" content="Jots">
+    <meta name="msapplication-TileColor" content="#8f6efa">
+    <meta name="theme-color" content="131313">
+  </head>

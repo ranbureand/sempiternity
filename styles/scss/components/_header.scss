@@ -1,0 +1,55 @@
+/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Header
+*/
+
+.header {
+	overflow: auto;
+
+	width: 100%;
+
+	@include align(center);
+	h1 {
+		float: left;
+		a:first-child {
+			&:before {
+				padding-right: 1.6em;
+
+				background-image: url("../../media/graphics/sempiternity_logo_00.svg");
+				background-repeat: no-repeat;
+				background-position: 0.6em center;
+				background-size: 1.0em;
+			}
+		}
+	}
+	nav {
+		float: right;
+	}
+	a {
+		display: block;
+		float: left;
+
+		padding: rhythm($m-small-line/2, $m-small-size) em($m-gut/2, $m-small-size);
+
+		@include link;
+	}
+	.current {
+		@include link(current);
+	}
+	@include min-screen(col(9)) {
+		h1, nav {
+			@include adjust-font-size-to($d-small-size, $d-small-line);
+		}
+		a {
+			padding: rhythm($d-small-line/2, $d-small-size) em($d-gut/2, $d-small-size);
+		}
+	}
+	h1, nav {
+		overflow: auto;
+
+		margin: 0;
+
+		@include adjust-font-size-to($m-small-size, $m-small-line);
+	}
+}

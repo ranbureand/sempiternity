@@ -1,0 +1,35 @@
+---
+layout: base
+
+title: 'Bozze'
+subtitle: 'Lavori in Corso'
+
+description: 'L’indice delle bozze della raccolta di pezzi più o meno brevi.'
+
+---
+
+      <section class="content">
+
+        <header class="head">
+
+          <img class="icon" src="http://www.sempiternity.net/workspace/media/motifs/index_00.png" alt="Sempiternity Index" />
+
+          <h2 class="title">{{ page.title }}</h2>
+
+          <div class="subtitle">{{ page.subtitle }}</div>
+
+        </header>
+
+        <ul class="pieces">
+          {%- assign posts = site.posts | where: 'publish', 'no' %}
+          {% for post in posts %}
+            <li>
+              <a class="piece" href="{{ post.url }}">
+                <strong class="title">{{ post.title }}</strong>
+                <div class="subtitle">{{ post.description }}</div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </section>

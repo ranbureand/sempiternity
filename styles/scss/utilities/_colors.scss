@@ -1,0 +1,59 @@
+/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Colors
+** 0 1 | 2 3 | 4 5 | 6 7 | 8 9 | a b | c d | e f
+*/
+
+$white: #fff;
+$black: #000;
+
+/*
+** Typography
+*/
+
+$type-color: rgba($black, 0.8);
+$light-type-color: rgba($black, 0.4);
+$strong-type-color: rgba($black, 0.8);
+$em-type-color: rgba($black, 0.8);
+$selected-type-color: $strong-type-color;
+
+/*
+** Backgrounds
+*/
+
+$background-color: hsl(180, 50, 90);
+$selected-background-color: darken($background-color, 8%);
+$code-background-color: rgba($black, 0.1);
+$background-colors: 
+	(0, 180deg),
+	(1, 195deg),
+	(2, 210deg),
+	(3, 225deg),
+	(4, 240deg),
+	(5, 255deg),
+	(6, 270deg),
+	(7, 285deg),
+	(8, 300deg),
+	(9, 315deg),
+	(10, 330deg),
+	(11, 345deg),
+	(12,   0deg),
+	(13,  15deg),
+	(14,  30deg),
+	(15,  45deg),
+	(16,  60deg),
+	(17,  75deg),
+	(18,  90deg),
+	(19, 105deg),
+	(20, 120deg),
+	(21, 135deg),
+	(22, 150deg),
+	(23, 165deg),
+	(24, 180deg);
+
+/*
+** Borders
+*/
+
+$border-color: rgba($black, 0.4);

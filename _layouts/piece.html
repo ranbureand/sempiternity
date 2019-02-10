@@ -1,0 +1,24 @@
+---
+layout: base
+---
+
+      <article class="content">
+
+        <header class="head">
+
+          <img class="icon" src="{{ site.baseurl }}/media/motifs/{{page.motif}}.png" alt="{{ page.title }}" />
+
+          <h2 class="title">{{ page.title }}</h2>
+
+          <time class="subtitle" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%-d" }} {% assign m = page.date | date: "%-m" %}{% case m %}{% when '1' %}Gennaio{% when '2' %}Febbraio{% when '3' %}Marzo{% when '4' %}Aprile{% when '5' %}Maggio{% when '6' %}Giugno{% when '7' %}Luglio{% when '8' %}Agosto{% when '9' %}Settembre{% when '10' %}Ottobre{% when '11' %}Novembre{% when '12' %}Dicembre{% endcase %} {{ page.date | date: "%Y" }}</time>
+
+        </header>
+
+        <div class="body typo-m">
+
+{{ page.content }}
+        </div>
+
+      </article>
+
+{% include pagination.html %}
