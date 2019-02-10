@@ -1,24 +1,36 @@
 ---
 layout: base
+
+title: 'Pagina non trovata'
+subtitle: 'Errore 404'
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+      <article class="content">
 
-<div class="container">
-  <h1>404</h1>
+        <header class="head">
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+          <img class="icon" src="{{ site.baseurl }}/media/motifs/game_over_00.png" alt="{{ page.title }}" />
+
+          <h2 class="title">{{ page.title }}</h2>
+
+          <div class="subtitle" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.subtitle }}</div>
+
+        </header>
+
+        <div class="body typo-m">
+          <p>Sono veramente spiaciuto, ma non sono riuscito a trovare quello che stavi cercando… ciononostante, ti va di dare un’occhiata a uno dei pezzi?</p>
+        </div>
+
+        <ul class="pieces">
+          {%- assign posts = site.posts | where: 'publish', 'yes' %}
+          {% for post in posts %}
+            <li>
+              <a class="piece" href="{{ post.url | prepend: site.baseurl }}">
+                <strong class="title">{{ post.title }}</strong>
+                <div class="subtitle">{{ post.description }}</div>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </article>
