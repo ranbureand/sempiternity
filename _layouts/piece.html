@@ -2,23 +2,23 @@
 layout: base
 ---
 
-      <article class="content">
+      <div class="piece-canvas">
+        <article class="piece">
 
-        <header class="head">
+          <header class="head">
 
-          <img class="icon" src="{{ site.baseurl }}/media/motifs/{{page.motif}}.png" alt="{{ page.title }}" />
+            <h2 class="title" style="background-image: url('{{ site.baseurl }}/media/motifs/{{page.motif}}.png');">{{ page.title }}</h2>
 
-          <h2 class="title">{{ page.title }}</h2>
+  {% include date.html date=page.date %}
 
-{% include date.html date=page.date %}
+          </header>
 
-        </header>
+          <div class="body typo-m">
 
-        <div class="body typo-m">
+  {{ page.content }}
+          </div>
 
-{{ page.content }}
-        </div>
-
-      </article>
+        </article>
+      </div>
 
 {% include pagination.html %}

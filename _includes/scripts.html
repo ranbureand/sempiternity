@@ -1,10 +1,11 @@
     <script type="text/javascript">
       var time = new Date(),
           color = 'h' + time.getHours();
-          background = document.getElementsByClassName("h0");
+          background = document.getElementById('h0');
 
+      console.log(time);
       console.log(color);
       console.log(background);
 
-      background[0].setAttribute('class', color);
+      background.setAttribute('id', color);
     </script>

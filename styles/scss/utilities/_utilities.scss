@@ -1,75 +1,95 @@
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Variables
+*/
+
+$base-unit:                 4px;
+
+$browser-default-font-size: 16px;
+
+$base-font-size:            16px;
+$base-font-line:            $base-unit*6;
+
+$m-base-rhythm:             $base-unit*6;
+$d-base-rhythm:             $base-unit*10;
 
 /*
 ** Font sizes and line heights
+** m : mobile
+** t : tablet
+** d : desktop
 */
 
-$m-large-size: 28px;
-$m-large-line: 3.2;
-$d-large-size: 32px;
-$d-large-line: 4.0;
-$m-medium-size: 18px;
-$m-medium-line: 2.8;
-$d-medium-size: 20px;
-$d-medium-line: 3.2;
-$m-small-size: 14px;
-$m-small-line: 2.0;
-$d-small-size: 14px;
-$d-small-line: 2.0;
-$m-extra-small-size: 8px;
-$m-extra-small-line: 1.2;
-$d-extra-small-size: 10px;
-$d-extra-small-line: 1.6;
+$m-large-size:          28px;
+$m-large-line:          $base-unit*8; //32px
 
-/*
-** Base font sizes and line heights
-*/
+$d-large-size:          36px;
+$d-large-line:          $base-unit*11; //44px
 
-$base-font-size: 16px;
-$base-line-height: 10px;
+$m-medium-size:         20px;
+$m-medium-line:         $base-unit*8; //32px
+
+$d-medium-size:         24px;
+$d-medium-line:         $base-unit*9; //36px
+
+$m-small-size:          16px;
+$m-small-line:          $base-unit*5; //20px
+
+$d-small-size:          18px;
+$d-small-line:          $base-unit*6; //24px
+
+$m-extra-small-size:    14px;
+$m-extra-small-line:    $base-unit*5; //20px
+
+$d-extra-small-size:    14px;
+$d-extra-small-line:    $base-unit*5; //20px
+
+$m-tiny-size:           12px;
+$m-tiny-line:           $base-unit*4;  //16px
+
+$d-tiny-size:           12px;
+$d-tiny-line:           $base-unit*4;  //16px
 
 /*
 ** Font weights
 */
 
-$normal: 400;
-$bold: 700;
+$bold:      600;
+$normal:    400;
 
 /*
 ** Icon sizes
 */
 
-$icon-size: 12px;
-$icon-line: 1.2;
+$icon-size:             12px;
+$icon-line:             $base-unit*3; //12px
 
 /*
 ** Grid
 */
 
-$column-width: 72px;
+$column-width: 64px;
 
 /*
 ** Guts and indents
 */
 
-$m-gut: 24px; // mobile gut
-$m-indent: $m-gut; // mobile indent
-
-$d-gut: 32px; // desktop gut
-$d-indent: $d-gut; // desktop indent
+$m-gut: 16px; // mobile gut
+$d-gut: 24px; // desktop gut
 
 /*
 ** Border widths
 */
 
-$border-width: 1px;
+$border-width:        1px;
 
 /*
-** Strip unit from number
+** Strip units
 */
 
 @function strip($number) {
-	@return $number / ($number * 0 + 1);
+  @return $number / ($number * 0 + 1);
 }
 
 /*
@@ -77,7 +97,7 @@ $border-width: 1px;
 */
 
 @function em($px, $base: $base-font-size) {
-	@return strip($px / $base) * 1em;
+  @return strip($px / $base) * 1em;
 }
 
 /*
@@ -85,7 +105,7 @@ $border-width: 1px;
 */
 
 @function col($number-columns, $base: $base-font-size) {
-	@return em($column-width * $number-columns, $base);
+  @return em($column-width * $number-columns, $base);
 }
 
 /*
@@ -93,80 +113,101 @@ $border-width: 1px;
 */
 
 @function col-px($number-columns) {
-	@return $column-width * $number-columns * 1px;
+  @return $column-width * $number-columns * 1px;
 }
 
 /*
 ** Typefaces
 */
 
+@mixin font-face($type-name, $file-name, $weight, $style) {
+  @font-face {
+    font-family: "#{$type-name}";
+    src: url("../../fonts/woff2/#{$file-name}.woff2") format("woff2"),
+         url("../../fonts/woff/#{$file-name}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
 @mixin face($status: sans) {
-	@if $status == "sans" {
-		font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
-	} @else if $status == "serif" {
-		font-family: Georgia, serif;
-	} @else if $status == "mono" {
-		font-family: "Droid Sans Mono", "Andale Mono", "Monaco", monospace;
-	}
+  @if $status == "sans" {
+  font-family: "Faune", "Helvetica Neue", Arial, sans-serif;
+  } @else if $status == "serif" {
+  font-family: "Spectral", Georgia, serif;
+  } @else if $status == "mono" {
+  font-family: "Droid Sans Mono", "Andale Mono", "Monaco", monospace;
+  }
 }
 
 /*
-** Align
+** Font size
 */
 
-@mixin align($status: center) {
-	@if $status == "center" {
-		margin-right: auto;
-		margin-left: auto;
-	} @else if $status == "left" {
-		margin-right: 0;
-		margin-left: 0;
-	}
+@mixin font-size($to-size, $lines: auto, $from-size: $base-font-size) {
+  font-size: em($to-size, $from-size);
+  @if $lines != auto {
+    line-height: em($lines, $to-size);
+  }
+}
+
+/*
+** Adjust the width of an element (to accomodate for CSS Comb)
+*/
+
+@mixin adjust-dimension($dimension, $to-gut, $from-size: $base-font-size) {
+  #{$dimension}: calc(100% - #{em($to-gut*2, $from-size)});
 }
 
 /*
 ** Link
 */
 
-@mixin link($status: link) {
-	font-weight: $bold;
-	@if $status == "link" {
-		&:after {
-			font-weight: $normal;
+@mixin link($status: normal) {
+  font-weight: $bold;
+  @if $status == "normal" {
+    &:after {
+      font-weight: $normal;
 
-			margin-left: 0.1em;
+      margin-left: 0.1em;
 
-			content: "]";
-		}
-		&:before {
-			font-weight: $normal;
+      content: "]";
+    }
+    &:before {
+      font-weight: $normal;
 
-			margin-right: 0.1em;
+      margin-right: 0.1em;
 
-			content: "[";
-		}
-		&:hover {
-			&:after {
-				content: "[";
-			}
-			&:before {
-				content: "]";
-			}
-		}
-	} @else if $status == "current" {
-		&:after {
-			font-weight: $normal;
+      content: "[";
+    }
+    &:hover {
+      &:after {
+        content: "[";
+      }
+      &:before {
+        content: "]";
+      }
+    }
+  } @else if $status == "current" {
+    &:after {
+      font-weight: $normal;
 
-			margin-left: 0.1em;
+      margin-left: 0.1em;
 
-			content: "[";
-		}
-		&:before {
-			font-weight: $normal;
+      content: "[";
+    }
+    &:before {
+      font-weight: $normal;
 
-			margin-right: 0.1em;
+      margin-right: 0.1em;
 
-			content: "]";
-		}
-	}
+      content: "]";
+    }
+  }
 }
+
+/*
+** Tempo
+*/
+
+$duration: 0.2s;

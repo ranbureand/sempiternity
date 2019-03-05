@@ -1,0 +1,102 @@
+/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Frames
+*/
+
+.header-canvas,
+.footer-canvas {
+  padding-top: em($base-unit + $base-unit*0.5);
+  padding-bottom: em($base-unit + $base-unit*0.5);
+  padding-right: em($m-gut/2);
+  padding-left: em($m-gut/2);
+
+  @include min-screen(col(8)) {
+    padding-right: em($d-gut/2);
+    padding-left: em($d-gut/2);
+    padding-top: em($d-small-line + $base-unit*0.5);
+    padding-bottom: em($d-small-line + $base-unit*0.5);
+  }
+  @include min-screen(col(12)) {
+    padding-top: em($d-base-rhythm*1.5 + $base-unit*0.5);
+    padding-bottom: em($d-base-rhythm*1.5 + $base-unit*0.5);
+  }
+}
+
+.header,
+.footer {
+  display: grid;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  grid-column-gap: em($m-gut);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  @include min-screen(col(8)) {
+    padding-right: em($d-gut/2);
+    padding-left: em($d-gut/2);
+    grid-column-gap: em($d-gut);
+  }
+  @include min-screen(col(20)) {
+    width: col(20);
+  }
+}
+
+.header-title,
+.header-index,
+.footer-copyright,
+.footer-scroll {
+  @include font-size($m-small-size, $m-small-line);
+  a, div {
+    display: block;
+    padding-top: em($m-small-line/2, $m-small-size);
+    padding-bottom: em($m-small-line/2, $m-small-size);
+  }
+  a {
+    @include link(normal);
+  }
+  span {
+    display: none;
+  }
+  .current {
+    @include link(current);
+  }
+  @include min-screen(col(10)) {
+    @include font-size($d-small-size, $d-small-line);
+    a, div {
+      padding-top: em($d-small-line/2, $d-small-size);
+      padding-bottom: em($d-small-line/2, $d-small-size);
+    }
+    span {
+      display: inline;
+    }
+  }
+}
+
+.header-title {
+  a {
+    &:before {
+      padding-right: 1.6em;
+
+      background-image: url("../../media/graphics/sempiternity_logo_00.svg");
+      background-repeat: no-repeat;
+      background-position: 0.6em center;
+      background-size: 1.0em;
+    }
+  }
+  grid-column: 1 / 2;
+}
+
+.header-index {
+  text-align: right;
+  grid-column: 2 / 3;
+}
+
+.footer-copyright {
+  grid-column: 1 / 2;
+}
+
+.footer-scroll {
+  text-align: right;
+  grid-column: 2 / 3;
+}

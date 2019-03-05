@@ -12,11 +12,11 @@ publish: 'yes'
 ---
 
 > Viaggiatori!
-
+>
 > Siete assetati alla fine di una lunga giornata di viaggio? Volete sedervi a godere dell’atmosfera locale con un Martini Scotch Superspeziato in mano? La Locanda di Esmeralda* è il posto che fa per voi!
-
+>
 > Sarete in compagnia di un sacco di persone interessanti e avrete il nostro staff e la sua esperienza a vostra disposizione. Con le sue luci e il suo ambiente accogliente, la Locanda di Esmeralda è il posto perfetto per rilassarsi.
-
+>
 > \* Stiamo assumendo!
 
 Blueberry Hill in quel momento si trovava dentro alla Locanda di Esmeralda a constatare quanto vecchio dovesse essere il volantino che stringeva in mano: la locanda era infatti uno dei posti più sporchi e confusi che avesse visto da un bel po’ di tempo a questa parte.  

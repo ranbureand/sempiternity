@@ -1,0 +1,130 @@
+/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Piece
+*/
+
+.piece-canvas {
+  padding-right: em($m-gut/2);
+  padding-left: em($m-gut/2);
+
+  @include min-screen(col(8)) {
+    padding-right: em($d-gut/2);
+    padding-left: em($d-gut/2);
+  }
+}
+
+.piece {
+  display: grid;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: em($m-gut/2);
+  padding-left: em($m-gut/2);
+  grid-column-gap: em($m-gut);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  @include min-screen(col(8)) {
+    padding-right: em($d-gut/2);
+    padding-left: em($d-gut/2);
+    grid-column-gap: em($d-gut);
+  }
+  @include min-screen(col(12)) {
+    width: col(12);
+  }
+}
+
+.head {
+  padding-top: em($m-large-line/5*2 + $m-large-line);
+  padding-bottom: em($m-large-line*2);
+
+  text-align: center;
+
+  grid-column: 2 / 8;
+  .title {
+    padding-top: em($m-small-line*0.4 + 48, $m-large-size);
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: em(48, $m-large-size);
+
+    @include font-size($m-large-size, $m-large-line);
+  }
+  .subtitle {
+    display: block;
+
+    margin-top: em($m-small-line/2, $m-small-size);
+
+    @include font-size($m-small-size, $m-small-line);
+  }
+  @include min-screen(col(8)) {
+    padding-top: em($d-large-line/5*2 + $d-large-line);
+    padding-bottom: em($d-large-line*2);
+    .title {
+      padding-top: em($d-small-line*0.8 + 48, $d-large-size);
+
+      background-size: em(48, $d-large-size);
+
+      @include font-size($d-large-size, $d-large-line);
+    }
+    .subtitle {
+      margin-top: em($d-small-line/2, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+  }
+}
+
+.body {
+  margin-bottom: em($m-medium-line*4);
+  grid-column: 1 / 9;
+  @include min-screen(col(8)) {
+    margin-bottom: em($d-medium-line*4);
+  }
+}
+
+
+
+
+
+
+
+.footnote {
+  margin-bottom: em($m-small-line/2);
+
+  @include min-screen(col(9)) {
+    margin-bottom: em($d-small-line/2);
+    a[href *= "#fnref"] {
+      padding-left: em($d-gut/4, $d-small-size);
+    }
+    .ref-mark {
+      padding-right: em($d-gut/2, $d-small-size);
+
+      @include font-size($d-small-size, $d-small-line);
+    }
+  }
+
+  a[href *= "#fnref"] {
+    padding-left: em($m-gut/4, $m-small-size);
+  }
+  blockquote {
+    padding-left: 0;
+
+    border-left-width: 0;
+  }
+  .ref-mark {
+    font-weight: $bold;
+
+    display: block;
+    float: left;
+
+    padding-right: em($m-gut/4, $m-small-size);
+
+    @include font-size($m-small-size, $m-small-line);
+    &:after {
+      font-weight: $normal;
+
+      content: " }";
+    }
+  }
+}

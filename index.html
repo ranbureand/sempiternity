@@ -2,28 +2,28 @@
 layout: base
 ---
 
-      {%- assign posts = site.posts | where: 'publish', 'yes' %}
-      {%- for post in site.posts limit: 1  %}
-      <article class="content">
+      <div class="piece-canvas">
+        {%- assign posts = site.posts | where: 'publish', 'yes' %}
+        {%- for post in site.posts limit: 1  %}
+        <article class="piece">
 
-        <header class="head">
+          <header class="head">
 
-          <img class="icon" src="{{ site.baseurl }}/media/motifs/{{post.motif}}.png" alt="{{ post.title }}" />
+            <h2 class="title" style="background-image: url('{{ site.baseurl }}/media/motifs/{{post.motif}}.png');">{{ post.title }}</h2>
 
-          <h2 class="title">{{ post.title }}</h2>
+  {% include date.html date=post.date %}
 
-{% include date.html date=post.date %}
+          </header>
 
-        </header>
+          <div class="body typo-m">
 
-        <div class="body typo-m">
+  {{ post.content }}
+          </div>
 
-{{ post.content }}
-        </div>
-
-      </article>
-      {%- endfor %}
+        </article>
+        {%- endfor %}
+      </div>
 
       <div class="pagination">
-        <a class="page-prev" href="{{ site.posts[2].url | prepend: site.baseurl }}"><strong>{{ site.posts[1].title }}</strong><br />{{ site.posts[1].excerpt }}</a>
+        <a class="page-prev" href="{{ site.posts[2].url | prepend: site.baseurl }}"><strong>{{ site.posts[1].title }}</strong><br />{{ site.posts[1].description }}</a>
       </div>

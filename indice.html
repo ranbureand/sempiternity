@@ -9,18 +9,18 @@ permalink: '/indice'
 description: 'L’indice della raccolta di pezzi più o meno brevi.'
 ---
 
-      <section class="content">
+      <div class="piece-canvas">
+        <section class="piece">
 
-        <header class="head">
+          <header class="head">
 
-          <img class="icon" src="{{ site.baseurl }}/media/motifs/index_00.png" alt="Indice di Sempiternity" />
+            <h2 class="title" style="background-image: url('{{ site.baseurl }}/media/motifs/index_00.png');">{{ page.title }}</h2>
 
-          <h2 class="title">{{ page.title }}</h2>
+            <div class="subtitle">{{ page.subtitle }}</div>
 
-          <div class="subtitle">{{ page.subtitle }}</div>
+          </header>
 
-        </header>
+    {% include pieces.html %}
 
-{% include pieces.html %}
-
-      </section>
+        </section>
+      </div>

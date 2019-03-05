@@ -5,261 +5,341 @@
 */
 
 [class*="typo"] {
-	position: relative;
+  position: relative;
 
-	ul, ol, blockquote, .indent {
-		padding-left: em($m-indent);
-	}
-	.indent {
-		font-style: italic;
-	}
-	ul {
-		li {
-			&:before {
-				float: left;
+  h1,
+  h2,
+  h3,
+  h5 {
+    font-weight: $bold;
 
-				content: "\003E";
-			}
-		}
-	}
-	ol {
-		counter-reset: ordered-list;
-		li {
-			counter-increment: ordered-list;
-			&:before {
-				float: left;
+    text-align: center;
+  }
+  h4,
+  h6 {
+    font-weight: $normal;
 
-				content: counter(ordered-list);
-			}
-		}
-	}
-	blockquote {
-		border-left-width: $border-width;
-		border-left-style: solid;
-	}
-	a {
-		@include link;
-	}
-	sup[id *= "fnref:"] {
-		margin-left: 0.2em;
-	}
-	img {
-		margin-right: auto;
-		margin-left: auto;
-	}
-	hr {
-		width: 25%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	> *:first-child {
-		margin-top: 0;
-	}
-	> *:last-child {
-		margin-bottom: 0;
-	}
-	@include min-screen(col(9)) {
-		ul, ol, blockquote, .indent {
-			padding-left: em($d-indent);
-		}
-		hr {
-			width: col(2);
-		}
-	}
+    text-align: center;
+  }
+
+  ul,
+  ol,
+  blockquote,
+  .indent {
+    padding-left: em($m-gut);
+  }
+  ul {
+    li {
+      &:before {
+        float: left;
+        content: "\003E";
+      }
+    }
+  }
+  ol {
+    counter-reset: ordered-list;
+    li {
+      counter-increment: ordered-list;
+      &:before {
+        float: left;
+        content: counter(ordered-list);
+      }
+    }
+  }
+  ul ul,
+  ol ol {
+    margin-bottom: 0;
+    padding-left: em($m-gut);
+  }
+  blockquote {
+    border-left-width: $border-width;
+    border-left-style: solid;
+  }
+  .indent {
+    font-style: italic;
+  }
+  a {
+    @include link(normal);
+  }
+  a.footnote {
+
+  }
+  sup[id *= "fnref:"] {
+    margin-left: 0.2em;
+  }
+  img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  hr {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+   > *:first-child {
+    margin-top: 0;
+  }
+   > *:last-child {
+    margin-bottom: 0;
+  }
+  @include min-screen(col(9)) {
+    ul,
+    ol,
+    blockquote,
+    .indent {
+      padding-left: em($d-gut);
+    }
+    hr {
+      width: col(2);
+    }
+  }
 }
 
 .typo-m {
-	h1, h2 {
-		margin-bottom: rhythm($m-large-line/2, $m-large-size);
+  h1,
+  h2 {
+    margin-bottom: em($m-large-line/2, $m-large-size);
 
-		@include adjust-font-size-to($m-large-size, $m-large-line);
-	}
-	h3, h4, p, dd {
-		margin-bottom: rhythm($m-medium-line/2, $m-medium-size);
+    @include font-size($m-large-size, $m-large-line);
+  }
+  h3,
+  h4,
+  p,
+  dd {
+    margin-bottom: em($m-medium-line/2, $m-medium-size);
 
-		@include adjust-font-size-to($m-medium-size, $m-medium-line);
-	}
-	h5, h6 {
-		margin-bottom: rhythm($m-small-line/2, $m-small-size);
+    @include font-size($m-medium-size, $m-medium-line);
+  }
+  h5,
+  h6 {
+    margin-bottom: em($m-small-line/2, $m-small-size);
 
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-	}
-	ul, ol, blockquote {
-		margin-bottom: rhythm($m-small-line/2);
-	}
-	li, dt {
-		@include adjust-font-size-to($m-medium-size, $m-medium-line);
-	}
-	li {
-		&:before {
-			width: em($m-indent, $m-medium-size);
-			margin-left: em(-$m-indent, $m-medium-size);
-		}
-		li {
-			font-size: 1em;
-		}
-	}
-	pre {
-		padding-right: em($m-gut/2, $m-medium-size);
-		padding-left: em($m-indent, $m-medium-size);
+    @include font-size($m-small-size, $m-small-line);
+  }
+  ul,
+  ol,
+  blockquote {
+    margin-bottom: em($m-medium-line/2);
+  }
+  ul,
+  ol {
+    padding-left: em($m-gut*2, $m-medium-size);
+  }
+  li,
+  dt {
+    @include font-size($m-medium-size, $m-medium-line);
+  }
+  dt {
+    padding-right: em($m-gut/2, $m-medium-size);
+  }
+  li:before {
+    width: em($m-gut*2, $m-medium-size);
+    margin-left: em(-$m-gut*2, $m-medium-size);
+  }
+  ul ul,
+  ol ol {
+    padding-left: em($m-gut*2, $m-medium-size);
+  }
+  li li {
+    font-size: 1em;
+  }
+  pre {
+    margin-top: em($m-medium-line/2, $m-medium-size);
+    margin-bottom: em($m-medium-line/2, $m-medium-size);
+    padding-top: em($m-medium-line/2, $m-medium-size);
+    padding-right: em($m-gut*2, $m-medium-size);
+    padding-bottom: em($m-medium-line/2, $m-medium-size);
+    padding-left: em($m-gut*2, $m-medium-size);
 
-		@include adjust-font-size-to($m-medium-size, $m-medium-line);
-		@include rhythm($m-medium-line/2, $m-medium-line/2, $m-medium-line/2, $m-medium-line/2, $d-medium-size);
-	}
-	img {
-		margin-top: rhythm($m-medium-line/2, $m-small-size);
-		margin-bottom: rhythm($m-medium-line/2, $m-small-size);
+    @include font-size($m-medium-size, $m-medium-line);
+  }
+  img {
+    margin-bottom: em($m-medium-line/2, $m-tiny-size);
 
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-	}
-	hr {
-		@include rhythm-margins($m-medium-line/2, $m-medium-line/2);
-		@include leading-border($border-width, $m-medium-line);
-	}
-	@include min-screen(col(9)) {
-		h1, h2 {
-			margin-bottom: rhythm($d-large-line/2, $d-large-size);
+    @include font-size($m-tiny-size, $m-tiny-line);
+  }
+  hr {
+    margin-top: em($m-medium-line);
+    margin-bottom: em($m-medium-line);
+  }
+  @include min-screen(col(9)) {
+    h1,
+    h2 {
+      margin-bottom: em($d-large-line/2, $d-large-size);
 
-			@include adjust-font-size-to($d-large-size, $d-large-line);
-		}
-		h3, h4, p, dd {
-			margin-bottom: rhythm($d-medium-line/2, $d-medium-size);
+      @include font-size($d-large-size, $d-large-line);
+    }
+    h3,
+    h4,
+    p,
+    dd {
+      margin-bottom: em($d-medium-line/2, $d-medium-size);
 
-			@include adjust-font-size-to($d-medium-size, $d-medium-line);
-		}
-		h5, h6 {
-			margin-bottom: rhythm($d-small-line/2, $d-small-size);
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    h5,
+    h6 {
+      margin-bottom: em($d-small-line/2, $d-small-size);
 
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-		}
-		ul, ol, blockquote {
-			margin-bottom: rhythm($d-small-line/2);
-		}
-		li, dt {
-			@include adjust-font-size-to($d-medium-size, $d-medium-line);
-		}
-		li {
-			&:before {
-				width: em($d-indent, $d-medium-size);
-				margin-left: em(-$d-indent, $d-medium-size);
-			}
-			li {
-				font-size: 1em;
-			}
-		}
-		pre {
-			padding-right: em($d-gut/2, $d-medium-size);
-			padding-left: em($d-indent, $d-medium-size);
+      @include font-size($d-small-size, $d-small-line);
+    }
+    ul,
+    ol,
+    blockquote {
+      margin-bottom: em($d-medium-line/2);
+    }
+    ul,
+    ol {
+      padding-left: em($d-gut/2*3);
+    }
+    li,
+    dt {
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    li:before {
+      width: em($d-gut/2*3, $d-medium-size);
+      margin-left: em(-$d-gut/2*3, $d-medium-size);
+    }
+    dt {
+      padding-right: em($d-gut/2, $d-medium-size);
+    }
+    ul ul,
+    ol ol {
+      padding-left: em($d-gut, $d-medium-size);
+    }
+    li li {
+      font-size: 1em;
+    }
+    pre {
+      margin-top: em($d-medium-line/2, $d-medium-size);
+      margin-bottom: em($d-medium-line/2, $d-medium-size);
+      padding-top: em($d-medium-line/2, $d-medium-size);
+      padding-right: em($d-gut, $d-medium-size);
+      padding-bottom: em($d-medium-line/2, $d-medium-size);
+      padding-left: em($d-gut, $d-medium-size);
 
-			@include adjust-font-size-to($d-medium-size, $d-medium-line);
-			@include rhythm($d-medium-line/2, $d-medium-line/2, $d-medium-line/2, $d-medium-line/2, $d-medium-size);
-		}
-		img {
-			margin-top: rhythm($d-medium-line/2, $d-small-size);
-			margin-bottom: rhythm($d-medium-line/2, $d-small-size);
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    img {
+      margin-bottom: em($d-medium-line/2, $d-tiny-size);
 
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-		}
-		hr {
-			@include rhythm-margins($d-medium-line/2, $d-medium-line/2);
-			@include leading-border($border-width, $d-medium-line);
-		}
-	}
+      @include font-size($d-tiny-size, $d-tiny-line);
+    }
+    hr {
+      margin-top: em($d-medium-line);
+      margin-bottom: em($d-medium-line);
+    }
+  }
 }
 
-.typo-s {
-	h1, h2, h3, h4 {
-		margin-bottom: rhythm($m-medium-line/2, $m-medium-size);
+.typo-s,
+.footnotes > ol > li {
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: em($m-medium-line/4, $m-medium-size);
 
-		@include adjust-font-size-to($m-medium-size, $m-medium-line);
-	}
-	p, dd {
-		margin-bottom: rhythm($m-small-line/2, $m-small-size);
+    @include font-size($m-medium-size, $m-medium-line);
+  }
+  h5,
+  h6,
+  p,
+  dd {
+    margin-bottom: em($m-small-line/4, $m-small-size);
 
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-	}
-	h5, h6 {
-		margin-bottom: rhythm($m-small-line/2, $m-small-size);
+    @include font-size($m-small-size, $m-small-line);
+  }
+  ul,
+  ol,
+  blockquote {
+    margin-bottom: em($m-small-line/2);
+  }
+  ul,
+  ol {
+    padding-left: em($m-gut*2, $m-small-size);
+  }
+  li,
+  dt {
+    @include font-size($m-small-size, $m-small-line);
+  }
+  dt {
+    padding-right: em($m-gut/2, $m-small-size);
+  }
+  li:before {
+    width: em($m-gut*2, $m-small-size);
+    margin-left: em(-$m-gut*2, $m-small-size);
+  }
+  ul ul,
+  ol ol {
+    padding-left: em($m-gut*2, $m-small-size);
+  }
+  li li {
+    font-size: 1em;
+  }
+  pre {
+    margin-top: em($m-small-line/2, $m-small-size);
+    margin-bottom: em($m-small-line/2, $m-small-size);
+    padding-top: em($m-small-line/2, $m-small-size);
+    padding-right: em($m-gut*2, $m-small-size);
+    padding-bottom: em($m-small-line/2, $m-small-size);
+    padding-left: em($m-gut*2, $m-small-size);
 
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-	}
-	ul, ol, blockquote {
-		margin-bottom: rhythm($m-small-line/2);
-	}
-	li, dt {
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-	}
-	li {
-		&:before {
-			width: em($m-indent, $m-small-size);
-			margin-left: em(-$m-indent, $m-small-size);
-		}
-		li {
-			font-size: 1em;
-		}
-	}
-	pre {
-		padding-right: em($m-gut/2, $m-small-size);
-		padding-left: em($m-indent, $m-small-size);
+    @include font-size($m-small-size, $m-small-line);
+  }
+  @include min-screen(col(9)) {
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin-bottom: em($d-medium-line/4, $d-medium-size);
 
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-		@include rhythm($m-small-line/2, $m-small-line/2, $m-small-line/2, $m-small-line/2, $d-small-size);
-	}
-	img {
-		margin-bottom: rhythm($m-small-line/2, $m-small-size);
+      @include font-size($d-medium-size, $d-medium-line);
+    }
+    h5,
+    h6,
+    p,
+    dd {
+      margin-bottom: em($d-small-line/4, $d-small-size);
 
-		@include adjust-font-size-to($m-small-size, $m-small-line);
-	}
-	hr {
-		@include rhythm-margins($m-small-line/2, 0);
-		@include leading-border($border-width, $m-small-line);
-	}
-	@include min-screen(col(9)) {
-		h1, h2, h3, h4 {
-			margin-bottom: rhythm($d-medium-line/2, $d-medium-size);
+      @include font-size($d-small-size, $d-small-line);
+    }
+    ul,
+    ol,
+    blockquote {
+      margin-bottom: em($d-small-line/2);
+    }
+    ul,
+    ol {
+      padding-left: em($d-gut/2*3);
+    }
+    li,
+    dt {
+      @include font-size($d-small-size, $d-small-line);
+    }
+    li:before {
+      width: em($d-gut/2*3, $d-small-size);
+      margin-left: em(-$d-gut/2*3, $d-small-size);
+    }
+    dt {
+      padding-right: em($d-gut/2, $d-small-size);
+    }
+    ul ul,
+    ol ol {
+      padding-left: em($d-gut, $d-small-size);
+    }
+    li li {
+      font-size: 1em;
+    }
+    pre {
+      margin-top: em($d-small-line/2, $d-small-size);
+      margin-bottom: em($d-small-line/2, $d-small-size);
+      padding-top: em($d-small-line/2, $d-small-size);
+      padding-right: em($d-gut, $d-small-size);
+      padding-bottom: em($d-small-line/2, $d-small-size);
+      padding-left: em($d-gut, $d-small-size);
 
-			@include adjust-font-size-to($d-medium-size, $d-medium-line);
-		}
-		p, dd {
-			margin-bottom: rhythm($d-small-line/2, $d-small-size);
-
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-		}
-		h5, h6 {
-			margin-bottom: rhythm($d-small-line/2, $d-small-size);
-
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-		}
-		ul, ol {
-			margin-bottom: rhythm($d-small-line/2);
-		}
-		li, dt {
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-		}
-		li {
-			&:before {
-				width: em($d-indent, $d-small-size);
-				margin-left: em(-$d-indent, $d-small-size);
-			}
-			li {
-				font-size: 1em;
-			}
-		}
-		pre {
-			padding-right: em($d-gut/2, $d-small-size);
-			padding-left: em($d-indent, $d-small-size);
-
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-			@include rhythm($d-small-line/2, $d-small-line/2, $d-small-line/2, $d-small-line/2, $d-small-size);
-		}
-		img {
-			margin-bottom: rhythm($d-small-line/2, $d-small-size);
-
-			@include adjust-font-size-to($d-small-size, $d-small-line);
-		}
-		hr {
-			@include rhythm-margins($d-small-line/2, 0);
-			@include leading-border($border-width, $d-small-line);
-		}
-	}
+      @include font-size($d-small-size, $d-small-line);
+    }
+  }
 }
