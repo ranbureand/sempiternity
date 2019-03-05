@@ -6,7 +6,7 @@
 
 @each $hour, $deg in $background-colors {
 	#h#{$hour} {
-    color: blue;
+    color: rgba(darken(adjust-hue($background-color, $deg+180), 68%), 0.88);
 		::-moz-selection {
 			background-color: darken(adjust-hue($background-color, $deg), 1%);
 		}
