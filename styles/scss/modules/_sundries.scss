@@ -6,7 +6,7 @@
 
 @each $hour, $deg in $background-colors {
 	#h#{$hour} {
-    color: rgba(darken(adjust-hue($background-color, $deg+180), 68%), 0.88);
+    color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
 		::-moz-selection {
 			background-color: darken(adjust-hue($background-color, $deg), 1%);
 		}
@@ -18,8 +18,16 @@
 		.container:before {
 			background-color: adjust-hue($background-color, $deg);
 		}
+    blockquote {
+      border-left-color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
+    }
     hr {
-      border-top-color: blue;
+      border-top-color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
+    }
+    .header-canvas,
+    .footer-canvas {
+      background-color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
+      color: adjust-hue($background-color, $deg);
     }
 	}
 }

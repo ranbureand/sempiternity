@@ -8,7 +8,7 @@
   margin-top: em(-$m-small-line/2);
   padding-bottom: em($m-medium-line*4);
 
-  grid-column: 2 / 8;
+  grid-column: 1 / 9;
 
   li {
     position: relative;
@@ -16,6 +16,7 @@
     margin-bottom: em($m-small-line);
   }
   @include min-screen(col(8)) {
+    grid-column: 2 / 8;
     margin-top: em(-$d-small-line/2);
     padding-bottom: em($d-medium-line*4);
     li {
