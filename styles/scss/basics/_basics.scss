@@ -57,7 +57,7 @@ html {
 }
 
 body {
-  @include rainbow(24);
+  //@include rainbow(24);
   font-weight: $normal;
 
   height: 100%;

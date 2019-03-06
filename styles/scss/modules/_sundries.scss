@@ -6,16 +6,15 @@
 
 @each $hour, $deg in $background-colors {
 	#h#{$hour} {
-    color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
+    background-color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
+    color: rgba(saturate(darken(adjust-hue($background-color, $deg+180), 72%), 0.88), 100%);
 		::-moz-selection {
 			background-color: darken(adjust-hue($background-color, $deg), 1%);
 		}
 		::selection {
 			background-color: darken(adjust-hue($background-color, $deg), 1%);
 		}
-		.container,
-		.container:after,
-		.container:before {
+		.piece-canvas {
 			background-color: adjust-hue($background-color, $deg);
 		}
     blockquote {
@@ -26,7 +25,6 @@
     }
     .header-canvas,
     .footer-canvas {
-      background-color: rgba(darken(adjust-hue($background-color, $deg+180), 72%), 0.88);
       color: adjust-hue($background-color, $deg);
     }
 	}
@@ -93,14 +91,14 @@
 
 		height: rhythm($m-small-line/2);
 
-		@include clip-head(48);
+		//@include clip-head(48);
 	}
 	&:after {
 		bottom: rhythm(-$m-small-line/2);
 
 		height: rhythm($m-small-line/2);
 
-		@include clip-feet(48);
+		//@include clip-feet(48);
 	}
 	@include min-screen(col(9)) {
 		padding-bottom: rhythm($d-small-line*2);

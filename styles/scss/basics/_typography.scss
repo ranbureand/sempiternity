@@ -82,7 +82,7 @@
    > *:last-child {
     margin-bottom: 0;
   }
-  @include min-screen(col(9)) {
+  @include min-screen(col(8)) {
     ul,
     ol,
     blockquote,
@@ -162,7 +162,7 @@
     margin-top: em($m-medium-line);
     margin-bottom: em($m-medium-line);
   }
-  @include min-screen(col(9)) {
+  @include min-screen(col(8)) {
     h1,
     h2 {
       margin-bottom: em($d-large-line/2, $d-large-size);
@@ -287,7 +287,7 @@
 
     @include font-size($m-small-size, $m-small-line);
   }
-  @include min-screen(col(9)) {
+  @include min-screen(col(8)) {
     h1,
     h2,
     h3,
