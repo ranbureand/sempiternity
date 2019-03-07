@@ -4,40 +4,6 @@
 ** Piece
 */
 
-.piece-canvas {
-  padding-right: em($m-gut/2);
-  padding-left: em($m-gut/2);
-
-  @include min-screen(col(8)) {
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
-  }
-  @include min-screen(col(12)) {
-    margin-right: em($d-gut/4*3);
-    margin-left: em($d-gut/4*3);
-  }
-}
-
-.piece {
-  display: grid;
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: em($m-gut/2);
-  padding-left: em($m-gut/2);
-  grid-column-gap: em($m-gut);
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto;
-  @include min-screen(col(8)) {
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
-    grid-column-gap: em($d-gut);
-  }
-  @include min-screen(col(12)) {
-    width: col(12);
-  }
-}
-
 .head {
   padding-top: em($m-base-rhythm*2);
   padding-bottom: em($m-base-rhythm*2);
@@ -85,10 +51,8 @@
 }
 
 .body {
-  margin-bottom: em($m-medium-line*4);
   grid-column: 1 / 9;
   @include min-screen(col(8)) {
-    margin-bottom: em($d-medium-line*4);
   }
 }
 
