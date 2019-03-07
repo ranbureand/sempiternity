@@ -7,7 +7,7 @@
 @each $hour, $deg in $background-colors {
 	#h#{$hour} {
     $light-color: adjust-hue($background-color, $deg);
-    $dark-color: desaturate(darken(adjust-hue($background-color, $deg+180), 72%), 20%);
+    $dark-color: desaturate(darken(adjust-hue($background-color, $deg+180), 80%), 0%);
 
     background-color: $dark-color;
     color: $light-color;

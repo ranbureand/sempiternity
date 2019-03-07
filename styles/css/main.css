@@ -779,7 +779,7 @@ video {
 ** Sundries
 */
 #h0 {
-  background-color: #203c3c;
+  background-color: #0d2626;
   color: #f2d9d9; }
   #h0 ::-moz-selection {
     background-color: #f1d5d5; }
@@ -787,14 +787,14 @@ video {
     background-color: #f1d5d5; }
   #h0 .article-canvas {
     background-color: #f2d9d9;
-    color: #203c3c; }
+    color: #0d2626; }
   #h0 blockquote {
-    border-left-color: #203c3c; }
+    border-left-color: #0d2626; }
   #h0 hr {
-    border-top-color: #203c3c; }
+    border-top-color: #0d2626; }
 
 #h1 {
-  background-color: #20353c;
+  background-color: #0d2026;
   color: #f2dfd9; }
   #h1 ::-moz-selection {
     background-color: #f1dcd5; }
@@ -802,14 +802,14 @@ video {
     background-color: #f1dcd5; }
   #h1 .article-canvas {
     background-color: #f2dfd9;
-    color: #20353c; }
+    color: #0d2026; }
   #h1 blockquote {
-    border-left-color: #20353c; }
+    border-left-color: #0d2026; }
   #h1 hr {
-    border-top-color: #20353c; }
+    border-top-color: #0d2026; }
 
 #h2 {
-  background-color: #202e3c;
+  background-color: #0d1a26;
   color: #f2e6d9; }
   #h2 ::-moz-selection {
     background-color: #f1e3d5; }
@@ -817,14 +817,14 @@ video {
     background-color: #f1e3d5; }
   #h2 .article-canvas {
     background-color: #f2e6d9;
-    color: #202e3c; }
+    color: #0d1a26; }
   #h2 blockquote {
-    border-left-color: #202e3c; }
+    border-left-color: #0d1a26; }
   #h2 hr {
-    border-top-color: #202e3c; }
+    border-top-color: #0d1a26; }
 
 #h3 {
-  background-color: #20273c;
+  background-color: #0d1326;
   color: #f2ecd9; }
   #h3 ::-moz-selection {
     background-color: #f1ead5; }
@@ -832,14 +832,14 @@ video {
     background-color: #f1ead5; }
   #h3 .article-canvas {
     background-color: #f2ecd9;
-    color: #20273c; }
+    color: #0d1326; }
   #h3 blockquote {
-    border-left-color: #20273c; }
+    border-left-color: #0d1326; }
   #h3 hr {
-    border-top-color: #20273c; }
+    border-top-color: #0d1326; }
 
 #h4 {
-  background-color: #20203c;
+  background-color: #0d0d26;
   color: #f2f2d9; }
   #h4 ::-moz-selection {
     background-color: #f1f1d5; }
@@ -847,14 +847,14 @@ video {
     background-color: #f1f1d5; }
   #h4 .article-canvas {
     background-color: #f2f2d9;
-    color: #20203c; }
+    color: #0d0d26; }
   #h4 blockquote {
-    border-left-color: #20203c; }
+    border-left-color: #0d0d26; }
   #h4 hr {
-    border-top-color: #20203c; }
+    border-top-color: #0d0d26; }
 
 #h5 {
-  background-color: #27203c;
+  background-color: #130d26;
   color: #ecf2d9; }
   #h5 ::-moz-selection {
     background-color: #eaf1d5; }
@@ -862,14 +862,14 @@ video {
     background-color: #eaf1d5; }
   #h5 .article-canvas {
     background-color: #ecf2d9;
-    color: #27203c; }
+    color: #130d26; }
   #h5 blockquote {
-    border-left-color: #27203c; }
+    border-left-color: #130d26; }
   #h5 hr {
-    border-top-color: #27203c; }
+    border-top-color: #130d26; }
 
 #h6 {
-  background-color: #2e203c;
+  background-color: #1a0d26;
   color: #e6f2d9; }
   #h6 ::-moz-selection {
     background-color: #e3f1d5; }
@@ -877,14 +877,14 @@ video {
     background-color: #e3f1d5; }
   #h6 .article-canvas {
     background-color: #e6f2d9;
-    color: #2e203c; }
+    color: #1a0d26; }
   #h6 blockquote {
-    border-left-color: #2e203c; }
+    border-left-color: #1a0d26; }
   #h6 hr {
-    border-top-color: #2e203c; }
+    border-top-color: #1a0d26; }
 
 #h7 {
-  background-color: #35203c;
+  background-color: #200d26;
   color: #dff2d9; }
   #h7 ::-moz-selection {
     background-color: #dcf1d5; }
@@ -892,14 +892,14 @@ video {
     background-color: #dcf1d5; }
   #h7 .article-canvas {
     background-color: #dff2d9;
-    color: #35203c; }
+    color: #200d26; }
   #h7 blockquote {
-    border-left-color: #35203c; }
+    border-left-color: #200d26; }
   #h7 hr {
-    border-top-color: #35203c; }
+    border-top-color: #200d26; }
 
 #h8 {
-  background-color: #3c203c;
+  background-color: #260d26;
   color: #d9f2d9; }
   #h8 ::-moz-selection {
     background-color: #d5f1d5; }
@@ -907,14 +907,14 @@ video {
     background-color: #d5f1d5; }
   #h8 .article-canvas {
     background-color: #d9f2d9;
-    color: #3c203c; }
+    color: #260d26; }
   #h8 blockquote {
-    border-left-color: #3c203c; }
+    border-left-color: #260d26; }
   #h8 hr {
-    border-top-color: #3c203c; }
+    border-top-color: #260d26; }
 
 #h9 {
-  background-color: #3c2035;
+  background-color: #260d20;
   color: #d9f2df; }
   #h9 ::-moz-selection {
     background-color: #d5f1dc; }
@@ -922,14 +922,14 @@ video {
     background-color: #d5f1dc; }
   #h9 .article-canvas {
     background-color: #d9f2df;
-    color: #3c2035; }
+    color: #260d20; }
   #h9 blockquote {
-    border-left-color: #3c2035; }
+    border-left-color: #260d20; }
   #h9 hr {
-    border-top-color: #3c2035; }
+    border-top-color: #260d20; }
 
 #h10 {
-  background-color: #3c202e;
+  background-color: #260d1a;
   color: #d9f2e6; }
   #h10 ::-moz-selection {
     background-color: #d5f1e3; }
@@ -937,14 +937,14 @@ video {
     background-color: #d5f1e3; }
   #h10 .article-canvas {
     background-color: #d9f2e6;
-    color: #3c202e; }
+    color: #260d1a; }
   #h10 blockquote {
-    border-left-color: #3c202e; }
+    border-left-color: #260d1a; }
   #h10 hr {
-    border-top-color: #3c202e; }
+    border-top-color: #260d1a; }
 
 #h11 {
-  background-color: #3c2027;
+  background-color: #260d13;
   color: #d9f2ec; }
   #h11 ::-moz-selection {
     background-color: #d5f1ea; }
@@ -952,14 +952,14 @@ video {
     background-color: #d5f1ea; }
   #h11 .article-canvas {
     background-color: #d9f2ec;
-    color: #3c2027; }
+    color: #260d13; }
   #h11 blockquote {
-    border-left-color: #3c2027; }
+    border-left-color: #260d13; }
   #h11 hr {
-    border-top-color: #3c2027; }
+    border-top-color: #260d13; }
 
 #h12 {
-  background-color: #3c2020;
+  background-color: #260d0d;
   color: #d9f2f2; }
   #h12 ::-moz-selection {
     background-color: #d5f1f1; }
@@ -967,14 +967,14 @@ video {
     background-color: #d5f1f1; }
   #h12 .article-canvas {
     background-color: #d9f2f2;
-    color: #3c2020; }
+    color: #260d0d; }
   #h12 blockquote {
-    border-left-color: #3c2020; }
+    border-left-color: #260d0d; }
   #h12 hr {
-    border-top-color: #3c2020; }
+    border-top-color: #260d0d; }
 
 #h13 {
-  background-color: #3c2720;
+  background-color: #26130d;
   color: #d9ecf2; }
   #h13 ::-moz-selection {
     background-color: #d5eaf1; }
@@ -982,14 +982,14 @@ video {
     background-color: #d5eaf1; }
   #h13 .article-canvas {
     background-color: #d9ecf2;
-    color: #3c2720; }
+    color: #26130d; }
   #h13 blockquote {
-    border-left-color: #3c2720; }
+    border-left-color: #26130d; }
   #h13 hr {
-    border-top-color: #3c2720; }
+    border-top-color: #26130d; }
 
 #h14 {
-  background-color: #3c2e20;
+  background-color: #261a0d;
   color: #d9e6f2; }
   #h14 ::-moz-selection {
     background-color: #d5e3f1; }
@@ -997,14 +997,14 @@ video {
     background-color: #d5e3f1; }
   #h14 .article-canvas {
     background-color: #d9e6f2;
-    color: #3c2e20; }
+    color: #261a0d; }
   #h14 blockquote {
-    border-left-color: #3c2e20; }
+    border-left-color: #261a0d; }
   #h14 hr {
-    border-top-color: #3c2e20; }
+    border-top-color: #261a0d; }
 
 #h15 {
-  background-color: #3c3520;
+  background-color: #26200d;
   color: #d9dff2; }
   #h15 ::-moz-selection {
     background-color: #d5dcf1; }
@@ -1012,14 +1012,14 @@ video {
     background-color: #d5dcf1; }
   #h15 .article-canvas {
     background-color: #d9dff2;
-    color: #3c3520; }
+    color: #26200d; }
   #h15 blockquote {
-    border-left-color: #3c3520; }
+    border-left-color: #26200d; }
   #h15 hr {
-    border-top-color: #3c3520; }
+    border-top-color: #26200d; }
 
 #h16 {
-  background-color: #3c3c20;
+  background-color: #26260d;
   color: #d9d9f2; }
   #h16 ::-moz-selection {
     background-color: #d5d5f1; }
@@ -1027,14 +1027,14 @@ video {
     background-color: #d5d5f1; }
   #h16 .article-canvas {
     background-color: #d9d9f2;
-    color: #3c3c20; }
+    color: #26260d; }
   #h16 blockquote {
-    border-left-color: #3c3c20; }
+    border-left-color: #26260d; }
   #h16 hr {
-    border-top-color: #3c3c20; }
+    border-top-color: #26260d; }
 
 #h17 {
-  background-color: #353c20;
+  background-color: #20260d;
   color: #dfd9f2; }
   #h17 ::-moz-selection {
     background-color: #dcd5f1; }
@@ -1042,14 +1042,14 @@ video {
     background-color: #dcd5f1; }
   #h17 .article-canvas {
     background-color: #dfd9f2;
-    color: #353c20; }
+    color: #20260d; }
   #h17 blockquote {
-    border-left-color: #353c20; }
+    border-left-color: #20260d; }
   #h17 hr {
-    border-top-color: #353c20; }
+    border-top-color: #20260d; }
 
 #h18 {
-  background-color: #2e3c20;
+  background-color: #1a260d;
   color: #e6d9f2; }
   #h18 ::-moz-selection {
     background-color: #e3d5f1; }
@@ -1057,14 +1057,14 @@ video {
     background-color: #e3d5f1; }
   #h18 .article-canvas {
     background-color: #e6d9f2;
-    color: #2e3c20; }
+    color: #1a260d; }
   #h18 blockquote {
-    border-left-color: #2e3c20; }
+    border-left-color: #1a260d; }
   #h18 hr {
-    border-top-color: #2e3c20; }
+    border-top-color: #1a260d; }
 
 #h19 {
-  background-color: #273c20;
+  background-color: #13260d;
   color: #ecd9f2; }
   #h19 ::-moz-selection {
     background-color: #ead5f1; }
@@ -1072,14 +1072,14 @@ video {
     background-color: #ead5f1; }
   #h19 .article-canvas {
     background-color: #ecd9f2;
-    color: #273c20; }
+    color: #13260d; }
   #h19 blockquote {
-    border-left-color: #273c20; }
+    border-left-color: #13260d; }
   #h19 hr {
-    border-top-color: #273c20; }
+    border-top-color: #13260d; }
 
 #h20 {
-  background-color: #203c20;
+  background-color: #0d260d;
   color: #f2d9f2; }
   #h20 ::-moz-selection {
     background-color: #f1d5f1; }
@@ -1087,14 +1087,14 @@ video {
     background-color: #f1d5f1; }
   #h20 .article-canvas {
     background-color: #f2d9f2;
-    color: #203c20; }
+    color: #0d260d; }
   #h20 blockquote {
-    border-left-color: #203c20; }
+    border-left-color: #0d260d; }
   #h20 hr {
-    border-top-color: #203c20; }
+    border-top-color: #0d260d; }
 
 #h21 {
-  background-color: #203c27;
+  background-color: #0d2613;
   color: #f2d9ec; }
   #h21 ::-moz-selection {
     background-color: #f1d5ea; }
@@ -1102,14 +1102,14 @@ video {
     background-color: #f1d5ea; }
   #h21 .article-canvas {
     background-color: #f2d9ec;
-    color: #203c27; }
+    color: #0d2613; }
   #h21 blockquote {
-    border-left-color: #203c27; }
+    border-left-color: #0d2613; }
   #h21 hr {
-    border-top-color: #203c27; }
+    border-top-color: #0d2613; }
 
 #h22 {
-  background-color: #203c2e;
+  background-color: #0d261a;
   color: #f2d9e6; }
   #h22 ::-moz-selection {
     background-color: #f1d5e3; }
@@ -1117,14 +1117,14 @@ video {
     background-color: #f1d5e3; }
   #h22 .article-canvas {
     background-color: #f2d9e6;
-    color: #203c2e; }
+    color: #0d261a; }
   #h22 blockquote {
-    border-left-color: #203c2e; }
+    border-left-color: #0d261a; }
   #h22 hr {
-    border-top-color: #203c2e; }
+    border-top-color: #0d261a; }
 
 #h23 {
-  background-color: #203c35;
+  background-color: #0d2620;
   color: #f2d9df; }
   #h23 ::-moz-selection {
     background-color: #f1d5dc; }
@@ -1132,14 +1132,14 @@ video {
     background-color: #f1d5dc; }
   #h23 .article-canvas {
     background-color: #f2d9df;
-    color: #203c35; }
+    color: #0d2620; }
   #h23 blockquote {
-    border-left-color: #203c35; }
+    border-left-color: #0d2620; }
   #h23 hr {
-    border-top-color: #203c35; }
+    border-top-color: #0d2620; }
 
 #h24 {
-  background-color: #203c3c;
+  background-color: #0d2626;
   color: #f2d9d9; }
   #h24 ::-moz-selection {
     background-color: #f1d5d5; }
@@ -1147,11 +1147,11 @@ video {
     background-color: #f1d5d5; }
   #h24 .article-canvas {
     background-color: #f2d9d9;
-    color: #203c3c; }
+    color: #0d2626; }
   #h24 blockquote {
-    border-left-color: #203c3c; }
+    border-left-color: #0d2626; }
   #h24 hr {
-    border-top-color: #203c3c; }
+    border-top-color: #0d2626; }
 
 .container {
   position: relative;
@@ -1348,8 +1348,9 @@ video {
       padding-left: 0.75em; } }
   @media screen and (min-width: 48em) {
     .article-canvas {
-      margin-right: 1.125em;
-      margin-left: 1.125em; } }
+      margin-right: 0.75em;
+      margin-left: 0.75em;
+      border-radius: 1px; } }
 
 .article {
   display: grid;
@@ -1360,17 +1361,18 @@ video {
   padding-left: 0.5em;
   grid-column-gap: 1em;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: auto; }
+  grid-template-rows: auto;
+  padding-bottom: 9em; }
   @media screen and (min-width: 32em) {
     .article {
       padding-right: 0.75em;
       padding-left: 0.75em;
-      grid-column-gap: 1.5em; } }
+      grid-column-gap: 1.5em;
+      padding-bottom: 15em; } }
   @media screen and (min-width: 48em) {
     .article {
       width: 48em;
-      padding-bottom: 15em;
-      padding-top: 5em; } }
+      padding-bottom: 15em; } }
 
 /* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
