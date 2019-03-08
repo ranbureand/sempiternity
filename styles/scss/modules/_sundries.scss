@@ -5,112 +5,37 @@
 */
 
 @each $hour, $deg in $background-colors {
-	#h#{$hour} {
-    $light-color: adjust-hue($background-color, $deg);
-    $dark-color: desaturate(darken(adjust-hue($background-color, $deg+180), 80%), 0%);
+  $light-color: adjust-hue($background-color, $deg);
+  $dark-color: desaturate(darken(adjust-hue($background-color, $deg+180), 72%), 0%);
 
-    background-color: $dark-color;
+  #h#{$hour} {
     color: $light-color;
-		::-moz-selection {
-			background-color: darken($light-color, 1%);
-		}
-		::selection {
-			background-color: darken($light-color, 1%);
-		}
-		.article-canvas {
-			background-color: $light-color;
+    background-color: $dark-color;
+    ::-moz-selection {
+      background-color: darken($light-color, 1%);
+    }
+    ::selection {
+      background-color: darken($light-color, 1%);
+    }
+    .container {
       color: $dark-color;
-		}
+      background-color: $light-color;
+    }
     blockquote {
       border-left-color: $dark-color;
     }
     hr {
       border-top-color: $dark-color;
     }
-	}
-}
-
-@mixin clip-head($col-number) {
-	$points: ();
-
-	@for $i from 0 through $col-number {
-		$dump: ();
-
-		@if $i % 2 == 0 {
-			$dump: 100/$col-number*$i*1% 0%,
-		} @else {
-			$dump: 100/$col-number*$i*1% 100%,
-		}
-
-		$points: join($points, $dump, comma);
-	}
-
-	-webkit-clip-path: polygon(0 100%, $points, 100% 100%);
-	clip-path: polygon(0 100%, $points, 100% 100%);
-}
-
-@mixin clip-feet($col-number) {
-	$points: ();
-
-	@for $i from 0 through $col-number {
-		$dump: ();
-
-		@if $i % 2 == 0 {
-			$dump: 100/$col-number*$i*1% 100%,
-		} @else {
-			$dump: 100/$col-number*$i*1% 0%,
-		}
-
-		$points: join($points, $dump, comma);
-	}
-
-	-webkit-clip-path: polygon(0% 0%, $points, 100% 0%);
-	clip-path: polygon(0% 0%, $points, 100% 0%);
+  }
 }
 
 .container {
-	position: relative;
+  position: relative;
 
-	min-height: 100%;
-	margin-top: rhythm($m-small-line/2);
-	margin-bottom: rhythm($m-small-line/2);
-	padding-bottom: rhythm($m-small-line*2);
+  min-height: 100%;
 
-	&:before, &:after {
-		position: absolute;
-		left: 0;
-
-		display: block;
-
-		width: 100%;
-
-		content: "";
-	}
-	&:before {
-		top: rhythm(-$m-small-line/2);
-
-		height: rhythm($m-small-line/2);
-
-		//@include clip-head(48);
-	}
-	&:after {
-		bottom: rhythm(-$m-small-line/2);
-
-		height: rhythm($m-small-line/2);
-
-		//@include clip-feet(48);
-	}
-	@include min-screen(col(9)) {
-		padding-bottom: rhythm($d-small-line*2);
-		&:before {
-			top: rhythm(-$d-small-line/2);
-
-			height: rhythm($d-small-line/2);
-		}
-		&:after {
-			bottom: rhythm(-$d-small-line/2);
-
-			height: rhythm($d-small-line/2);
-		}
-	}
+  @include min-screen(col(8)) {
+    margin: $d-gut/2;
+  }
 }

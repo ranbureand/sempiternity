@@ -4,7 +4,7 @@
 ** Piece
 */
 
-.article-canvas {
+/*.article-canvas {
   padding-right: em($m-gut/2);
   padding-left: em($m-gut/2);
 
@@ -12,27 +12,22 @@
     padding-right: em($d-gut/2);
     padding-left: em($d-gut/2);
   }
-  @include min-screen(col(12)) {
-    margin-right: em($d-gut/2);
-    margin-left: em($d-gut/2);
-    border-radius: 1px;
-  }
-}
+}*/
 
 .article {
   display: grid;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: em($m-gut/2);
-  padding-left: em($m-gut/2);
+  padding-right: em($m-gut);
+  padding-left: em($m-gut);
   grid-column-gap: em($m-gut);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
   padding-bottom: em($m-base-rhythm*6);
   @include min-screen(col(8)) {
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
+    padding-right: em($d-gut);
+    padding-left: em($d-gut);
     grid-column-gap: em($d-gut);
     padding-bottom: em($d-base-rhythm*6);
   }
