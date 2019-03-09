@@ -12,14 +12,20 @@
     color: $light-color;
     background-color: $dark-color;
     ::-moz-selection {
-      background-color: darken($light-color, 1%);
+      background-color: adjust-hue($background-color, $deg+180);
     }
     ::selection {
-      background-color: darken($light-color, 1%);
+      background-color: adjust-hue($background-color, $deg+180);
     }
     .container {
       color: $dark-color;
       background-color: $light-color;
+    }
+    .motif-dark {
+      fill: $dark-color;
+    }
+    .motif-light {
+      fill: lighten($dark-color, 50%);
     }
     blockquote {
       border-left-color: $dark-color;

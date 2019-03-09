@@ -5,20 +5,27 @@
 */
 
 .head {
-  padding-top: em($m-base-rhythm*2);
+  position: relative;
+
+  padding-top: em($m-base-rhythm*3);
   padding-bottom: em($m-base-rhythm*3);
 
   text-align: center;
 
   grid-column: 1 / 9;
   .title {
-    padding-top: em($m-small-line*0.4 + 48, $m-large-size);
-
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: em(48, $m-large-size);
-
     @include font-size($m-large-size, $m-large-line);
+  }
+  .motif {
+    position: absolute;
+    top: em($m-base-rhythm/2);
+    right: 0;
+    left: 0;
+
+    width: em(64);
+    height: em(48);
+    margin-right: auto;
+    margin-left: auto;
   }
   .subtitle {
     display: block;
@@ -28,15 +35,18 @@
     @include font-size($m-small-size, $m-small-line);
   }
   @include min-screen(col(8)) {
+    padding-top: em($d-base-rhythm*3);
+    padding-bottom: em($d-base-rhythm*3);
+
     grid-column: 2 / 8;
-    padding-top: em($d-base-rhythm*2);
-    padding-bottom: em($d-base-rhythm*2);
     .title {
-      padding-top: em($d-small-line*0.8 + 48, $d-large-size);
-
-      background-size: em(48, $d-large-size);
-
       @include font-size($d-large-size, $d-large-line);
+    }
+    .motif {
+      top: em($d-base-rhythm/2);
+
+      width: em(96);
+      height: em(72);
     }
     .subtitle {
       margin-top: em($d-small-line/2, $d-small-size);
@@ -44,8 +54,8 @@
       @include font-size($d-small-size, $d-small-line);
     }
   }
-  @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*2);
+  @include min-screen(col(12)) {
+    padding-top: em($d-base-rhythm*3);
     padding-bottom: em($d-base-rhythm*3);
   }
 }
@@ -53,51 +63,5 @@
 .body {
   grid-column: 1 / 9;
   @include min-screen(col(8)) {
-  }
-}
-
-
-
-
-
-
-
-.footnote {
-  margin-bottom: em($m-small-line/2);
-
-  @include min-screen(col(9)) {
-    margin-bottom: em($d-small-line/2);
-    a[href *= "#fnref"] {
-      padding-left: em($d-gut/4, $d-small-size);
-    }
-    .ref-mark {
-      padding-right: em($d-gut/2, $d-small-size);
-
-      @include font-size($d-small-size, $d-small-line);
-    }
-  }
-
-  a[href *= "#fnref"] {
-    padding-left: em($m-gut/4, $m-small-size);
-  }
-  blockquote {
-    padding-left: 0;
-
-    border-left-width: 0;
-  }
-  .ref-mark {
-    font-weight: $bold;
-
-    display: block;
-    float: left;
-
-    padding-right: em($m-gut/4, $m-small-size);
-
-    @include font-size($m-small-size, $m-small-line);
-    &:after {
-      font-weight: $normal;
-
-      content: " }";
-    }
   }
 }

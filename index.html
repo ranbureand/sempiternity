@@ -9,21 +9,22 @@ layout: base
 
           <header class="head">
 
-            <h2 class="title" style="background-image: url('{{ site.baseurl }}/media/motifs/{{post.motif}}.png');">{{ post.title }}</h2>
+            <h2 class="title">{{ post.title }}</h2>
+{% include motif.html motif=post.motif %}
 
-  {% include date.html date=post.date %}
+{% include date.html date=post.date %}
 
           </header>
 
           <div class="body typo-m">
 
-  {{ post.content }}
+{{ post.content }}
           </div>
 
         </article>
         {%- endfor %}
       </div>
 
-      <div class="pagination">
+      <!--<div class="pagination">
         <a class="page-prev" href="{{ site.posts[2].url | prepend: site.baseurl }}"><strong>{{ site.posts[1].title }}</strong><br />{{ site.posts[1].description }}</a>
-      </div>
+      </div>-->

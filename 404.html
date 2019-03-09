@@ -5,32 +5,23 @@ title: 'Pagina non trovata'
 subtitle: 'Errore 404'
 ---
 
-      <article class="content">
+      <div class="article-canvas">
+        <section class="article">
 
-        <header class="head">
+          <header class="head">
 
-          <img class="icon" src="{{ site.baseurl }}/media/motifs/game_over_00.png" alt="{{ page.title }}" />
+            <h2 class="title">{{ page.title }}</h2>
+{% include motif.html motif="game_over_00" %}
 
-          <h2 class="title">{{ page.title }}</h2>
+            <div class="subtitle">{{ page.subtitle }}</div>
 
-          <div class="subtitle" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.subtitle }}</div>
+          </header>
 
-        </header>
+          <div class="body typo-m">
+            <p>Sono veramente spiaciuto, ma non sono riuscito a trovare quello che stavi cercando… ciononostante, ti va di dare un’occhiata a uno dei pezzi?</p>
+          </div>
 
-        <div class="body typo-m">
-          <p>Sono veramente spiaciuto, ma non sono riuscito a trovare quello che stavi cercando… ciononostante, ti va di dare un’occhiata a uno dei pezzi?</p>
-        </div>
+{% include pieces.html %}
 
-        <ul class="pieces">
-          {%- assign posts = site.posts | where: 'publish', 'yes' %}
-          {% for post in posts %}
-            <li>
-              <a class="piece" href="{{ post.url | prepend: site.baseurl }}">
-                <strong class="title">{{ post.title }}</strong>
-                <div class="subtitle">{{ post.description }}</div>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-
-      </article>
+        </section>
+      </div>

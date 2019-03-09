@@ -7,15 +7,16 @@ layout: base
 
           <header class="head">
 
-            <h2 class="title" style="background-image: url('{{ site.baseurl }}/media/motifs/{{page.motif}}.png');">{{ page.title }}</h2>
+            <h2 class="title">{{ page.title }}</h2>
+{% include motif.html motif=page.motif %}
 
-  {% include date.html date=page.date %}
+{% include date.html date=page.date %}
 
           </header>
 
           <div class="body typo-m">
 
-  {{ page.content }}
+{{ page.content }}
           </div>
 
         </article>
