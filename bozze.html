@@ -9,18 +9,19 @@ permalink: '/bozze'
 description: 'L’indice delle bozze della raccolta di pezzi più o meno brevi.'
 ---
 
-      <section class="content">
+      <div class="article-canvas">
+        <section class="article">
 
-        <header class="head">
+          <header class="head">
 
-          <img class="icon" src="{{ site.baseurl }}/media/motifs/index_00.png" alt="Indice di Sempiternity" />
+            <h2 class="title">{{ page.title }}</h2>
+{% include motif.html motif="index_00" %}
 
-          <h2 class="title">{{ page.title }}</h2>
+            <div class="subtitle">{{ page.subtitle }}</div>
 
-          <div class="subtitle">{{ page.subtitle }}</div>
-
-        </header>
+          </header>
 
 {% include drafts.html %}
 
-      </section>
+        </section>
+      </div>

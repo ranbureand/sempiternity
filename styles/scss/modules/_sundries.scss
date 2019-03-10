@@ -6,11 +6,22 @@
 
 @each $hour, $deg in $background-colors {
   $light-color: adjust-hue($background-color, $deg);
-  $dark-color: desaturate(darken(adjust-hue($background-color, $deg+180), 72%), 0%);
+  $dark-color: rgba(
+                 desaturate(
+                   darken(
+                     adjust-hue(
+                       $background-color,
+                     $deg+180),
+                   80%),
+                 80),
+               0.80);
 
   #h#{$hour} {
     color: $light-color;
-    background-color: $dark-color;
+    background-color: $light-color;
+    background-repeat: none;
+    background-image: linear-gradient(to right, $dark-color, $dark-color);
+
     ::-moz-selection {
       background-color: adjust-hue($background-color, $deg+180);
     }
@@ -21,11 +32,13 @@
       color: $dark-color;
       background-color: $light-color;
     }
-    .motif-dark {
+    .d-vector {
       fill: $dark-color;
     }
-    .motif-light {
+    .l-vector {
       fill: lighten($dark-color, 50%);
+      fill: adjust-hue($background-color, $deg+180);
+      fill: darken(adjust-hue($background-color, $deg+180), 32%);
     }
     blockquote {
       border-left-color: $dark-color;
@@ -33,15 +46,5 @@
     hr {
       border-top-color: $dark-color;
     }
-  }
-}
-
-.container {
-  position: relative;
-
-  min-height: 100%;
-
-  @include min-screen(col(8)) {
-    margin: $d-gut/2;
   }
 }

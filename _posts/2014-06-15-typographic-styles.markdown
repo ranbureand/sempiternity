@@ -23,7 +23,7 @@ A paragraph (from the Greek paragraphos, “to write beside” or “written bes
 A paragraph consists of one or more sentences. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose.
 
 > A block quotation (also known as a long quotation or extract) is a quotation in a written document, that is set off from the main text as a paragraph, or block of text, and typically distinguished visually using indentation and a different typeface or smaller size quotation.
-
+>
 > — <cite>[Video](http://www.youtube.com/watch?v=6r7E-69MIOU "Matt Cutts on YouTube"), Matt Cutts.</cite>
 
 This text[^footnote] has a footnote.

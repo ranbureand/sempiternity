@@ -1,8 +1,8 @@
-        <ul class="pieces">
+        <ul class="references">
           {%- assign posts = site.posts | where: 'publish', 'no' %}
           {% for post in posts %}
             <li>
-              <a class="piece" href="{{ post.url | prepend: site.baseurl }}">
+              <a class="reference" href="{{ post.url | prepend: site.baseurl }}">
                 <strong class="title">{{ post.title }}</strong>
                 <div class="subtitle">{{ post.description }}</div>
               </a>

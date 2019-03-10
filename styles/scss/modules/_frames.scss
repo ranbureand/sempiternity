@@ -63,36 +63,35 @@
   a {
     @include link(normal);
   }
-  span {
-    display: none;
-  }
   .current {
     @include link(current);
   }
-  @include min-screen(col(10)) {
+  @include min-screen(col(8)) {
     @include font-size($d-small-size, $d-small-line);
     a, div {
       padding-top: em($d-small-line/2, $d-small-size);
       padding-bottom: em($d-small-line/2, $d-small-size);
     }
-    span {
-      display: inline;
-    }
+
   }
 }
 
 .header-title {
-  a {
-    &:before {
-      padding-right: 1.6em;
-
-      background-image: url("../../media/graphics/sempiternity_logo_00.svg");
-      background-repeat: no-repeat;
-      background-position: 0.6em center;
-      background-size: 1.0em;
+  grid-column: 1 / 2;
+  .logo {
+    margin-top: em(-$base-unit/2, $m-small-size);
+    margin-right: em($base-unit, $m-small-size);
+    height: em($base-unit*4, $m-small-size);
+    width: em($base-unit*4, $m-small-size);
+  }
+  @include min-screen(col(8)) {
+    .logo {
+      margin-top: em(-$base-unit/2, $d-small-size);
+      margin-right: em($base-unit, $d-small-size);
+      height: em($base-unit*5, $d-small-size);
+      width: em($base-unit*5, $d-small-size);
     }
   }
-  grid-column: 1 / 2;
 }
 
 .header-index {
@@ -102,9 +101,27 @@
 
 .footer-copyright {
   grid-column: 1 / 2;
+  span {
+    display: none;
+  }
+  @include min-screen(col(8)) {
+    span {
+      display: inline;
+    }
+  }
 }
 
 .footer-scroll {
   text-align: right;
   grid-column: 2 / 3;
+}
+
+.container {
+  position: relative;
+
+  min-height: 100%;
+
+  @include min-screen(col(8)) {
+    margin: $d-gut/2;
+  }
 }
