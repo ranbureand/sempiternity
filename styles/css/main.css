@@ -780,22 +780,18 @@ video {
 */
 #h0 {
   color: #f3cece;
-  background-color: #f3cece;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413a3a; }
   #h0 ::-moz-selection {
-    background-color: #cef3f3; }
+    fill: #c1b9b9; }
   #h0 ::selection {
-    background-color: #cef3f3; }
+    fill: #c1b9b9; }
   #h0 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3cece; }
   #h0 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h0 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cef3f3;
-    fill: #4bd2d2; }
+    fill: #c1b9b9; }
   #h0 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h0 hr {
@@ -803,22 +799,18 @@ video {
 
 #h1 {
   color: #f3d7ce;
-  background-color: #f3d7ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413b3a; }
   #h1 ::-moz-selection {
-    background-color: #ceeaf3; }
+    fill: #c1bab9; }
   #h1 ::selection {
-    background-color: #ceeaf3; }
+    fill: #c1bab9; }
   #h1 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3d7ce; }
   #h1 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h1 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #ceeaf3;
-    fill: #4bb0d2; }
+    fill: #c1bab9; }
   #h1 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h1 hr {
@@ -826,22 +818,18 @@ video {
 
 #h2 {
   color: #f3e0ce;
-  background-color: #f3e0ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413d3a; }
   #h2 ::-moz-selection {
-    background-color: #cee0f3; }
+    fill: #c1bcb9; }
   #h2 ::selection {
-    background-color: #cee0f3; }
+    fill: #c1bcb9; }
   #h2 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3e0ce; }
   #h2 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h2 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cee0f3;
-    fill: #4b8fd2; }
+    fill: #c1bcb9; }
   #h2 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h2 hr {
@@ -849,22 +837,18 @@ video {
 
 #h3 {
   color: #f3eace;
-  background-color: #f3eace;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413f3a; }
   #h3 ::-moz-selection {
-    background-color: #ced7f3; }
+    fill: #c1bfb9; }
   #h3 ::selection {
-    background-color: #ced7f3; }
+    fill: #c1bfb9; }
   #h3 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3eace; }
   #h3 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h3 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #ced7f3;
-    fill: #4b6dd2; }
+    fill: #c1bfb9; }
   #h3 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h3 hr {
@@ -872,22 +856,18 @@ video {
 
 #h4 {
   color: #f3f3ce;
-  background-color: #f3f3ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #41413a; }
   #h4 ::-moz-selection {
-    background-color: #cecef3; }
+    fill: #c1c1b9; }
   #h4 ::selection {
-    background-color: #cecef3; }
+    fill: #c1c1b9; }
   #h4 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3f3ce; }
   #h4 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h4 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cecef3;
-    fill: #4b4bd2; }
+    fill: #c1c1b9; }
   #h4 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h4 hr {
@@ -895,22 +875,18 @@ video {
 
 #h5 {
   color: #eaf3ce;
-  background-color: #eaf3ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3f413a; }
   #h5 ::-moz-selection {
-    background-color: #d7cef3; }
+    fill: #bfc1b9; }
   #h5 ::selection {
-    background-color: #d7cef3; }
+    fill: #bfc1b9; }
   #h5 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #eaf3ce; }
   #h5 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h5 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #d7cef3;
-    fill: #6d4bd2; }
+    fill: #bfc1b9; }
   #h5 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h5 hr {
@@ -918,22 +894,18 @@ video {
 
 #h6 {
   color: #e0f3ce;
-  background-color: #e0f3ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3d413a; }
   #h6 ::-moz-selection {
-    background-color: #e0cef3; }
+    fill: #bcc1b9; }
   #h6 ::selection {
-    background-color: #e0cef3; }
+    fill: #bcc1b9; }
   #h6 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #e0f3ce; }
   #h6 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h6 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #e0cef3;
-    fill: #8f4bd2; }
+    fill: #bcc1b9; }
   #h6 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h6 hr {
@@ -941,22 +913,18 @@ video {
 
 #h7 {
   color: #d7f3ce;
-  background-color: #d7f3ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3b413a; }
   #h7 ::-moz-selection {
-    background-color: #eacef3; }
+    fill: #bac1b9; }
   #h7 ::selection {
-    background-color: #eacef3; }
+    fill: #bac1b9; }
   #h7 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #d7f3ce; }
   #h7 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h7 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #eacef3;
-    fill: #b04bd2; }
+    fill: #bac1b9; }
   #h7 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h7 hr {
@@ -964,22 +932,18 @@ video {
 
 #h8 {
   color: #cef3ce;
-  background-color: #cef3ce;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a413a; }
   #h8 ::-moz-selection {
-    background-color: #f3cef3; }
+    fill: #b9c1b9; }
   #h8 ::selection {
-    background-color: #f3cef3; }
+    fill: #b9c1b9; }
   #h8 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cef3ce; }
   #h8 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h8 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3cef3;
-    fill: #d24bd2; }
+    fill: #b9c1b9; }
   #h8 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h8 hr {
@@ -987,22 +951,18 @@ video {
 
 #h9 {
   color: #cef3d7;
-  background-color: #cef3d7;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a413b; }
   #h9 ::-moz-selection {
-    background-color: #f3ceea; }
+    fill: #b9c1ba; }
   #h9 ::selection {
-    background-color: #f3ceea; }
+    fill: #b9c1ba; }
   #h9 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cef3d7; }
   #h9 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h9 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3ceea;
-    fill: #d24bb0; }
+    fill: #b9c1ba; }
   #h9 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h9 hr {
@@ -1010,22 +970,18 @@ video {
 
 #h10 {
   color: #cef3e0;
-  background-color: #cef3e0;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a413d; }
   #h10 ::-moz-selection {
-    background-color: #f3cee0; }
+    fill: #b9c1bc; }
   #h10 ::selection {
-    background-color: #f3cee0; }
+    fill: #b9c1bc; }
   #h10 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cef3e0; }
   #h10 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h10 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3cee0;
-    fill: #d24b8f; }
+    fill: #b9c1bc; }
   #h10 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h10 hr {
@@ -1033,22 +989,18 @@ video {
 
 #h11 {
   color: #cef3ea;
-  background-color: #cef3ea;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a413f; }
   #h11 ::-moz-selection {
-    background-color: #f3ced7; }
+    fill: #b9c1bf; }
   #h11 ::selection {
-    background-color: #f3ced7; }
+    fill: #b9c1bf; }
   #h11 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cef3ea; }
   #h11 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h11 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3ced7;
-    fill: #d24b6d; }
+    fill: #b9c1bf; }
   #h11 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h11 hr {
@@ -1056,22 +1008,18 @@ video {
 
 #h12 {
   color: #cef3f3;
-  background-color: #cef3f3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a4141; }
   #h12 ::-moz-selection {
-    background-color: #f3cece; }
+    fill: #b9c1c1; }
   #h12 ::selection {
-    background-color: #f3cece; }
+    fill: #b9c1c1; }
   #h12 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cef3f3; }
   #h12 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h12 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3cece;
-    fill: #d24b4b; }
+    fill: #b9c1c1; }
   #h12 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h12 hr {
@@ -1079,22 +1027,18 @@ video {
 
 #h13 {
   color: #ceeaf3;
-  background-color: #ceeaf3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a3f41; }
   #h13 ::-moz-selection {
-    background-color: #f3d7ce; }
+    fill: #b9bfc1; }
   #h13 ::selection {
-    background-color: #f3d7ce; }
+    fill: #b9bfc1; }
   #h13 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #ceeaf3; }
   #h13 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h13 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3d7ce;
-    fill: #d26d4b; }
+    fill: #b9bfc1; }
   #h13 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h13 hr {
@@ -1102,22 +1046,18 @@ video {
 
 #h14 {
   color: #cee0f3;
-  background-color: #cee0f3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a3d41; }
   #h14 ::-moz-selection {
-    background-color: #f3e0ce; }
+    fill: #b9bcc1; }
   #h14 ::selection {
-    background-color: #f3e0ce; }
+    fill: #b9bcc1; }
   #h14 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cee0f3; }
   #h14 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h14 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3e0ce;
-    fill: #d28f4b; }
+    fill: #b9bcc1; }
   #h14 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h14 hr {
@@ -1125,22 +1065,18 @@ video {
 
 #h15 {
   color: #ced7f3;
-  background-color: #ced7f3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a3b41; }
   #h15 ::-moz-selection {
-    background-color: #f3eace; }
+    fill: #b9bac1; }
   #h15 ::selection {
-    background-color: #f3eace; }
+    fill: #b9bac1; }
   #h15 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #ced7f3; }
   #h15 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h15 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3eace;
-    fill: #d2b04b; }
+    fill: #b9bac1; }
   #h15 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h15 hr {
@@ -1148,22 +1084,18 @@ video {
 
 #h16 {
   color: #cecef3;
-  background-color: #cecef3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3a3a41; }
   #h16 ::-moz-selection {
-    background-color: #f3f3ce; }
+    fill: #b9b9c1; }
   #h16 ::selection {
-    background-color: #f3f3ce; }
+    fill: #b9b9c1; }
   #h16 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #cecef3; }
   #h16 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h16 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #f3f3ce;
-    fill: #d2d24b; }
+    fill: #b9b9c1; }
   #h16 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h16 hr {
@@ -1171,22 +1103,18 @@ video {
 
 #h17 {
   color: #d7cef3;
-  background-color: #d7cef3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3b3a41; }
   #h17 ::-moz-selection {
-    background-color: #eaf3ce; }
+    fill: #bab9c1; }
   #h17 ::selection {
-    background-color: #eaf3ce; }
+    fill: #bab9c1; }
   #h17 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #d7cef3; }
   #h17 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h17 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #eaf3ce;
-    fill: #b0d24b; }
+    fill: #bab9c1; }
   #h17 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h17 hr {
@@ -1194,22 +1122,18 @@ video {
 
 #h18 {
   color: #e0cef3;
-  background-color: #e0cef3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3d3a41; }
   #h18 ::-moz-selection {
-    background-color: #e0f3ce; }
+    fill: #bcb9c1; }
   #h18 ::selection {
-    background-color: #e0f3ce; }
+    fill: #bcb9c1; }
   #h18 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #e0cef3; }
   #h18 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h18 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #e0f3ce;
-    fill: #8fd24b; }
+    fill: #bcb9c1; }
   #h18 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h18 hr {
@@ -1217,22 +1141,18 @@ video {
 
 #h19 {
   color: #eacef3;
-  background-color: #eacef3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #3f3a41; }
   #h19 ::-moz-selection {
-    background-color: #d7f3ce; }
+    fill: #bfb9c1; }
   #h19 ::selection {
-    background-color: #d7f3ce; }
+    fill: #bfb9c1; }
   #h19 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #eacef3; }
   #h19 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h19 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #d7f3ce;
-    fill: #6dd24b; }
+    fill: #bfb9c1; }
   #h19 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h19 hr {
@@ -1240,22 +1160,18 @@ video {
 
 #h20 {
   color: #f3cef3;
-  background-color: #f3cef3;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413a41; }
   #h20 ::-moz-selection {
-    background-color: #cef3ce; }
+    fill: #c1b9c1; }
   #h20 ::selection {
-    background-color: #cef3ce; }
+    fill: #c1b9c1; }
   #h20 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3cef3; }
   #h20 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h20 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cef3ce;
-    fill: #4bd24b; }
+    fill: #c1b9c1; }
   #h20 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h20 hr {
@@ -1263,22 +1179,18 @@ video {
 
 #h21 {
   color: #f3ceea;
-  background-color: #f3ceea;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413a3f; }
   #h21 ::-moz-selection {
-    background-color: #cef3d7; }
+    fill: #c1b9bf; }
   #h21 ::selection {
-    background-color: #cef3d7; }
+    fill: #c1b9bf; }
   #h21 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3ceea; }
   #h21 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h21 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cef3d7;
-    fill: #4bd26d; }
+    fill: #c1b9bf; }
   #h21 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h21 hr {
@@ -1286,22 +1198,18 @@ video {
 
 #h22 {
   color: #f3cee0;
-  background-color: #f3cee0;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413a3d; }
   #h22 ::-moz-selection {
-    background-color: #cef3e0; }
+    fill: #c1b9bc; }
   #h22 ::selection {
-    background-color: #cef3e0; }
+    fill: #c1b9bc; }
   #h22 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3cee0; }
   #h22 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h22 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cef3e0;
-    fill: #4bd28f; }
+    fill: #c1b9bc; }
   #h22 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h22 hr {
@@ -1309,22 +1217,18 @@ video {
 
 #h23 {
   color: #f3ced7;
-  background-color: #f3ced7;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413a3b; }
   #h23 ::-moz-selection {
-    background-color: #cef3ea; }
+    fill: #c1b9ba; }
   #h23 ::selection {
-    background-color: #cef3ea; }
+    fill: #c1b9ba; }
   #h23 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3ced7; }
   #h23 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h23 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cef3ea;
-    fill: #4bd2b0; }
+    fill: #c1b9ba; }
   #h23 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h23 hr {
@@ -1332,22 +1236,18 @@ video {
 
 #h24 {
   color: #f3cece;
-  background-color: #f3cece;
-  background-repeat: none;
-  background-image: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.8)); }
+  background-color: #413a3a; }
   #h24 ::-moz-selection {
-    background-color: #cef3f3; }
+    fill: #c1b9b9; }
   #h24 ::selection {
-    background-color: #cef3f3; }
+    fill: #c1b9b9; }
   #h24 .container {
     color: rgba(20, 20, 20, 0.8);
     background-color: #f3cece; }
   #h24 .d-vector {
     fill: rgba(20, 20, 20, 0.8); }
   #h24 .l-vector {
-    fill: rgba(148, 148, 148, 0.8);
-    fill: #cef3f3;
-    fill: #4bd2d2; }
+    fill: #c1b9b9; }
   #h24 blockquote {
     border-left-color: rgba(20, 20, 20, 0.8); }
   #h24 hr {

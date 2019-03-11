@@ -15,12 +15,11 @@ Blueberry Hill aveva davanti a sé la posta ricevuta, che stava aprendo mentre s
 
 >Ufficio iscritti e missioni segrete  
 Ministero della Grammatica
-
+>
 >Blueberry Hill,
-abbiamo sviluppato un corso di aggiornamento che ha luogo nella realtà virtuale, e ti abbiamo scelto per testarlo.
-Il giorno è fissato per oggi: un funzionario verrà a prenderti e ti porterà sul luogo.
+abbiamo sviluppato un corso di aggiornamento che ha luogo nella realtà virtuale, e ti abbiamo scelto per testarlo. Il giorno è fissato per oggi: un funzionario verrà a prenderti e ti porterà sul luogo.
 
-«…Dannazione!» disse Blueberry, con una punta di agitazione nella voce. Continuò a leggere:
+«… dannazione!» disse Blueberry, con una punta di agitazione nella voce. Continuò a leggere:
 
 >Il funzionario è una persona con cui hai già avuto occasione di lavorare: si tratta di Paco.
 

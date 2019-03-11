@@ -5,46 +5,62 @@
 */
 
 @each $hour, $deg in $background-colors {
-  $light-color: adjust-hue($background-color, $deg);
-  $dark-color: rgba(
-                 desaturate(
-                   darken(
-                     adjust-hue(
-                       $background-color,
-                     $deg+180),
-                   80%),
-                 80),
-               0.80);
+  $l-yin: adjust-hue(
+    $background-color, $deg
+  );
+  $l-yang: adjust-hue(
+    $background-color, $deg+180
+  );
+  $d-yin: desaturate(
+    darken(
+      $l-yin, 80
+    ), 60
+  );
+  $d-yang: desaturate(
+    darken(
+      $l-yang, 80
+    ), 60
+  );
+  $l-yin-solid: $l-yin;
+  $d-yin-solid: mix(
+    $d-yin, $l-yang, 80
+  );
+  $d-yin-transparent: rgba(
+    $d-yin, 0.80
+  );
+  $l-yang-solid: $l-yang;
+  $d-yang-solid: mix(
+    $d-yang, $l-yin, 80
+  );
+  $d-yang-transparent: rgba(
+    $d-yang, 0.80
+  );
 
   #h#{$hour} {
-    color: $light-color;
-    background-color: $light-color;
-    background-repeat: none;
-    background-image: linear-gradient(to right, $dark-color, $dark-color);
+    color: $l-yin-solid;
+    background-color: $d-yang-solid;
 
     ::-moz-selection {
-      background-color: adjust-hue($background-color, $deg+180);
+      fill: lighten($d-yang-solid, 50%);
     }
     ::selection {
-      background-color: adjust-hue($background-color, $deg+180);
+      fill: lighten($d-yang-solid, 50%);
     }
     .container {
-      color: $dark-color;
-      background-color: $light-color;
+      color: $d-yang-transparent;
+      background-color: $l-yin-solid;
     }
     .d-vector {
-      fill: $dark-color;
+      fill: $d-yang-transparent;
     }
     .l-vector {
-      fill: lighten($dark-color, 50%);
-      fill: adjust-hue($background-color, $deg+180);
-      fill: darken(adjust-hue($background-color, $deg+180), 32%);
+      fill: lighten($d-yang-solid, 50%);
     }
     blockquote {
-      border-left-color: $dark-color;
+      border-left-color: $d-yang-transparent;
     }
     hr {
-      border-top-color: $dark-color;
+      border-top-color: $d-yang-transparent;
     }
   }
 }
