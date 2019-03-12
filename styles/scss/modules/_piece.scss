@@ -7,7 +7,7 @@
 .head {
   position: relative;
 
-  padding-top: em($m-base-rhythm*3);
+  padding-top: em($m-base-rhythm*4);
 
   text-align: center;
 
@@ -21,8 +21,8 @@
     right: 0;
     left: 0;
 
-    width: em(64);
-    height: em(48);
+    width: em(80);
+    height: em(60);
     margin-right: auto;
     margin-left: auto;
   }
@@ -58,6 +58,6 @@
   grid-column: 1 / 9;
   padding-top: em($m-base-rhythm*3);
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*3);
+    padding-top: em($d-base-rhythm*2);
   }
 }

@@ -1297,6 +1297,15 @@ video {
       padding-top: 3.75em;
       padding-bottom: 3.75em; } }
 
+.header-canvas {
+  margin-bottom: 3em; }
+  @media screen and (min-width: 32em) {
+    .header-canvas {
+      margin-bottom: 3em; } }
+  @media screen and (min-width: 48em) {
+    .header-canvas {
+      margin-bottom: 0; } }
+
 .footer-canvas {
   padding-top: 6em; }
   @media screen and (min-width: 32em) {
@@ -1546,7 +1555,7 @@ video {
 */
 .head {
   position: relative;
-  padding-top: 4.5em;
+  padding-top: 6em;
   text-align: center;
   grid-column: 1 / 9; }
   .head .title {
@@ -1557,8 +1566,8 @@ video {
     top: 0.75em;
     right: 0;
     left: 0;
-    width: 4em;
-    height: 3em;
+    width: 5em;
+    height: 3.75em;
     margin-right: auto;
     margin-left: auto; }
   .head .subtitle {
@@ -1587,7 +1596,7 @@ video {
   padding-top: 4.5em; }
   @media screen and (min-width: 32em) {
     .body {
-      padding-top: 7.5em; } }
+      padding-top: 5em; } }
 
 /* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*

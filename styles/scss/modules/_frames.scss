@@ -19,6 +19,16 @@
   }
 }
 
+.header-canvas {
+  margin-bottom: em($m-base-rhythm*2);
+  @include min-screen(col(8)) {
+    margin-bottom: em($m-base-rhythm*2);
+  }
+  @include min-screen(col(12)) {
+    margin-bottom: 0;
+  }
+}
+
 .footer-canvas {
   padding-top: em($m-base-rhythm*4);
   @include min-screen(col(8)) {
