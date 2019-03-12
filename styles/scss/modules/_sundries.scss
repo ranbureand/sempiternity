@@ -22,8 +22,10 @@
       $l-foreground, 80
     ), 20
   );
-  $m-foreground: darken(
-    $l-foreground, 40
+  $m-foreground: saturate(
+    darken(
+      $l-foreground, 40
+    ), 40
   );
 
   $l-background-solid: $l-background;
@@ -48,10 +50,10 @@
     background-color: $d-foreground-solid;
 
     ::-moz-selection {
-      background-color: rgba($m-foreground, 0.16);
+      background-color: rgba($m-foreground, 0.08);
     }
     ::selection {
-      background-color: rgba($m-foreground, 0.16);
+      background-color: rgba($m-foreground, 0.08);
     }
     .container {
       color: $d-foreground-transparent;

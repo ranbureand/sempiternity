@@ -109,6 +109,31 @@
   font-weight: 400;
   font-style: normal; }
 
+/* (c) 2018 Andrea Buran [www.andreaburan.com] All rights reserved */
+/*
+** Animations
+*/
+@keyframes element-in {
+  0% {
+    opacity: 0; }
+  75% {
+    opacity: 1; } }
+
+@keyframes element-up {
+  0% {
+    transform: translateY(1.25em); }
+  100% {
+    transform: translateY(0); } }
+
+@keyframes element-in-up {
+  0% {
+    transform: translateY(1.25em);
+    opacity: 0; }
+  75% {
+    opacity: 1; }
+  100% {
+    transform: translateY(0); } }
+
 /*
 ** Basics
 **/
@@ -122,12 +147,12 @@
 */
 ::-moz-selection {
   color: inherit;
-  background-color: #b4e4e4;
+  background-color: #e4b4b4;
   text-shadow: none; }
 
 ::selection {
   color: inherit;
-  background-color: #b4e4e4;
+  background-color: #e4b4b4;
   text-shadow: none; }
 
 img::-moz-selection {
@@ -779,479 +804,479 @@ video {
 ** Sundries
 */
 #h0 {
-  color: #efd2d2;
-  background-color: #3c3f3f; }
-  #h0 ::-moz-selection {
-    background-color: rgba(64, 181, 181, 0.16); }
-  #h0 ::selection {
-    background-color: rgba(64, 181, 181, 0.16); }
-  #h0 .container {
-    color: rgba(15, 26, 26, 0.8);
-    background-color: #efd2d2; }
-  #h0 .d-vector {
-    fill: rgba(15, 26, 26, 0.8); }
-  #h0 .l-vector {
-    fill: rgba(64, 181, 181, 0.32); }
-  #h0 blockquote {
-    border-left-color: rgba(15, 26, 26, 0.8); }
-  #h0 hr {
-    border-top-color: rgba(15, 26, 26, 0.8); }
-
-#h1 {
-  color: #efd9d2;
-  background-color: #3c3e3f; }
-  #h1 ::-moz-selection {
-    background-color: rgba(64, 152, 181, 0.16); }
-  #h1 ::selection {
-    background-color: rgba(64, 152, 181, 0.16); }
-  #h1 .container {
-    color: rgba(15, 23, 26, 0.8);
-    background-color: #efd9d2; }
-  #h1 .d-vector {
-    fill: rgba(15, 23, 26, 0.8); }
-  #h1 .l-vector {
-    fill: rgba(64, 152, 181, 0.32); }
-  #h1 blockquote {
-    border-left-color: rgba(15, 23, 26, 0.8); }
-  #h1 hr {
-    border-top-color: rgba(15, 23, 26, 0.8); }
-
-#h2 {
-  color: #efe0d2;
-  background-color: #3c3d3f; }
-  #h2 ::-moz-selection {
-    background-color: rgba(64, 122, 181, 0.16); }
-  #h2 ::selection {
-    background-color: rgba(64, 122, 181, 0.16); }
-  #h2 .container {
-    color: rgba(15, 20, 26, 0.8);
-    background-color: #efe0d2; }
-  #h2 .d-vector {
-    fill: rgba(15, 20, 26, 0.8); }
-  #h2 .l-vector {
-    fill: rgba(64, 122, 181, 0.32); }
-  #h2 blockquote {
-    border-left-color: rgba(15, 20, 26, 0.8); }
-  #h2 hr {
-    border-top-color: rgba(15, 20, 26, 0.8); }
-
-#h3 {
-  color: #efe8d2;
-  background-color: #3c3c3f; }
-  #h3 ::-moz-selection {
-    background-color: rgba(64, 93, 181, 0.16); }
-  #h3 ::selection {
-    background-color: rgba(64, 93, 181, 0.16); }
-  #h3 .container {
-    color: rgba(15, 18, 26, 0.8);
-    background-color: #efe8d2; }
-  #h3 .d-vector {
-    fill: rgba(15, 18, 26, 0.8); }
-  #h3 .l-vector {
-    fill: rgba(64, 93, 181, 0.32); }
-  #h3 blockquote {
-    border-left-color: rgba(15, 18, 26, 0.8); }
-  #h3 hr {
-    border-top-color: rgba(15, 18, 26, 0.8); }
-
-#h4 {
-  color: #efefd2;
-  background-color: #3c3c3f; }
-  #h4 ::-moz-selection {
-    background-color: rgba(64, 64, 181, 0.16); }
-  #h4 ::selection {
-    background-color: rgba(64, 64, 181, 0.16); }
-  #h4 .container {
-    color: rgba(15, 15, 26, 0.8);
-    background-color: #efefd2; }
-  #h4 .d-vector {
-    fill: rgba(15, 15, 26, 0.8); }
-  #h4 .l-vector {
-    fill: rgba(64, 64, 181, 0.32); }
-  #h4 blockquote {
-    border-left-color: rgba(15, 15, 26, 0.8); }
-  #h4 hr {
-    border-top-color: rgba(15, 15, 26, 0.8); }
-
-#h5 {
-  color: #e8efd2;
-  background-color: #3c3c3f; }
-  #h5 ::-moz-selection {
-    background-color: rgba(93, 64, 181, 0.16); }
-  #h5 ::selection {
-    background-color: rgba(93, 64, 181, 0.16); }
-  #h5 .container {
-    color: rgba(18, 15, 26, 0.8);
-    background-color: #e8efd2; }
-  #h5 .d-vector {
-    fill: rgba(18, 15, 26, 0.8); }
-  #h5 .l-vector {
-    fill: rgba(93, 64, 181, 0.32); }
-  #h5 blockquote {
-    border-left-color: rgba(18, 15, 26, 0.8); }
-  #h5 hr {
-    border-top-color: rgba(18, 15, 26, 0.8); }
-
-#h6 {
-  color: #e0efd2;
-  background-color: #3d3c3f; }
-  #h6 ::-moz-selection {
-    background-color: rgba(122, 64, 181, 0.16); }
-  #h6 ::selection {
-    background-color: rgba(122, 64, 181, 0.16); }
-  #h6 .container {
-    color: rgba(20, 15, 26, 0.8);
-    background-color: #e0efd2; }
-  #h6 .d-vector {
-    fill: rgba(20, 15, 26, 0.8); }
-  #h6 .l-vector {
-    fill: rgba(122, 64, 181, 0.32); }
-  #h6 blockquote {
-    border-left-color: rgba(20, 15, 26, 0.8); }
-  #h6 hr {
-    border-top-color: rgba(20, 15, 26, 0.8); }
-
-#h7 {
-  color: #d9efd2;
-  background-color: #3e3c3f; }
-  #h7 ::-moz-selection {
-    background-color: rgba(152, 64, 181, 0.16); }
-  #h7 ::selection {
-    background-color: rgba(152, 64, 181, 0.16); }
-  #h7 .container {
-    color: rgba(23, 15, 26, 0.8);
-    background-color: #d9efd2; }
-  #h7 .d-vector {
-    fill: rgba(23, 15, 26, 0.8); }
-  #h7 .l-vector {
-    fill: rgba(152, 64, 181, 0.32); }
-  #h7 blockquote {
-    border-left-color: rgba(23, 15, 26, 0.8); }
-  #h7 hr {
-    border-top-color: rgba(23, 15, 26, 0.8); }
-
-#h8 {
-  color: #d2efd2;
-  background-color: #3f3c3f; }
-  #h8 ::-moz-selection {
-    background-color: rgba(181, 64, 181, 0.16); }
-  #h8 ::selection {
-    background-color: rgba(181, 64, 181, 0.16); }
-  #h8 .container {
-    color: rgba(26, 15, 26, 0.8);
-    background-color: #d2efd2; }
-  #h8 .d-vector {
-    fill: rgba(26, 15, 26, 0.8); }
-  #h8 .l-vector {
-    fill: rgba(181, 64, 181, 0.32); }
-  #h8 blockquote {
-    border-left-color: rgba(26, 15, 26, 0.8); }
-  #h8 hr {
-    border-top-color: rgba(26, 15, 26, 0.8); }
-
-#h9 {
-  color: #d2efd9;
-  background-color: #3f3c3e; }
-  #h9 ::-moz-selection {
-    background-color: rgba(181, 64, 152, 0.16); }
-  #h9 ::selection {
-    background-color: rgba(181, 64, 152, 0.16); }
-  #h9 .container {
-    color: rgba(26, 15, 23, 0.8);
-    background-color: #d2efd9; }
-  #h9 .d-vector {
-    fill: rgba(26, 15, 23, 0.8); }
-  #h9 .l-vector {
-    fill: rgba(181, 64, 152, 0.32); }
-  #h9 blockquote {
-    border-left-color: rgba(26, 15, 23, 0.8); }
-  #h9 hr {
-    border-top-color: rgba(26, 15, 23, 0.8); }
-
-#h10 {
-  color: #d2efe0;
-  background-color: #3f3c3d; }
-  #h10 ::-moz-selection {
-    background-color: rgba(181, 64, 122, 0.16); }
-  #h10 ::selection {
-    background-color: rgba(181, 64, 122, 0.16); }
-  #h10 .container {
-    color: rgba(26, 15, 20, 0.8);
-    background-color: #d2efe0; }
-  #h10 .d-vector {
-    fill: rgba(26, 15, 20, 0.8); }
-  #h10 .l-vector {
-    fill: rgba(181, 64, 122, 0.32); }
-  #h10 blockquote {
-    border-left-color: rgba(26, 15, 20, 0.8); }
-  #h10 hr {
-    border-top-color: rgba(26, 15, 20, 0.8); }
-
-#h11 {
-  color: #d2efe8;
-  background-color: #3f3c3c; }
-  #h11 ::-moz-selection {
-    background-color: rgba(181, 64, 93, 0.16); }
-  #h11 ::selection {
-    background-color: rgba(181, 64, 93, 0.16); }
-  #h11 .container {
-    color: rgba(26, 15, 18, 0.8);
-    background-color: #d2efe8; }
-  #h11 .d-vector {
-    fill: rgba(26, 15, 18, 0.8); }
-  #h11 .l-vector {
-    fill: rgba(181, 64, 93, 0.32); }
-  #h11 blockquote {
-    border-left-color: rgba(26, 15, 18, 0.8); }
-  #h11 hr {
-    border-top-color: rgba(26, 15, 18, 0.8); }
-
-#h12 {
   color: #d2efef;
   background-color: #3f3c3c; }
-  #h12 ::-moz-selection {
-    background-color: rgba(181, 64, 64, 0.16); }
-  #h12 ::selection {
-    background-color: rgba(181, 64, 64, 0.16); }
-  #h12 .container {
+  #h0 ::-moz-selection {
+    background-color: rgba(230, 15, 15, 0.08); }
+  #h0 ::selection {
+    background-color: rgba(230, 15, 15, 0.08); }
+  #h0 .container {
     color: rgba(26, 15, 15, 0.8);
     background-color: #d2efef; }
-  #h12 .d-vector {
+  #h0 .d-vector {
     fill: rgba(26, 15, 15, 0.8); }
-  #h12 .l-vector {
-    fill: rgba(181, 64, 64, 0.32); }
-  #h12 blockquote {
+  #h0 .l-vector {
+    fill: rgba(230, 15, 15, 0.32); }
+  #h0 blockquote {
     border-left-color: rgba(26, 15, 15, 0.8); }
-  #h12 hr {
+  #h0 hr {
     border-top-color: rgba(26, 15, 15, 0.8); }
 
-#h13 {
+#h1 {
   color: #d2e8ef;
   background-color: #3f3c3c; }
-  #h13 ::-moz-selection {
-    background-color: rgba(181, 93, 64, 0.16); }
-  #h13 ::selection {
-    background-color: rgba(181, 93, 64, 0.16); }
-  #h13 .container {
+  #h1 ::-moz-selection {
+    background-color: rgba(230, 69, 15, 0.08); }
+  #h1 ::selection {
+    background-color: rgba(230, 69, 15, 0.08); }
+  #h1 .container {
     color: rgba(26, 18, 15, 0.8);
     background-color: #d2e8ef; }
-  #h13 .d-vector {
+  #h1 .d-vector {
     fill: rgba(26, 18, 15, 0.8); }
-  #h13 .l-vector {
-    fill: rgba(181, 93, 64, 0.32); }
-  #h13 blockquote {
+  #h1 .l-vector {
+    fill: rgba(230, 69, 15, 0.32); }
+  #h1 blockquote {
     border-left-color: rgba(26, 18, 15, 0.8); }
-  #h13 hr {
+  #h1 hr {
     border-top-color: rgba(26, 18, 15, 0.8); }
 
-#h14 {
+#h2 {
   color: #d2e0ef;
   background-color: #3f3d3c; }
-  #h14 ::-moz-selection {
-    background-color: rgba(181, 122, 64, 0.16); }
-  #h14 ::selection {
-    background-color: rgba(181, 122, 64, 0.16); }
-  #h14 .container {
+  #h2 ::-moz-selection {
+    background-color: rgba(230, 122, 15, 0.08); }
+  #h2 ::selection {
+    background-color: rgba(230, 122, 15, 0.08); }
+  #h2 .container {
     color: rgba(26, 20, 15, 0.8);
     background-color: #d2e0ef; }
-  #h14 .d-vector {
+  #h2 .d-vector {
     fill: rgba(26, 20, 15, 0.8); }
-  #h14 .l-vector {
-    fill: rgba(181, 122, 64, 0.32); }
-  #h14 blockquote {
+  #h2 .l-vector {
+    fill: rgba(230, 122, 15, 0.32); }
+  #h2 blockquote {
     border-left-color: rgba(26, 20, 15, 0.8); }
-  #h14 hr {
+  #h2 hr {
     border-top-color: rgba(26, 20, 15, 0.8); }
 
-#h15 {
+#h3 {
   color: #d2d9ef;
   background-color: #3f3e3c; }
-  #h15 ::-moz-selection {
-    background-color: rgba(181, 152, 64, 0.16); }
-  #h15 ::selection {
-    background-color: rgba(181, 152, 64, 0.16); }
-  #h15 .container {
+  #h3 ::-moz-selection {
+    background-color: rgba(230, 176, 15, 0.08); }
+  #h3 ::selection {
+    background-color: rgba(230, 176, 15, 0.08); }
+  #h3 .container {
     color: rgba(26, 23, 15, 0.8);
     background-color: #d2d9ef; }
-  #h15 .d-vector {
+  #h3 .d-vector {
     fill: rgba(26, 23, 15, 0.8); }
-  #h15 .l-vector {
-    fill: rgba(181, 152, 64, 0.32); }
-  #h15 blockquote {
+  #h3 .l-vector {
+    fill: rgba(230, 176, 15, 0.32); }
+  #h3 blockquote {
     border-left-color: rgba(26, 23, 15, 0.8); }
-  #h15 hr {
+  #h3 hr {
     border-top-color: rgba(26, 23, 15, 0.8); }
 
-#h16 {
+#h4 {
   color: #d2d2ef;
   background-color: #3f3f3c; }
-  #h16 ::-moz-selection {
-    background-color: rgba(181, 181, 64, 0.16); }
-  #h16 ::selection {
-    background-color: rgba(181, 181, 64, 0.16); }
-  #h16 .container {
+  #h4 ::-moz-selection {
+    background-color: rgba(230, 230, 15, 0.08); }
+  #h4 ::selection {
+    background-color: rgba(230, 230, 15, 0.08); }
+  #h4 .container {
     color: rgba(26, 26, 15, 0.8);
     background-color: #d2d2ef; }
-  #h16 .d-vector {
+  #h4 .d-vector {
     fill: rgba(26, 26, 15, 0.8); }
-  #h16 .l-vector {
-    fill: rgba(181, 181, 64, 0.32); }
-  #h16 blockquote {
+  #h4 .l-vector {
+    fill: rgba(230, 230, 15, 0.32); }
+  #h4 blockquote {
     border-left-color: rgba(26, 26, 15, 0.8); }
-  #h16 hr {
+  #h4 hr {
     border-top-color: rgba(26, 26, 15, 0.8); }
 
-#h17 {
+#h5 {
   color: #d9d2ef;
   background-color: #3e3f3c; }
-  #h17 ::-moz-selection {
-    background-color: rgba(152, 181, 64, 0.16); }
-  #h17 ::selection {
-    background-color: rgba(152, 181, 64, 0.16); }
-  #h17 .container {
+  #h5 ::-moz-selection {
+    background-color: rgba(176, 230, 15, 0.08); }
+  #h5 ::selection {
+    background-color: rgba(176, 230, 15, 0.08); }
+  #h5 .container {
     color: rgba(23, 26, 15, 0.8);
     background-color: #d9d2ef; }
-  #h17 .d-vector {
+  #h5 .d-vector {
     fill: rgba(23, 26, 15, 0.8); }
-  #h17 .l-vector {
-    fill: rgba(152, 181, 64, 0.32); }
-  #h17 blockquote {
+  #h5 .l-vector {
+    fill: rgba(176, 230, 15, 0.32); }
+  #h5 blockquote {
     border-left-color: rgba(23, 26, 15, 0.8); }
-  #h17 hr {
+  #h5 hr {
     border-top-color: rgba(23, 26, 15, 0.8); }
 
-#h18 {
+#h6 {
   color: #e0d2ef;
   background-color: #3d3f3c; }
-  #h18 ::-moz-selection {
-    background-color: rgba(122, 181, 64, 0.16); }
-  #h18 ::selection {
-    background-color: rgba(122, 181, 64, 0.16); }
-  #h18 .container {
+  #h6 ::-moz-selection {
+    background-color: rgba(122, 230, 15, 0.08); }
+  #h6 ::selection {
+    background-color: rgba(122, 230, 15, 0.08); }
+  #h6 .container {
     color: rgba(20, 26, 15, 0.8);
     background-color: #e0d2ef; }
-  #h18 .d-vector {
+  #h6 .d-vector {
     fill: rgba(20, 26, 15, 0.8); }
-  #h18 .l-vector {
-    fill: rgba(122, 181, 64, 0.32); }
-  #h18 blockquote {
+  #h6 .l-vector {
+    fill: rgba(122, 230, 15, 0.32); }
+  #h6 blockquote {
     border-left-color: rgba(20, 26, 15, 0.8); }
-  #h18 hr {
+  #h6 hr {
     border-top-color: rgba(20, 26, 15, 0.8); }
 
-#h19 {
+#h7 {
   color: #e8d2ef;
   background-color: #3c3f3c; }
-  #h19 ::-moz-selection {
-    background-color: rgba(93, 181, 64, 0.16); }
-  #h19 ::selection {
-    background-color: rgba(93, 181, 64, 0.16); }
-  #h19 .container {
+  #h7 ::-moz-selection {
+    background-color: rgba(69, 230, 15, 0.08); }
+  #h7 ::selection {
+    background-color: rgba(69, 230, 15, 0.08); }
+  #h7 .container {
     color: rgba(18, 26, 15, 0.8);
     background-color: #e8d2ef; }
-  #h19 .d-vector {
+  #h7 .d-vector {
     fill: rgba(18, 26, 15, 0.8); }
-  #h19 .l-vector {
-    fill: rgba(93, 181, 64, 0.32); }
-  #h19 blockquote {
+  #h7 .l-vector {
+    fill: rgba(69, 230, 15, 0.32); }
+  #h7 blockquote {
     border-left-color: rgba(18, 26, 15, 0.8); }
-  #h19 hr {
+  #h7 hr {
     border-top-color: rgba(18, 26, 15, 0.8); }
 
-#h20 {
+#h8 {
   color: #efd2ef;
   background-color: #3c3f3c; }
-  #h20 ::-moz-selection {
-    background-color: rgba(64, 181, 64, 0.16); }
-  #h20 ::selection {
-    background-color: rgba(64, 181, 64, 0.16); }
-  #h20 .container {
+  #h8 ::-moz-selection {
+    background-color: rgba(15, 230, 15, 0.08); }
+  #h8 ::selection {
+    background-color: rgba(15, 230, 15, 0.08); }
+  #h8 .container {
     color: rgba(15, 26, 15, 0.8);
     background-color: #efd2ef; }
-  #h20 .d-vector {
+  #h8 .d-vector {
     fill: rgba(15, 26, 15, 0.8); }
-  #h20 .l-vector {
-    fill: rgba(64, 181, 64, 0.32); }
-  #h20 blockquote {
+  #h8 .l-vector {
+    fill: rgba(15, 230, 15, 0.32); }
+  #h8 blockquote {
     border-left-color: rgba(15, 26, 15, 0.8); }
-  #h20 hr {
+  #h8 hr {
     border-top-color: rgba(15, 26, 15, 0.8); }
 
-#h21 {
+#h9 {
   color: #efd2e8;
   background-color: #3c3f3c; }
-  #h21 ::-moz-selection {
-    background-color: rgba(64, 181, 93, 0.16); }
-  #h21 ::selection {
-    background-color: rgba(64, 181, 93, 0.16); }
-  #h21 .container {
+  #h9 ::-moz-selection {
+    background-color: rgba(15, 230, 69, 0.08); }
+  #h9 ::selection {
+    background-color: rgba(15, 230, 69, 0.08); }
+  #h9 .container {
     color: rgba(15, 26, 18, 0.8);
     background-color: #efd2e8; }
-  #h21 .d-vector {
+  #h9 .d-vector {
     fill: rgba(15, 26, 18, 0.8); }
-  #h21 .l-vector {
-    fill: rgba(64, 181, 93, 0.32); }
-  #h21 blockquote {
+  #h9 .l-vector {
+    fill: rgba(15, 230, 69, 0.32); }
+  #h9 blockquote {
     border-left-color: rgba(15, 26, 18, 0.8); }
-  #h21 hr {
+  #h9 hr {
     border-top-color: rgba(15, 26, 18, 0.8); }
 
-#h22 {
+#h10 {
   color: #efd2e0;
   background-color: #3c3f3d; }
-  #h22 ::-moz-selection {
-    background-color: rgba(64, 181, 122, 0.16); }
-  #h22 ::selection {
-    background-color: rgba(64, 181, 122, 0.16); }
-  #h22 .container {
+  #h10 ::-moz-selection {
+    background-color: rgba(15, 230, 122, 0.08); }
+  #h10 ::selection {
+    background-color: rgba(15, 230, 122, 0.08); }
+  #h10 .container {
     color: rgba(15, 26, 20, 0.8);
     background-color: #efd2e0; }
-  #h22 .d-vector {
+  #h10 .d-vector {
     fill: rgba(15, 26, 20, 0.8); }
-  #h22 .l-vector {
-    fill: rgba(64, 181, 122, 0.32); }
-  #h22 blockquote {
+  #h10 .l-vector {
+    fill: rgba(15, 230, 122, 0.32); }
+  #h10 blockquote {
     border-left-color: rgba(15, 26, 20, 0.8); }
-  #h22 hr {
+  #h10 hr {
     border-top-color: rgba(15, 26, 20, 0.8); }
 
-#h23 {
+#h11 {
   color: #efd2d9;
   background-color: #3c3f3e; }
-  #h23 ::-moz-selection {
-    background-color: rgba(64, 181, 152, 0.16); }
-  #h23 ::selection {
-    background-color: rgba(64, 181, 152, 0.16); }
-  #h23 .container {
+  #h11 ::-moz-selection {
+    background-color: rgba(15, 230, 176, 0.08); }
+  #h11 ::selection {
+    background-color: rgba(15, 230, 176, 0.08); }
+  #h11 .container {
     color: rgba(15, 26, 23, 0.8);
     background-color: #efd2d9; }
-  #h23 .d-vector {
+  #h11 .d-vector {
     fill: rgba(15, 26, 23, 0.8); }
-  #h23 .l-vector {
-    fill: rgba(64, 181, 152, 0.32); }
-  #h23 blockquote {
+  #h11 .l-vector {
+    fill: rgba(15, 230, 176, 0.32); }
+  #h11 blockquote {
     border-left-color: rgba(15, 26, 23, 0.8); }
-  #h23 hr {
+  #h11 hr {
     border-top-color: rgba(15, 26, 23, 0.8); }
 
-#h24 {
+#h12 {
   color: #efd2d2;
   background-color: #3c3f3f; }
-  #h24 ::-moz-selection {
-    background-color: rgba(64, 181, 181, 0.16); }
-  #h24 ::selection {
-    background-color: rgba(64, 181, 181, 0.16); }
-  #h24 .container {
+  #h12 ::-moz-selection {
+    background-color: rgba(15, 230, 230, 0.08); }
+  #h12 ::selection {
+    background-color: rgba(15, 230, 230, 0.08); }
+  #h12 .container {
     color: rgba(15, 26, 26, 0.8);
     background-color: #efd2d2; }
-  #h24 .d-vector {
+  #h12 .d-vector {
     fill: rgba(15, 26, 26, 0.8); }
-  #h24 .l-vector {
-    fill: rgba(64, 181, 181, 0.32); }
-  #h24 blockquote {
+  #h12 .l-vector {
+    fill: rgba(15, 230, 230, 0.32); }
+  #h12 blockquote {
     border-left-color: rgba(15, 26, 26, 0.8); }
-  #h24 hr {
+  #h12 hr {
     border-top-color: rgba(15, 26, 26, 0.8); }
+
+#h13 {
+  color: #efd9d2;
+  background-color: #3c3e3f; }
+  #h13 ::-moz-selection {
+    background-color: rgba(15, 176, 230, 0.08); }
+  #h13 ::selection {
+    background-color: rgba(15, 176, 230, 0.08); }
+  #h13 .container {
+    color: rgba(15, 23, 26, 0.8);
+    background-color: #efd9d2; }
+  #h13 .d-vector {
+    fill: rgba(15, 23, 26, 0.8); }
+  #h13 .l-vector {
+    fill: rgba(15, 176, 230, 0.32); }
+  #h13 blockquote {
+    border-left-color: rgba(15, 23, 26, 0.8); }
+  #h13 hr {
+    border-top-color: rgba(15, 23, 26, 0.8); }
+
+#h14 {
+  color: #efe0d2;
+  background-color: #3c3d3f; }
+  #h14 ::-moz-selection {
+    background-color: rgba(15, 122, 230, 0.08); }
+  #h14 ::selection {
+    background-color: rgba(15, 122, 230, 0.08); }
+  #h14 .container {
+    color: rgba(15, 20, 26, 0.8);
+    background-color: #efe0d2; }
+  #h14 .d-vector {
+    fill: rgba(15, 20, 26, 0.8); }
+  #h14 .l-vector {
+    fill: rgba(15, 122, 230, 0.32); }
+  #h14 blockquote {
+    border-left-color: rgba(15, 20, 26, 0.8); }
+  #h14 hr {
+    border-top-color: rgba(15, 20, 26, 0.8); }
+
+#h15 {
+  color: #efe8d2;
+  background-color: #3c3c3f; }
+  #h15 ::-moz-selection {
+    background-color: rgba(15, 69, 230, 0.08); }
+  #h15 ::selection {
+    background-color: rgba(15, 69, 230, 0.08); }
+  #h15 .container {
+    color: rgba(15, 18, 26, 0.8);
+    background-color: #efe8d2; }
+  #h15 .d-vector {
+    fill: rgba(15, 18, 26, 0.8); }
+  #h15 .l-vector {
+    fill: rgba(15, 69, 230, 0.32); }
+  #h15 blockquote {
+    border-left-color: rgba(15, 18, 26, 0.8); }
+  #h15 hr {
+    border-top-color: rgba(15, 18, 26, 0.8); }
+
+#h16 {
+  color: #efefd2;
+  background-color: #3c3c3f; }
+  #h16 ::-moz-selection {
+    background-color: rgba(15, 15, 230, 0.08); }
+  #h16 ::selection {
+    background-color: rgba(15, 15, 230, 0.08); }
+  #h16 .container {
+    color: rgba(15, 15, 26, 0.8);
+    background-color: #efefd2; }
+  #h16 .d-vector {
+    fill: rgba(15, 15, 26, 0.8); }
+  #h16 .l-vector {
+    fill: rgba(15, 15, 230, 0.32); }
+  #h16 blockquote {
+    border-left-color: rgba(15, 15, 26, 0.8); }
+  #h16 hr {
+    border-top-color: rgba(15, 15, 26, 0.8); }
+
+#h17 {
+  color: #e8efd2;
+  background-color: #3c3c3f; }
+  #h17 ::-moz-selection {
+    background-color: rgba(69, 15, 230, 0.08); }
+  #h17 ::selection {
+    background-color: rgba(69, 15, 230, 0.08); }
+  #h17 .container {
+    color: rgba(18, 15, 26, 0.8);
+    background-color: #e8efd2; }
+  #h17 .d-vector {
+    fill: rgba(18, 15, 26, 0.8); }
+  #h17 .l-vector {
+    fill: rgba(69, 15, 230, 0.32); }
+  #h17 blockquote {
+    border-left-color: rgba(18, 15, 26, 0.8); }
+  #h17 hr {
+    border-top-color: rgba(18, 15, 26, 0.8); }
+
+#h18 {
+  color: #e0efd2;
+  background-color: #3d3c3f; }
+  #h18 ::-moz-selection {
+    background-color: rgba(122, 15, 230, 0.08); }
+  #h18 ::selection {
+    background-color: rgba(122, 15, 230, 0.08); }
+  #h18 .container {
+    color: rgba(20, 15, 26, 0.8);
+    background-color: #e0efd2; }
+  #h18 .d-vector {
+    fill: rgba(20, 15, 26, 0.8); }
+  #h18 .l-vector {
+    fill: rgba(122, 15, 230, 0.32); }
+  #h18 blockquote {
+    border-left-color: rgba(20, 15, 26, 0.8); }
+  #h18 hr {
+    border-top-color: rgba(20, 15, 26, 0.8); }
+
+#h19 {
+  color: #d9efd2;
+  background-color: #3e3c3f; }
+  #h19 ::-moz-selection {
+    background-color: rgba(176, 15, 230, 0.08); }
+  #h19 ::selection {
+    background-color: rgba(176, 15, 230, 0.08); }
+  #h19 .container {
+    color: rgba(23, 15, 26, 0.8);
+    background-color: #d9efd2; }
+  #h19 .d-vector {
+    fill: rgba(23, 15, 26, 0.8); }
+  #h19 .l-vector {
+    fill: rgba(176, 15, 230, 0.32); }
+  #h19 blockquote {
+    border-left-color: rgba(23, 15, 26, 0.8); }
+  #h19 hr {
+    border-top-color: rgba(23, 15, 26, 0.8); }
+
+#h20 {
+  color: #d2efd2;
+  background-color: #3f3c3f; }
+  #h20 ::-moz-selection {
+    background-color: rgba(230, 15, 230, 0.08); }
+  #h20 ::selection {
+    background-color: rgba(230, 15, 230, 0.08); }
+  #h20 .container {
+    color: rgba(26, 15, 26, 0.8);
+    background-color: #d2efd2; }
+  #h20 .d-vector {
+    fill: rgba(26, 15, 26, 0.8); }
+  #h20 .l-vector {
+    fill: rgba(230, 15, 230, 0.32); }
+  #h20 blockquote {
+    border-left-color: rgba(26, 15, 26, 0.8); }
+  #h20 hr {
+    border-top-color: rgba(26, 15, 26, 0.8); }
+
+#h21 {
+  color: #d2efd9;
+  background-color: #3f3c3e; }
+  #h21 ::-moz-selection {
+    background-color: rgba(230, 15, 176, 0.08); }
+  #h21 ::selection {
+    background-color: rgba(230, 15, 176, 0.08); }
+  #h21 .container {
+    color: rgba(26, 15, 23, 0.8);
+    background-color: #d2efd9; }
+  #h21 .d-vector {
+    fill: rgba(26, 15, 23, 0.8); }
+  #h21 .l-vector {
+    fill: rgba(230, 15, 176, 0.32); }
+  #h21 blockquote {
+    border-left-color: rgba(26, 15, 23, 0.8); }
+  #h21 hr {
+    border-top-color: rgba(26, 15, 23, 0.8); }
+
+#h22 {
+  color: #d2efe0;
+  background-color: #3f3c3d; }
+  #h22 ::-moz-selection {
+    background-color: rgba(230, 15, 122, 0.08); }
+  #h22 ::selection {
+    background-color: rgba(230, 15, 122, 0.08); }
+  #h22 .container {
+    color: rgba(26, 15, 20, 0.8);
+    background-color: #d2efe0; }
+  #h22 .d-vector {
+    fill: rgba(26, 15, 20, 0.8); }
+  #h22 .l-vector {
+    fill: rgba(230, 15, 122, 0.32); }
+  #h22 blockquote {
+    border-left-color: rgba(26, 15, 20, 0.8); }
+  #h22 hr {
+    border-top-color: rgba(26, 15, 20, 0.8); }
+
+#h23 {
+  color: #d2efe8;
+  background-color: #3f3c3c; }
+  #h23 ::-moz-selection {
+    background-color: rgba(230, 15, 69, 0.08); }
+  #h23 ::selection {
+    background-color: rgba(230, 15, 69, 0.08); }
+  #h23 .container {
+    color: rgba(26, 15, 18, 0.8);
+    background-color: #d2efe8; }
+  #h23 .d-vector {
+    fill: rgba(26, 15, 18, 0.8); }
+  #h23 .l-vector {
+    fill: rgba(230, 15, 69, 0.32); }
+  #h23 blockquote {
+    border-left-color: rgba(26, 15, 18, 0.8); }
+  #h23 hr {
+    border-top-color: rgba(26, 15, 18, 0.8); }
+
+#h24 {
+  color: #d2efef;
+  background-color: #3f3c3c; }
+  #h24 ::-moz-selection {
+    background-color: rgba(230, 15, 15, 0.08); }
+  #h24 ::selection {
+    background-color: rgba(230, 15, 15, 0.08); }
+  #h24 .container {
+    color: rgba(26, 15, 15, 0.8);
+    background-color: #d2efef; }
+  #h24 .d-vector {
+    fill: rgba(26, 15, 15, 0.8); }
+  #h24 .l-vector {
+    fill: rgba(230, 15, 15, 0.32); }
+  #h24 blockquote {
+    border-left-color: rgba(26, 15, 15, 0.8); }
+  #h24 hr {
+    border-top-color: rgba(26, 15, 15, 0.8); }
 
 /* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
@@ -1283,6 +1308,9 @@ video {
 
 .header,
 .footer {
+  animation-name: element-in;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
   display: grid;
   width: 100%;
   margin-right: auto;
@@ -1435,6 +1463,9 @@ video {
   }
 }*/
 .article {
+  animation-name: element-in-up;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
   display: grid;
   width: 100%;
   margin-right: auto;
