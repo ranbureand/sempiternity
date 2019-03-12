@@ -22,13 +22,13 @@ $selected-type-color:           inherit;
 ** Backgrounds
 */
 
-$background-color:              hsl(180, 60, 88);
+$background-color:              hsl(180, 48, 88);
 
 $selected-background-color:     darken($background-color, 8%);
 
 $code-background-color:         rgba($black, 0.1);
 
-$background-colors:             (0,  180deg),
+$colors:                        (0,  180deg),
                                 (1,  195deg),
                                 (2,  210deg),
                                 (3,  225deg),

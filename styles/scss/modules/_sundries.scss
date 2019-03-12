@@ -4,63 +4,70 @@
 ** Sundries
 */
 
-@each $hour, $deg in $background-colors {
-  $l-yin: adjust-hue(
+@each $hour, $deg in $colors {
+  $l-background: adjust-hue(
     $background-color, $deg
   );
-  $l-yang: adjust-hue(
+  $l-foreground: adjust-hue(
     $background-color, $deg+180
   );
-  $d-yin: desaturate(
+
+  $d-background: desaturate(
     darken(
-      $l-yin, 80
-    ), 60
+      $l-background, 80
+    ), 20
   );
-  $d-yang: desaturate(
+  $d-foreground: desaturate(
     darken(
-      $l-yang, 80
-    ), 60
+      $l-foreground, 80
+    ), 20
   );
-  $l-yin-solid: $l-yin;
-  $d-yin-solid: mix(
-    $d-yin, $l-yang, 80
+  $m-foreground: darken(
+    $l-foreground, 40
   );
-  $d-yin-transparent: rgba(
-    $d-yin, 0.80
+
+  $l-background-solid: $l-background;
+  $d-background-solid: mix(
+    $d-background, $l-foreground, 80
   );
-  $l-yang-solid: $l-yang;
-  $d-yang-solid: mix(
-    $d-yang, $l-yin, 80
+  $d-background-transparent: rgba(
+    $d-background, 0.80
   );
-  $d-yang-transparent: rgba(
-    $d-yang, 0.80
+
+  $l-foreground-solid: $l-foreground;
+
+  $d-foreground-solid: mix(
+    $d-foreground, $l-background, 80
+  );
+  $d-foreground-transparent: rgba(
+    $d-foreground, 0.80
   );
 
   #h#{$hour} {
-    color: $l-yin-solid;
-    background-color: $d-yang-solid;
+    color: $l-background-solid;
+    background-color: $d-foreground-solid;
 
     ::-moz-selection {
-      fill: lighten($d-yang-solid, 50%);
+      background-color: rgba($m-foreground, 0.16);
     }
     ::selection {
-      fill: lighten($d-yang-solid, 50%);
+      background-color: rgba($m-foreground, 0.16);
     }
     .container {
-      color: $d-yang-transparent;
-      background-color: $l-yin-solid;
+      color: $d-foreground-transparent;
+      background-color: $l-background-solid;
     }
     .d-vector {
-      fill: $d-yang-transparent;
+      fill: $d-foreground-transparent;
     }
     .l-vector {
-      fill: lighten($d-yang-solid, 50%);
+      fill: rgba($m-foreground, 0.32);
     }
     blockquote {
-      border-left-color: $d-yang-transparent;
+      border-left-color: $d-foreground-transparent;
     }
     hr {
-      border-top-color: $d-yang-transparent;
+      border-top-color: $d-foreground-transparent;
     }
   }
 }
