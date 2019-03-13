@@ -17,7 +17,7 @@
     margin-bottom: 0;
   }
   @include min-screen(col(8)) {
-    padding-top: em($d-base-rhythm*3);
+    padding-top: em($d-base-rhythm*2);
     grid-column: 2 / 8;
     li {
       margin-bottom: em($d-small-line*2);
