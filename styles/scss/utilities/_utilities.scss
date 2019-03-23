@@ -33,11 +33,11 @@ $m-medium-line:         $base-unit*8; //32px
 $d-medium-size:         24px;
 $d-medium-line:         $base-unit*10; //36px
 
-$m-small-size:          16px;
-$m-small-line:          $base-unit*5; //20px
+$m-small-size:          18px;
+$m-small-line:          $base-unit*6; //24px
 
-$d-small-size:          18px;
-$d-small-line:          $base-unit*6; //24px
+$d-small-size:          20px;
+$d-small-line:          $base-unit*7; //28px
 
 $m-extra-small-size:    14px;
 $m-extra-small-line:    $base-unit*5; //20px
@@ -136,7 +136,7 @@ $border-width:        1.5px;
   } @else if $status == "serif" {
   font-family: "Spectral", Georgia, serif;
   } @else if $status == "mono" {
-  font-family: "Droid Sans Mono", "Andale Mono", "Monaco", monospace;
+  font-family: "Roboto Mono", "Andale Mono", "Monaco", monospace;
   }
 }
 

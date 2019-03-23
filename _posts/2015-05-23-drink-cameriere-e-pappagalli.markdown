@@ -20,7 +20,7 @@ publish: 'yes'
 > \* Stiamo assumendo!
 
 Blueberry Hill in quel momento si trovava dentro alla Locanda di Esmeralda a constatare quanto vecchio dovesse essere il volantino che stringeva in mano: la locanda era infatti uno dei posti più sporchi e confusi che avesse visto da un bel po’ di tempo a questa parte.  
-Si fece strada tra i tavoli in mezzo a una nuvola di fumo pressoché perenne sperando di trovare Paco, il pappagalo con cui avrebbe dovuto incontrarsi.
+Si fece strada tra i tavoli in mezzo a una nuvola di fumo pressoché perenne sperando di trovare Paco, il pappagallo con cui avrebbe dovuto incontrarsi.
 
 Arrivato al bancone, decise di prendere qualcosa da bere e guardarsi attorno senza dare troppo nell’occhio.  
 La barista, una volpe dal viso carino e l’occhio stanco, gli si fece incontro. «Sono Esmeralda, micio. Che cosa posso portarti da bere?»  

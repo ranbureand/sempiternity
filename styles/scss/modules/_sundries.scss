@@ -68,8 +68,16 @@
     blockquote {
       border-left-color: $d-foreground-transparent;
     }
-    hr {
+    hr, .footnotes:before {
       border-top-color: $d-foreground-transparent;
+    }
+    pre, code, mark, kbd {
+      background-color: rgba($m-foreground, 0.16);
+    }
+    pre {
+      code {
+        background-color: transparent;
+      }
     }
   }
 }

@@ -32,7 +32,7 @@
     li {
       &:before {
         float: left;
-        content: "\003E";
+        content: "\00b7";
       }
     }
   }
@@ -42,6 +42,7 @@
       counter-increment: ordered-list;
       &:before {
         float: left;
+        font-variant-numeric: normal;
         content: counter(ordered-list);
       }
     }
@@ -93,6 +94,10 @@
       width: col(2);
     }
   }
+}
+
+[id*="fnref:"] {
+  margin-left: 0.2em;
 }
 
 .typo-m {
@@ -162,6 +167,12 @@
     margin-top: em($m-medium-line);
     margin-bottom: em($m-medium-line);
   }
+  .footnotes > ol > li {
+    &:before {
+      width: em($m-gut*2, $m-small-size);
+      margin-left: em(-$m-gut*2, $m-small-size);
+    }
+  }
   @include min-screen(col(8)) {
     h1,
     h2 {
@@ -228,6 +239,12 @@
     hr {
       margin-top: em($d-medium-line);
       margin-bottom: em($d-medium-line);
+    }
+    .footnotes > ol > li {
+      &:before {
+        width: em($d-gut/2*3, $d-small-size);
+        margin-left: em(-$d-gut/2*3, $d-small-size);
+      }
     }
   }
 }
@@ -340,6 +357,54 @@
       padding-left: em($d-gut, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
+    }
+  }
+}
+
+.footnotes {
+  margin-top: em($m-large-line);
+  padding-top: em($m-large-line);
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: $border-width;
+    border-top: $border-width solid $border-color;
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  > ol {
+    margin-bottom: 0;
+    counter-reset: footnotes;
+     > li {
+      font-size: 1em;
+      counter-increment: footnotes;
+      &:before {
+        content: counter(footnotes);
+
+        @include font-size($m-small-size, $m-small-line);
+      }
+    }
+  }
+  @include min-screen(col(8)) {
+    margin-top: em($d-large-line);
+    padding-top: em($d-large-line);
+    &:before {
+      width: col(2);
+    }
+     > ol {
+       > li {
+        font-size: 1em;
+        &:before {
+          @include font-size($d-small-size, $d-small-line);
+        }
+      }
     }
   }
 }

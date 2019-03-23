@@ -52,7 +52,7 @@
   .subtitle {
     display: block;
 
-    margin-top: em($m-small-line/2, $m-small-size);
+    margin-top: em($m-small-line/4, $m-small-size);
 
     text-align: center;
 
@@ -73,7 +73,7 @@
       @include font-size($d-medium-size, $d-medium-line);
     }
     .subtitle {
-      margin-top: em($d-small-line/2, $d-small-size);
+      margin-top: em($d-small-line/4, $d-small-size);
 
       @include font-size($d-small-size, $d-small-line);
     }
