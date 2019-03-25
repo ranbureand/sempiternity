@@ -36,7 +36,7 @@ This text[^footnote] has a footnote.
 
 <del>This text</del> is deleted while <ins>this text</ins> is inserted.
 
-<sup>This text</sup> is a superscript, such as <sup>®</sup>.
+<sup>This text</sup> is a superscript, such as 8<sup>th</sup>.
 
 <sub>This text</sub> is a subscript, such as H<sub>2</sub>O.
 
