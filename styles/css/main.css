@@ -3,7 +3,7 @@
 /*
 ** Utilities
 **/
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Colors
 ** 0 1 | 2 3 | 4 5 | 6 7 | 8 9 | a b | c d | e f
@@ -69,7 +69,7 @@
 /*
 ** Tempo
 */
-/* (c) 2017 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Fonts
 */
@@ -109,7 +109,7 @@
   font-weight: 400;
   font-style: normal; }
 
-/* (c) 2018 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Animations
 */
@@ -137,7 +137,7 @@
 /*
 ** Basics
 **/
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Rainbow
 */
@@ -399,7 +399,7 @@ svg,
 video {
   vertical-align: middle; }
 
-/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+/* Copyright (c) 2019 Andrea Buran [www.andreaburan.com]. All rights reserved */
 /*
 ** Grid
 */
@@ -427,7 +427,7 @@ video {
       width: 64em;
       grid-template-columns: repeat(8, 1fr); } }
 
-/* Copyright (c) 2017 Andrea Buran [www.andreaburan.com]. All rights reserved */
+/* Copyright (c) 2019 Andrea Buran [www.andreaburan.com]. All rights reserved */
 /*
 ** Flexbox
 */
@@ -456,7 +456,7 @@ video {
   flex-grow: 0;
   flex-shrink: 1; }
 
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Typography
 */
@@ -848,7 +848,7 @@ video {
 /*
 ** Modules
 **/
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Sundries
 */
@@ -1427,7 +1427,7 @@ video {
   #h24 pre code {
     background-color: transparent; }
 
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Frames
 */
@@ -1607,19 +1607,10 @@ video {
     .container {
       margin: 12px; } }
 
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Piece
 */
-/*.article-canvas {
-  padding-right: em($m-gut/2);
-  padding-left: em($m-gut/2);
-
-  @include min-screen(col(8)) {
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
-  }
-}*/
 .article {
   animation-name: element-in-up;
   animation-duration: 0.8s;
@@ -1645,7 +1636,7 @@ video {
       width: 48em;
       padding-bottom: 15em; } }
 
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** References
 */
@@ -1698,7 +1689,7 @@ video {
       font-size: 1.25em;
       line-height: 1.4em; } }
 
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Piece
 */
@@ -1747,7 +1738,7 @@ video {
     .body {
       padding-top: 5em; } }
 
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Navigation
 */

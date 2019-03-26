@@ -1,18 +1,8 @@
-/* (c) 2013 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 
 /*
 ** Piece
 */
-
-/*.article-canvas {
-  padding-right: em($m-gut/2);
-  padding-left: em($m-gut/2);
-
-  @include min-screen(col(8)) {
-    padding-right: em($d-gut/2);
-    padding-left: em($d-gut/2);
-  }
-}*/
 
 .article {
   animation-name: element-in-up;
