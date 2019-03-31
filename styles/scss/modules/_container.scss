@@ -1,0 +1,35 @@
+/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
+
+/*
+** Container
+*/
+
+.container {
+  &:before,
+  &:after {
+    display: block;
+
+    width: 100%;
+    padding-bottom: 100/24/2*1%;
+
+    content: "";
+
+    @include rainbow(24);
+  }
+  &:before {
+    top: 0;
+
+    @include clip-head(48);
+  }
+  &:after {
+    bottom: 0;
+
+    @include clip-feet(48);
+  }
+  @include min-screen(col(8)) {
+    &:before,
+    &:after {
+      padding-bottom: 100/24/2*1%;
+    }
+  }
+}

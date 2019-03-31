@@ -14,7 +14,7 @@
 ** Basics
 **/
 
-@import "modules/rainbow.scss";
+//@import "modules/rainbow.scss";
 @import "basics/basics.scss";
 @import "basics/layout-2d.scss";
 @import "basics/layout-1d.scss";
@@ -24,6 +24,7 @@
 ** Modules
 **/
 
+@import "modules/container.scss";
 @import "modules/sundries.scss";
 @import "modules/frames.scss";
 @import "modules/article.scss";

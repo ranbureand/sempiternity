@@ -211,3 +211,61 @@ $border-width:        1.5px;
 */
 
 $duration: 0.2s;
+
+/*
+** Rainbow
+*/
+
+@mixin rainbow($col-number, $direction: "to right") {
+  $gradient: ();
+
+  $column-width: 100/$col-number*1%; //width of a column in percentage
+
+  @each $hour, $deg in $colors {
+    $dump: ();
+
+    $dump:
+    adjust-hue($background-color, $deg) $column-width * ($hour - 1),
+    adjust-hue($background-color, $deg) $column-width * ($hour);
+
+    $gradient: join($gradient, $dump, comma);
+  }
+
+  background-image: linear-gradient(to right, $gradient);
+}
+
+@mixin clip-head($col-number) {
+  $points: ();
+
+  @for $i from 0 through $col-number {
+    $dump: ();
+
+    @if $i % 2 == 0 {
+      $dump: 100/$col-number*$i*1% 0%,
+    } @else {
+      $dump: 100/$col-number*$i*1% 100%,
+    }
+
+    $points: join($points, $dump, comma);
+  }
+
+  clip-path: polygon(0% 0%, $points, 100% 0%);
+}
+
+@mixin clip-feet($col-number) {
+  $points: ();
+
+  @for $i from 0 through $col-number {
+    $dump: ();
+
+    @if $i % 2 == 0 {
+      $dump: 100/$col-number*$i*1% 100%,
+    } @else {
+      $dump: 100/$col-number*$i*1% 0%,
+    }
+
+    $points: join($points, $dump, comma);
+  }
+
+  clip-path: polygon(0 100%, $points, 100% 100%);
+}

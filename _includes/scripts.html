@@ -1,17 +1,18 @@
     <script type="text/javascript">
       var time = new Date(),
           color = 'h' + time.getHours();
-          background = document.getElementById('h0');
+          body = document.getElementById('h0');
 
       console.log(time);
       console.log(color);
-      console.log(background);
+      //console.log(body);
 
-      background.setAttribute('id', color);
+      body.setAttribute('id', color);
 
       var footnote = document.getElementsByClassName('reversefootnote');
 
       for (i = 0; i < footnote.length; i++) {
-        footnote[i].textContent = 'Ritorna Su';
+          footnote[i].textContent = 'Back to Number';
       }
     </script>
+    <!--<script src="{{ "/scripts/js/main-min.js" | prepend: site.baseurl }}"></script>-->
