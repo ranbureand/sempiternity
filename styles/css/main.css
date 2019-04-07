@@ -72,6 +72,9 @@
 /*
 ** Rainbow
 */
+/*
+** Math
+*/
 /* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Fonts
@@ -878,22 +881,22 @@ video {
   color: #d2efef;
   background-color: #3f3c3c; }
   #h0 ::-moz-selection {
-    background-color: rgba(230, 15, 15, 0.08); }
+    background-color: #efd2d2; }
   #h0 ::selection {
-    background-color: rgba(230, 15, 15, 0.08); }
+    background-color: #efd2d2; }
   #h0 .container {
     color: rgba(26, 15, 15, 0.8);
     background-color: #d2efef; }
   #h0 .d-vector {
     fill: rgba(26, 15, 15, 0.8); }
   #h0 .l-vector {
-    fill: rgba(230, 15, 15, 0.32); }
+    fill: rgba(245, 0, 0, 0.32); }
   #h0 blockquote {
     border-left-color: rgba(26, 15, 15, 0.8); }
   #h0 hr, #h0 .footnotes:before {
     border-top-color: rgba(26, 15, 15, 0.8); }
   #h0 pre, #h0 code, #h0 mark, #h0 kbd {
-    background-color: rgba(230, 15, 15, 0.16); }
+    background-color: rgba(245, 0, 0, 0.16); }
   #h0 pre code {
     background-color: transparent; }
 
@@ -901,22 +904,22 @@ video {
   color: #d2e8ef;
   background-color: #3f3c3c; }
   #h1 ::-moz-selection {
-    background-color: rgba(230, 69, 15, 0.08); }
+    background-color: #efd9d2; }
   #h1 ::selection {
-    background-color: rgba(230, 69, 15, 0.08); }
+    background-color: #efd9d2; }
   #h1 .container {
     color: rgba(26, 18, 15, 0.8);
     background-color: #d2e8ef; }
   #h1 .d-vector {
     fill: rgba(26, 18, 15, 0.8); }
   #h1 .l-vector {
-    fill: rgba(230, 69, 15, 0.32); }
+    fill: rgba(245, 61, 0, 0.32); }
   #h1 blockquote {
     border-left-color: rgba(26, 18, 15, 0.8); }
   #h1 hr, #h1 .footnotes:before {
     border-top-color: rgba(26, 18, 15, 0.8); }
   #h1 pre, #h1 code, #h1 mark, #h1 kbd {
-    background-color: rgba(230, 69, 15, 0.16); }
+    background-color: rgba(245, 61, 0, 0.16); }
   #h1 pre code {
     background-color: transparent; }
 
@@ -924,22 +927,22 @@ video {
   color: #d2e0ef;
   background-color: #3f3d3c; }
   #h2 ::-moz-selection {
-    background-color: rgba(230, 122, 15, 0.08); }
+    background-color: #efe0d2; }
   #h2 ::selection {
-    background-color: rgba(230, 122, 15, 0.08); }
+    background-color: #efe0d2; }
   #h2 .container {
     color: rgba(26, 20, 15, 0.8);
     background-color: #d2e0ef; }
   #h2 .d-vector {
     fill: rgba(26, 20, 15, 0.8); }
   #h2 .l-vector {
-    fill: rgba(230, 122, 15, 0.32); }
+    fill: rgba(245, 122, 0, 0.32); }
   #h2 blockquote {
     border-left-color: rgba(26, 20, 15, 0.8); }
   #h2 hr, #h2 .footnotes:before {
     border-top-color: rgba(26, 20, 15, 0.8); }
   #h2 pre, #h2 code, #h2 mark, #h2 kbd {
-    background-color: rgba(230, 122, 15, 0.16); }
+    background-color: rgba(245, 122, 0, 0.16); }
   #h2 pre code {
     background-color: transparent; }
 
@@ -947,22 +950,22 @@ video {
   color: #d2d9ef;
   background-color: #3f3e3c; }
   #h3 ::-moz-selection {
-    background-color: rgba(230, 176, 15, 0.08); }
+    background-color: #efe8d2; }
   #h3 ::selection {
-    background-color: rgba(230, 176, 15, 0.08); }
+    background-color: #efe8d2; }
   #h3 .container {
     color: rgba(26, 23, 15, 0.8);
     background-color: #d2d9ef; }
   #h3 .d-vector {
     fill: rgba(26, 23, 15, 0.8); }
   #h3 .l-vector {
-    fill: rgba(230, 176, 15, 0.32); }
+    fill: rgba(245, 184, 0, 0.32); }
   #h3 blockquote {
     border-left-color: rgba(26, 23, 15, 0.8); }
   #h3 hr, #h3 .footnotes:before {
     border-top-color: rgba(26, 23, 15, 0.8); }
   #h3 pre, #h3 code, #h3 mark, #h3 kbd {
-    background-color: rgba(230, 176, 15, 0.16); }
+    background-color: rgba(245, 184, 0, 0.16); }
   #h3 pre code {
     background-color: transparent; }
 
@@ -970,22 +973,22 @@ video {
   color: #d2d2ef;
   background-color: #3f3f3c; }
   #h4 ::-moz-selection {
-    background-color: rgba(230, 230, 15, 0.08); }
+    background-color: #efefd2; }
   #h4 ::selection {
-    background-color: rgba(230, 230, 15, 0.08); }
+    background-color: #efefd2; }
   #h4 .container {
     color: rgba(26, 26, 15, 0.8);
     background-color: #d2d2ef; }
   #h4 .d-vector {
     fill: rgba(26, 26, 15, 0.8); }
   #h4 .l-vector {
-    fill: rgba(230, 230, 15, 0.32); }
+    fill: rgba(245, 245, 0, 0.32); }
   #h4 blockquote {
     border-left-color: rgba(26, 26, 15, 0.8); }
   #h4 hr, #h4 .footnotes:before {
     border-top-color: rgba(26, 26, 15, 0.8); }
   #h4 pre, #h4 code, #h4 mark, #h4 kbd {
-    background-color: rgba(230, 230, 15, 0.16); }
+    background-color: rgba(245, 245, 0, 0.16); }
   #h4 pre code {
     background-color: transparent; }
 
@@ -993,22 +996,22 @@ video {
   color: #d9d2ef;
   background-color: #3e3f3c; }
   #h5 ::-moz-selection {
-    background-color: rgba(176, 230, 15, 0.08); }
+    background-color: #e8efd2; }
   #h5 ::selection {
-    background-color: rgba(176, 230, 15, 0.08); }
+    background-color: #e8efd2; }
   #h5 .container {
     color: rgba(23, 26, 15, 0.8);
     background-color: #d9d2ef; }
   #h5 .d-vector {
     fill: rgba(23, 26, 15, 0.8); }
   #h5 .l-vector {
-    fill: rgba(176, 230, 15, 0.32); }
+    fill: rgba(184, 245, 0, 0.32); }
   #h5 blockquote {
     border-left-color: rgba(23, 26, 15, 0.8); }
   #h5 hr, #h5 .footnotes:before {
     border-top-color: rgba(23, 26, 15, 0.8); }
   #h5 pre, #h5 code, #h5 mark, #h5 kbd {
-    background-color: rgba(176, 230, 15, 0.16); }
+    background-color: rgba(184, 245, 0, 0.16); }
   #h5 pre code {
     background-color: transparent; }
 
@@ -1016,22 +1019,22 @@ video {
   color: #e0d2ef;
   background-color: #3d3f3c; }
   #h6 ::-moz-selection {
-    background-color: rgba(122, 230, 15, 0.08); }
+    background-color: #e0efd2; }
   #h6 ::selection {
-    background-color: rgba(122, 230, 15, 0.08); }
+    background-color: #e0efd2; }
   #h6 .container {
     color: rgba(20, 26, 15, 0.8);
     background-color: #e0d2ef; }
   #h6 .d-vector {
     fill: rgba(20, 26, 15, 0.8); }
   #h6 .l-vector {
-    fill: rgba(122, 230, 15, 0.32); }
+    fill: rgba(122, 245, 0, 0.32); }
   #h6 blockquote {
     border-left-color: rgba(20, 26, 15, 0.8); }
   #h6 hr, #h6 .footnotes:before {
     border-top-color: rgba(20, 26, 15, 0.8); }
   #h6 pre, #h6 code, #h6 mark, #h6 kbd {
-    background-color: rgba(122, 230, 15, 0.16); }
+    background-color: rgba(122, 245, 0, 0.16); }
   #h6 pre code {
     background-color: transparent; }
 
@@ -1039,22 +1042,22 @@ video {
   color: #e8d2ef;
   background-color: #3c3f3c; }
   #h7 ::-moz-selection {
-    background-color: rgba(69, 230, 15, 0.08); }
+    background-color: #d9efd2; }
   #h7 ::selection {
-    background-color: rgba(69, 230, 15, 0.08); }
+    background-color: #d9efd2; }
   #h7 .container {
     color: rgba(18, 26, 15, 0.8);
     background-color: #e8d2ef; }
   #h7 .d-vector {
     fill: rgba(18, 26, 15, 0.8); }
   #h7 .l-vector {
-    fill: rgba(69, 230, 15, 0.32); }
+    fill: rgba(61, 245, 0, 0.32); }
   #h7 blockquote {
     border-left-color: rgba(18, 26, 15, 0.8); }
   #h7 hr, #h7 .footnotes:before {
     border-top-color: rgba(18, 26, 15, 0.8); }
   #h7 pre, #h7 code, #h7 mark, #h7 kbd {
-    background-color: rgba(69, 230, 15, 0.16); }
+    background-color: rgba(61, 245, 0, 0.16); }
   #h7 pre code {
     background-color: transparent; }
 
@@ -1062,22 +1065,22 @@ video {
   color: #efd2ef;
   background-color: #3c3f3c; }
   #h8 ::-moz-selection {
-    background-color: rgba(15, 230, 15, 0.08); }
+    background-color: #d2efd2; }
   #h8 ::selection {
-    background-color: rgba(15, 230, 15, 0.08); }
+    background-color: #d2efd2; }
   #h8 .container {
     color: rgba(15, 26, 15, 0.8);
     background-color: #efd2ef; }
   #h8 .d-vector {
     fill: rgba(15, 26, 15, 0.8); }
   #h8 .l-vector {
-    fill: rgba(15, 230, 15, 0.32); }
+    fill: rgba(0, 245, 0, 0.32); }
   #h8 blockquote {
     border-left-color: rgba(15, 26, 15, 0.8); }
   #h8 hr, #h8 .footnotes:before {
     border-top-color: rgba(15, 26, 15, 0.8); }
   #h8 pre, #h8 code, #h8 mark, #h8 kbd {
-    background-color: rgba(15, 230, 15, 0.16); }
+    background-color: rgba(0, 245, 0, 0.16); }
   #h8 pre code {
     background-color: transparent; }
 
@@ -1085,22 +1088,22 @@ video {
   color: #efd2e8;
   background-color: #3c3f3c; }
   #h9 ::-moz-selection {
-    background-color: rgba(15, 230, 69, 0.08); }
+    background-color: #d2efd9; }
   #h9 ::selection {
-    background-color: rgba(15, 230, 69, 0.08); }
+    background-color: #d2efd9; }
   #h9 .container {
     color: rgba(15, 26, 18, 0.8);
     background-color: #efd2e8; }
   #h9 .d-vector {
     fill: rgba(15, 26, 18, 0.8); }
   #h9 .l-vector {
-    fill: rgba(15, 230, 69, 0.32); }
+    fill: rgba(0, 245, 61, 0.32); }
   #h9 blockquote {
     border-left-color: rgba(15, 26, 18, 0.8); }
   #h9 hr, #h9 .footnotes:before {
     border-top-color: rgba(15, 26, 18, 0.8); }
   #h9 pre, #h9 code, #h9 mark, #h9 kbd {
-    background-color: rgba(15, 230, 69, 0.16); }
+    background-color: rgba(0, 245, 61, 0.16); }
   #h9 pre code {
     background-color: transparent; }
 
@@ -1108,22 +1111,22 @@ video {
   color: #efd2e0;
   background-color: #3c3f3d; }
   #h10 ::-moz-selection {
-    background-color: rgba(15, 230, 122, 0.08); }
+    background-color: #d2efe0; }
   #h10 ::selection {
-    background-color: rgba(15, 230, 122, 0.08); }
+    background-color: #d2efe0; }
   #h10 .container {
     color: rgba(15, 26, 20, 0.8);
     background-color: #efd2e0; }
   #h10 .d-vector {
     fill: rgba(15, 26, 20, 0.8); }
   #h10 .l-vector {
-    fill: rgba(15, 230, 122, 0.32); }
+    fill: rgba(0, 245, 122, 0.32); }
   #h10 blockquote {
     border-left-color: rgba(15, 26, 20, 0.8); }
   #h10 hr, #h10 .footnotes:before {
     border-top-color: rgba(15, 26, 20, 0.8); }
   #h10 pre, #h10 code, #h10 mark, #h10 kbd {
-    background-color: rgba(15, 230, 122, 0.16); }
+    background-color: rgba(0, 245, 122, 0.16); }
   #h10 pre code {
     background-color: transparent; }
 
@@ -1131,22 +1134,22 @@ video {
   color: #efd2d9;
   background-color: #3c3f3e; }
   #h11 ::-moz-selection {
-    background-color: rgba(15, 230, 176, 0.08); }
+    background-color: #d2efe8; }
   #h11 ::selection {
-    background-color: rgba(15, 230, 176, 0.08); }
+    background-color: #d2efe8; }
   #h11 .container {
     color: rgba(15, 26, 23, 0.8);
     background-color: #efd2d9; }
   #h11 .d-vector {
     fill: rgba(15, 26, 23, 0.8); }
   #h11 .l-vector {
-    fill: rgba(15, 230, 176, 0.32); }
+    fill: rgba(0, 245, 184, 0.32); }
   #h11 blockquote {
     border-left-color: rgba(15, 26, 23, 0.8); }
   #h11 hr, #h11 .footnotes:before {
     border-top-color: rgba(15, 26, 23, 0.8); }
   #h11 pre, #h11 code, #h11 mark, #h11 kbd {
-    background-color: rgba(15, 230, 176, 0.16); }
+    background-color: rgba(0, 245, 184, 0.16); }
   #h11 pre code {
     background-color: transparent; }
 
@@ -1154,22 +1157,22 @@ video {
   color: #efd2d2;
   background-color: #3c3f3f; }
   #h12 ::-moz-selection {
-    background-color: rgba(15, 230, 230, 0.08); }
+    background-color: #d2efef; }
   #h12 ::selection {
-    background-color: rgba(15, 230, 230, 0.08); }
+    background-color: #d2efef; }
   #h12 .container {
     color: rgba(15, 26, 26, 0.8);
     background-color: #efd2d2; }
   #h12 .d-vector {
     fill: rgba(15, 26, 26, 0.8); }
   #h12 .l-vector {
-    fill: rgba(15, 230, 230, 0.32); }
+    fill: rgba(0, 245, 245, 0.32); }
   #h12 blockquote {
     border-left-color: rgba(15, 26, 26, 0.8); }
   #h12 hr, #h12 .footnotes:before {
     border-top-color: rgba(15, 26, 26, 0.8); }
   #h12 pre, #h12 code, #h12 mark, #h12 kbd {
-    background-color: rgba(15, 230, 230, 0.16); }
+    background-color: rgba(0, 245, 245, 0.16); }
   #h12 pre code {
     background-color: transparent; }
 
@@ -1177,22 +1180,22 @@ video {
   color: #efd9d2;
   background-color: #3c3e3f; }
   #h13 ::-moz-selection {
-    background-color: rgba(15, 176, 230, 0.08); }
+    background-color: #d2e8ef; }
   #h13 ::selection {
-    background-color: rgba(15, 176, 230, 0.08); }
+    background-color: #d2e8ef; }
   #h13 .container {
     color: rgba(15, 23, 26, 0.8);
     background-color: #efd9d2; }
   #h13 .d-vector {
     fill: rgba(15, 23, 26, 0.8); }
   #h13 .l-vector {
-    fill: rgba(15, 176, 230, 0.32); }
+    fill: rgba(0, 184, 245, 0.32); }
   #h13 blockquote {
     border-left-color: rgba(15, 23, 26, 0.8); }
   #h13 hr, #h13 .footnotes:before {
     border-top-color: rgba(15, 23, 26, 0.8); }
   #h13 pre, #h13 code, #h13 mark, #h13 kbd {
-    background-color: rgba(15, 176, 230, 0.16); }
+    background-color: rgba(0, 184, 245, 0.16); }
   #h13 pre code {
     background-color: transparent; }
 
@@ -1200,22 +1203,22 @@ video {
   color: #efe0d2;
   background-color: #3c3d3f; }
   #h14 ::-moz-selection {
-    background-color: rgba(15, 122, 230, 0.08); }
+    background-color: #d2e0ef; }
   #h14 ::selection {
-    background-color: rgba(15, 122, 230, 0.08); }
+    background-color: #d2e0ef; }
   #h14 .container {
     color: rgba(15, 20, 26, 0.8);
     background-color: #efe0d2; }
   #h14 .d-vector {
     fill: rgba(15, 20, 26, 0.8); }
   #h14 .l-vector {
-    fill: rgba(15, 122, 230, 0.32); }
+    fill: rgba(0, 122, 245, 0.32); }
   #h14 blockquote {
     border-left-color: rgba(15, 20, 26, 0.8); }
   #h14 hr, #h14 .footnotes:before {
     border-top-color: rgba(15, 20, 26, 0.8); }
   #h14 pre, #h14 code, #h14 mark, #h14 kbd {
-    background-color: rgba(15, 122, 230, 0.16); }
+    background-color: rgba(0, 122, 245, 0.16); }
   #h14 pre code {
     background-color: transparent; }
 
@@ -1223,22 +1226,22 @@ video {
   color: #efe8d2;
   background-color: #3c3c3f; }
   #h15 ::-moz-selection {
-    background-color: rgba(15, 69, 230, 0.08); }
+    background-color: #d2d9ef; }
   #h15 ::selection {
-    background-color: rgba(15, 69, 230, 0.08); }
+    background-color: #d2d9ef; }
   #h15 .container {
     color: rgba(15, 18, 26, 0.8);
     background-color: #efe8d2; }
   #h15 .d-vector {
     fill: rgba(15, 18, 26, 0.8); }
   #h15 .l-vector {
-    fill: rgba(15, 69, 230, 0.32); }
+    fill: rgba(0, 61, 245, 0.32); }
   #h15 blockquote {
     border-left-color: rgba(15, 18, 26, 0.8); }
   #h15 hr, #h15 .footnotes:before {
     border-top-color: rgba(15, 18, 26, 0.8); }
   #h15 pre, #h15 code, #h15 mark, #h15 kbd {
-    background-color: rgba(15, 69, 230, 0.16); }
+    background-color: rgba(0, 61, 245, 0.16); }
   #h15 pre code {
     background-color: transparent; }
 
@@ -1246,22 +1249,22 @@ video {
   color: #efefd2;
   background-color: #3c3c3f; }
   #h16 ::-moz-selection {
-    background-color: rgba(15, 15, 230, 0.08); }
+    background-color: #d2d2ef; }
   #h16 ::selection {
-    background-color: rgba(15, 15, 230, 0.08); }
+    background-color: #d2d2ef; }
   #h16 .container {
     color: rgba(15, 15, 26, 0.8);
     background-color: #efefd2; }
   #h16 .d-vector {
     fill: rgba(15, 15, 26, 0.8); }
   #h16 .l-vector {
-    fill: rgba(15, 15, 230, 0.32); }
+    fill: rgba(0, 0, 245, 0.32); }
   #h16 blockquote {
     border-left-color: rgba(15, 15, 26, 0.8); }
   #h16 hr, #h16 .footnotes:before {
     border-top-color: rgba(15, 15, 26, 0.8); }
   #h16 pre, #h16 code, #h16 mark, #h16 kbd {
-    background-color: rgba(15, 15, 230, 0.16); }
+    background-color: rgba(0, 0, 245, 0.16); }
   #h16 pre code {
     background-color: transparent; }
 
@@ -1269,22 +1272,22 @@ video {
   color: #e8efd2;
   background-color: #3c3c3f; }
   #h17 ::-moz-selection {
-    background-color: rgba(69, 15, 230, 0.08); }
+    background-color: #d9d2ef; }
   #h17 ::selection {
-    background-color: rgba(69, 15, 230, 0.08); }
+    background-color: #d9d2ef; }
   #h17 .container {
     color: rgba(18, 15, 26, 0.8);
     background-color: #e8efd2; }
   #h17 .d-vector {
     fill: rgba(18, 15, 26, 0.8); }
   #h17 .l-vector {
-    fill: rgba(69, 15, 230, 0.32); }
+    fill: rgba(61, 0, 245, 0.32); }
   #h17 blockquote {
     border-left-color: rgba(18, 15, 26, 0.8); }
   #h17 hr, #h17 .footnotes:before {
     border-top-color: rgba(18, 15, 26, 0.8); }
   #h17 pre, #h17 code, #h17 mark, #h17 kbd {
-    background-color: rgba(69, 15, 230, 0.16); }
+    background-color: rgba(61, 0, 245, 0.16); }
   #h17 pre code {
     background-color: transparent; }
 
@@ -1292,22 +1295,22 @@ video {
   color: #e0efd2;
   background-color: #3d3c3f; }
   #h18 ::-moz-selection {
-    background-color: rgba(122, 15, 230, 0.08); }
+    background-color: #e0d2ef; }
   #h18 ::selection {
-    background-color: rgba(122, 15, 230, 0.08); }
+    background-color: #e0d2ef; }
   #h18 .container {
     color: rgba(20, 15, 26, 0.8);
     background-color: #e0efd2; }
   #h18 .d-vector {
     fill: rgba(20, 15, 26, 0.8); }
   #h18 .l-vector {
-    fill: rgba(122, 15, 230, 0.32); }
+    fill: rgba(122, 0, 245, 0.32); }
   #h18 blockquote {
     border-left-color: rgba(20, 15, 26, 0.8); }
   #h18 hr, #h18 .footnotes:before {
     border-top-color: rgba(20, 15, 26, 0.8); }
   #h18 pre, #h18 code, #h18 mark, #h18 kbd {
-    background-color: rgba(122, 15, 230, 0.16); }
+    background-color: rgba(122, 0, 245, 0.16); }
   #h18 pre code {
     background-color: transparent; }
 
@@ -1315,22 +1318,22 @@ video {
   color: #d9efd2;
   background-color: #3e3c3f; }
   #h19 ::-moz-selection {
-    background-color: rgba(176, 15, 230, 0.08); }
+    background-color: #e8d2ef; }
   #h19 ::selection {
-    background-color: rgba(176, 15, 230, 0.08); }
+    background-color: #e8d2ef; }
   #h19 .container {
     color: rgba(23, 15, 26, 0.8);
     background-color: #d9efd2; }
   #h19 .d-vector {
     fill: rgba(23, 15, 26, 0.8); }
   #h19 .l-vector {
-    fill: rgba(176, 15, 230, 0.32); }
+    fill: rgba(184, 0, 245, 0.32); }
   #h19 blockquote {
     border-left-color: rgba(23, 15, 26, 0.8); }
   #h19 hr, #h19 .footnotes:before {
     border-top-color: rgba(23, 15, 26, 0.8); }
   #h19 pre, #h19 code, #h19 mark, #h19 kbd {
-    background-color: rgba(176, 15, 230, 0.16); }
+    background-color: rgba(184, 0, 245, 0.16); }
   #h19 pre code {
     background-color: transparent; }
 
@@ -1338,22 +1341,22 @@ video {
   color: #d2efd2;
   background-color: #3f3c3f; }
   #h20 ::-moz-selection {
-    background-color: rgba(230, 15, 230, 0.08); }
+    background-color: #efd2ef; }
   #h20 ::selection {
-    background-color: rgba(230, 15, 230, 0.08); }
+    background-color: #efd2ef; }
   #h20 .container {
     color: rgba(26, 15, 26, 0.8);
     background-color: #d2efd2; }
   #h20 .d-vector {
     fill: rgba(26, 15, 26, 0.8); }
   #h20 .l-vector {
-    fill: rgba(230, 15, 230, 0.32); }
+    fill: rgba(245, 0, 245, 0.32); }
   #h20 blockquote {
     border-left-color: rgba(26, 15, 26, 0.8); }
   #h20 hr, #h20 .footnotes:before {
     border-top-color: rgba(26, 15, 26, 0.8); }
   #h20 pre, #h20 code, #h20 mark, #h20 kbd {
-    background-color: rgba(230, 15, 230, 0.16); }
+    background-color: rgba(245, 0, 245, 0.16); }
   #h20 pre code {
     background-color: transparent; }
 
@@ -1361,22 +1364,22 @@ video {
   color: #d2efd9;
   background-color: #3f3c3e; }
   #h21 ::-moz-selection {
-    background-color: rgba(230, 15, 176, 0.08); }
+    background-color: #efd2e8; }
   #h21 ::selection {
-    background-color: rgba(230, 15, 176, 0.08); }
+    background-color: #efd2e8; }
   #h21 .container {
     color: rgba(26, 15, 23, 0.8);
     background-color: #d2efd9; }
   #h21 .d-vector {
     fill: rgba(26, 15, 23, 0.8); }
   #h21 .l-vector {
-    fill: rgba(230, 15, 176, 0.32); }
+    fill: rgba(245, 0, 184, 0.32); }
   #h21 blockquote {
     border-left-color: rgba(26, 15, 23, 0.8); }
   #h21 hr, #h21 .footnotes:before {
     border-top-color: rgba(26, 15, 23, 0.8); }
   #h21 pre, #h21 code, #h21 mark, #h21 kbd {
-    background-color: rgba(230, 15, 176, 0.16); }
+    background-color: rgba(245, 0, 184, 0.16); }
   #h21 pre code {
     background-color: transparent; }
 
@@ -1384,22 +1387,22 @@ video {
   color: #d2efe0;
   background-color: #3f3c3d; }
   #h22 ::-moz-selection {
-    background-color: rgba(230, 15, 122, 0.08); }
+    background-color: #efd2e0; }
   #h22 ::selection {
-    background-color: rgba(230, 15, 122, 0.08); }
+    background-color: #efd2e0; }
   #h22 .container {
     color: rgba(26, 15, 20, 0.8);
     background-color: #d2efe0; }
   #h22 .d-vector {
     fill: rgba(26, 15, 20, 0.8); }
   #h22 .l-vector {
-    fill: rgba(230, 15, 122, 0.32); }
+    fill: rgba(245, 0, 122, 0.32); }
   #h22 blockquote {
     border-left-color: rgba(26, 15, 20, 0.8); }
   #h22 hr, #h22 .footnotes:before {
     border-top-color: rgba(26, 15, 20, 0.8); }
   #h22 pre, #h22 code, #h22 mark, #h22 kbd {
-    background-color: rgba(230, 15, 122, 0.16); }
+    background-color: rgba(245, 0, 122, 0.16); }
   #h22 pre code {
     background-color: transparent; }
 
@@ -1407,22 +1410,22 @@ video {
   color: #d2efe8;
   background-color: #3f3c3c; }
   #h23 ::-moz-selection {
-    background-color: rgba(230, 15, 69, 0.08); }
+    background-color: #efd2d9; }
   #h23 ::selection {
-    background-color: rgba(230, 15, 69, 0.08); }
+    background-color: #efd2d9; }
   #h23 .container {
     color: rgba(26, 15, 18, 0.8);
     background-color: #d2efe8; }
   #h23 .d-vector {
     fill: rgba(26, 15, 18, 0.8); }
   #h23 .l-vector {
-    fill: rgba(230, 15, 69, 0.32); }
+    fill: rgba(245, 0, 61, 0.32); }
   #h23 blockquote {
     border-left-color: rgba(26, 15, 18, 0.8); }
   #h23 hr, #h23 .footnotes:before {
     border-top-color: rgba(26, 15, 18, 0.8); }
   #h23 pre, #h23 code, #h23 mark, #h23 kbd {
-    background-color: rgba(230, 15, 69, 0.16); }
+    background-color: rgba(245, 0, 61, 0.16); }
   #h23 pre code {
     background-color: transparent; }
 
@@ -1430,22 +1433,22 @@ video {
   color: #d2efef;
   background-color: #3f3c3c; }
   #h24 ::-moz-selection {
-    background-color: rgba(230, 15, 15, 0.08); }
+    background-color: #efd2d2; }
   #h24 ::selection {
-    background-color: rgba(230, 15, 15, 0.08); }
+    background-color: #efd2d2; }
   #h24 .container {
     color: rgba(26, 15, 15, 0.8);
     background-color: #d2efef; }
   #h24 .d-vector {
     fill: rgba(26, 15, 15, 0.8); }
   #h24 .l-vector {
-    fill: rgba(230, 15, 15, 0.32); }
+    fill: rgba(245, 0, 0, 0.32); }
   #h24 blockquote {
     border-left-color: rgba(26, 15, 15, 0.8); }
   #h24 hr, #h24 .footnotes:before {
     border-top-color: rgba(26, 15, 15, 0.8); }
   #h24 pre, #h24 code, #h24 mark, #h24 kbd {
-    background-color: rgba(230, 15, 15, 0.16); }
+    background-color: rgba(245, 0, 0, 0.16); }
   #h24 pre code {
     background-color: transparent; }
 
@@ -1765,6 +1768,9 @@ video {
 ** Navigation
 */
 .pagination {
+  animation-name: element-in-up;
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
   overflow: hidden;
   margin-top: -0.75em;
   margin-bottom: 7.25em;

@@ -8,14 +8,14 @@
   $l-background: adjust-hue(
     $background-color, $deg
   );
-  $l-foreground: adjust-hue(
-    $background-color, $deg+180
-  );
-
   $d-background: desaturate(
     darken(
       $l-background, 80
     ), 20
+  );
+
+  $l-foreground: adjust-hue(
+    $background-color, $deg+180
   );
   $d-foreground: desaturate(
     darken(
@@ -25,7 +25,7 @@
   $m-foreground: saturate(
     darken(
       $l-foreground, 40
-    ), 40
+    ), 60
   );
 
   $l-background-solid: $l-background;
@@ -50,10 +50,10 @@
     background-color: $d-foreground-solid;
 
     ::-moz-selection {
-      background-color: rgba($m-foreground, 0.08);
+      background-color: $l-foreground;
     }
     ::selection {
-      background-color: rgba($m-foreground, 0.08);
+      background-color: $l-foreground;
     }
     .container {
       color: $d-foreground-transparent;
