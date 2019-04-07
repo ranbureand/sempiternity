@@ -5,6 +5,10 @@
 */
 
 .pagination {
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
 	overflow: hidden;
 
 	margin-top: em(-$m-small-line/2);
