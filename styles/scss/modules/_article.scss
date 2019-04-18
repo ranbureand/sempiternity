@@ -1,29 +1,32 @@
-/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* Copyright (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 
 /*
-** Piece
+** Article
 */
 
 .article {
-  animation-name: element-in-up;
-  animation-duration: $duration*4;
-
-  animation-fill-mode: both;
   display: grid;
+
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: em($m-gut);
+  padding-bottom: em($m-base-rhythm*6);
   padding-left: em($m-gut);
+
+  animation-name: element-in-up;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
   grid-column-gap: em($m-gut);
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: auto;
-  padding-bottom: em($m-base-rhythm*6);
   @include min-screen(col(8)) {
     padding-right: em($d-gut);
-    padding-left: em($d-gut);
-    grid-column-gap: em($d-gut);
     padding-bottom: em($d-base-rhythm*6);
+    padding-left: em($d-gut);
+
+    grid-column-gap: em($d-gut);
   }
   @include min-screen(col(12)) {
     width: col(12);

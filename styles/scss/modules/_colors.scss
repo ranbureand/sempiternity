@@ -1,7 +1,7 @@
-/* (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
+/* Copyright (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 
 /*
-** Sundries
+** Colors
 */
 
 @each $hour, $deg in $colors {
@@ -68,10 +68,14 @@
     blockquote {
       border-left-color: $d-foreground-transparent;
     }
-    hr, .footnotes:before {
+    hr,
+    .footnotes:before {
       border-top-color: $d-foreground-transparent;
     }
-    pre, code, mark, kbd {
+    pre,
+    code,
+    mark,
+    kbd {
       background-color: rgba($m-foreground, 0.16);
     }
     pre {

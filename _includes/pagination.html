@@ -8,13 +8,15 @@
       {% assign prevPostIndex = currentPostIndex | plus: 1 %}
       {% assign nextPostIndex = currentPostIndex | minus: 1 %}
 
-      <div class="pagination">
-      {% for post in posts %}
-        {% if forloop.index == prevPostIndex %}
-          <a class="page-prev" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong><br />{{ post.description }}</a>
-        {% endif %}
-        {% if forloop.index == nextPostIndex %}
-          <a class="page-next" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong><br />{{ post.description }}</a>
-        {% endif %}
-      {% endfor %}
+      <div class="pagination-canvas">
+        <div class="pagination">
+        {% for post in posts %}
+          {% if forloop.index == prevPostIndex %}
+            <a class="page-prev" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong><br />{{ post.description }}</a>
+          {% endif %}
+          {% if forloop.index == nextPostIndex %}
+            <a class="page-next" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong><br />{{ post.description }}</a>
+          {% endif %}
+        {% endfor %}
+        </div>
       </div>
