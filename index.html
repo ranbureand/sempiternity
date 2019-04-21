@@ -4,7 +4,7 @@ layout: base
 
       <div class="article-canvas">
         {%- assign posts = site.posts | where: 'publish', 'yes' %}
-        {%- for post in site.posts limit: 1  %}
+        {%- for post in posts limit: 1  %}
         <article class="article">
 
           <header class="head">
@@ -27,4 +27,4 @@ layout: base
 
       </div>
 
-{% include pagination.html publish=post.publish %}
+{% include pagination.html publish='yes' %}
