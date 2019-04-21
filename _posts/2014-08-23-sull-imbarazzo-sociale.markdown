@@ -3,7 +3,7 @@ layout: piece
 
 title: 'Sull’imbarazzo sociale'
 
-description: 'Il nostro era stato invitato dal barone di R. a una cena ufficiale….'
+description: 'Il nostro era stato invitato dal barone di R. a una cena ufficiale…'
 
 date: 2014-08-23 01:50:00 +0300
 motif: 'scroll_00'

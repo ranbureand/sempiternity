@@ -57,8 +57,20 @@ $normal:    400;
 ** Icon sizes
 */
 
-$icon-size:             12px;
-$icon-line:             $base-unit*3; //12px
+
+$l-icon-width:          32px;
+$l-icon-height:         24px;
+$m-l-icon-width:        $l-icon-width*2.5;
+$m-l-icon-height:       $l-icon-height*2.5;
+$d-l-icon-width:        $l-icon-width*3;
+$d-l-icon-height:       $l-icon-height*3;
+
+$m-icon-width:          16px;
+$m-icon-height:         12px;
+$m-m-icon-width:        $m-icon-width*2.5;
+$m-m-icon-height:       $m-icon-height*2.5;
+$d-m-icon-width:        $m-icon-width*3;
+$d-m-icon-height:       $m-icon-height*3;
 
 /*
 ** Grid

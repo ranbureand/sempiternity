@@ -3,7 +3,7 @@ layout: piece
 
 title: 'Blueberry Hill nei videogiochi'
 
-description: 'Una donna delle pulizie fa la sua entrata nella stanza buia….'
+description: 'Una donna delle pulizie fa la sua entrata nella stanza buia…'
 
 date: 2014-09-20 17:25:00 +0300
 motif: 'controller_00'

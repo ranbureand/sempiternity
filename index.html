@@ -20,8 +20,11 @@ layout: base
 {{ post.content }}
           </div>
 
+{% include separator.html %}
+
         </article>
         {%- endfor %}
+
       </div>
 
 {% include pagination.html publish=post.publish %}

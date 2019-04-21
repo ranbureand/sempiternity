@@ -3,7 +3,7 @@ layout: piece
 
 title: 'Alla dogana'
 
-description: '«Deve stare attento perché la missione è di vitale importanza….»'
+description: '«Deve stare attento perché la missione è di vitale importanza…»'
 
 date: 2015-01-24 22:45:00 +0300
 motif: 'controller_00'

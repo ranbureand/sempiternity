@@ -17,12 +17,10 @@
     @include rainbow(24);
   }
   &:before {
-    top: 0;
-
     @include clip-head(48);
   }
   &:after {
-    bottom: 0;
+    margin-top: calc(#{em($m-base-rhythm*6)} - #{100/24/2*1%});
 
     @include clip-feet(48);
   }
@@ -30,6 +28,9 @@
     &:before,
     &:after {
       padding-bottom: 100/24/2*1%;
+    }
+    &:after {
+      margin-top: calc(#{em($d-base-rhythm*6)} - #{100/24/2*1%});
     }
   }
 }

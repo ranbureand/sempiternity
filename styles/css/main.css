@@ -1444,16 +1444,17 @@ video {
   background-image: linear-gradient(to right, #d2efef -4.1666666667%, #d2efef 0%, #d2e8ef 0%, #d2e8ef 4.1666666667%, #d2e0ef 4.1666666667%, #d2e0ef 8.3333333333%, #d2d9ef 8.3333333333%, #d2d9ef 12.5%, #d2d2ef 12.5%, #d2d2ef 16.6666666667%, #d9d2ef 16.6666666667%, #d9d2ef 20.8333333333%, #e0d2ef 20.8333333333%, #e0d2ef 25%, #e8d2ef 25%, #e8d2ef 29.1666666667%, #efd2ef 29.1666666667%, #efd2ef 33.3333333333%, #efd2e8 33.3333333333%, #efd2e8 37.5%, #efd2e0 37.5%, #efd2e0 41.6666666667%, #efd2d9 41.6666666667%, #efd2d9 45.8333333333%, #efd2d2 45.8333333333%, #efd2d2 50%, #efd9d2 50%, #efd9d2 54.1666666667%, #efe0d2 54.1666666667%, #efe0d2 58.3333333333%, #efe8d2 58.3333333333%, #efe8d2 62.5%, #efefd2 62.5%, #efefd2 66.6666666667%, #e8efd2 66.6666666667%, #e8efd2 70.8333333333%, #e0efd2 70.8333333333%, #e0efd2 75%, #d9efd2 75%, #d9efd2 79.1666666667%, #d2efd2 79.1666666667%, #d2efd2 83.3333333333%, #d2efd9 83.3333333333%, #d2efd9 87.5%, #d2efe0 87.5%, #d2efe0 91.6666666667%, #d2efe8 91.6666666667%, #d2efe8 95.8333333333%, #d2efef 95.8333333333%, #d2efef 100%); }
 
 .container:before {
-  top: 0;
   clip-path: polygon(0% 0%, 0% 0%, 2.0833333333% 100%, 4.1666666667% 0%, 6.25% 100%, 8.3333333333% 0%, 10.4166666667% 100%, 12.5% 0%, 14.5833333333% 100%, 16.6666666667% 0%, 18.75% 100%, 20.8333333333% 0%, 22.9166666667% 100%, 25% 0%, 27.0833333333% 100%, 29.1666666667% 0%, 31.25% 100%, 33.3333333333% 0%, 35.4166666667% 100%, 37.5% 0%, 39.5833333333% 100%, 41.6666666667% 0%, 43.75% 100%, 45.8333333333% 0%, 47.9166666667% 100%, 50% 0%, 52.0833333333% 100%, 54.1666666667% 0%, 56.25% 100%, 58.3333333333% 0%, 60.4166666667% 100%, 62.5% 0%, 64.5833333333% 100%, 66.6666666667% 0%, 68.75% 100%, 70.8333333333% 0%, 72.9166666667% 100%, 75% 0%, 77.0833333333% 100%, 79.1666666667% 0%, 81.25% 100%, 83.3333333333% 0%, 85.4166666667% 100%, 87.5% 0%, 89.5833333333% 100%, 91.6666666667% 0%, 93.75% 100%, 95.8333333333% 0%, 97.9166666667% 100%, 100% 0%, 100% 0%); }
 
 .container:after {
-  bottom: 0;
+  margin-top: calc(9em - 2.0833333333%);
   clip-path: polygon(0 100%, 0% 100%, 2.0833333333% 0%, 4.1666666667% 100%, 6.25% 0%, 8.3333333333% 100%, 10.4166666667% 0%, 12.5% 100%, 14.5833333333% 0%, 16.6666666667% 100%, 18.75% 0%, 20.8333333333% 100%, 22.9166666667% 0%, 25% 100%, 27.0833333333% 0%, 29.1666666667% 100%, 31.25% 0%, 33.3333333333% 100%, 35.4166666667% 0%, 37.5% 100%, 39.5833333333% 0%, 41.6666666667% 100%, 43.75% 0%, 45.8333333333% 100%, 47.9166666667% 0%, 50% 100%, 52.0833333333% 0%, 54.1666666667% 100%, 56.25% 0%, 58.3333333333% 100%, 60.4166666667% 0%, 62.5% 100%, 64.5833333333% 0%, 66.6666666667% 100%, 68.75% 0%, 70.8333333333% 100%, 72.9166666667% 0%, 75% 100%, 77.0833333333% 0%, 79.1666666667% 100%, 81.25% 0%, 83.3333333333% 100%, 85.4166666667% 0%, 87.5% 100%, 89.5833333333% 0%, 91.6666666667% 100%, 93.75% 0%, 95.8333333333% 100%, 97.9166666667% 0%, 100% 100%, 100% 100%); }
 
 @media screen and (min-width: 32em) {
   .container:before, .container:after {
-    padding-bottom: 2.0833333333%; } }
+    padding-bottom: 2.0833333333%; }
+  .container:after {
+    margin-top: calc(15em - 2.0833333333%); } }
 
 /* Copyright (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
@@ -1713,17 +1714,32 @@ video {
     .body {
       padding-top: 5em; } }
 
+.flower {
+  position: absolute;
+  bottom: 3em;
+  right: 0;
+  left: 0;
+  width: 5em;
+  height: 3.75em;
+  margin-right: auto;
+  margin-left: auto; }
+  @media screen and (min-width: 32em) {
+    .flower {
+      bottom: 5em;
+      width: 6em;
+      height: 4.5em; } }
+
 /* Copyright (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
 ** Pagination
 */
 .pagination {
+  position: relative;
   display: grid;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: 1em;
-  padding-bottom: 9em;
   padding-left: 1em;
   animation-name: element-in-up;
   animation-duration: 0.8s;
@@ -1734,20 +1750,25 @@ video {
   @media screen and (min-width: 32em) {
     .pagination {
       padding-right: 1.5em;
-      padding-bottom: 15em;
       padding-left: 1.5em;
       grid-column-gap: 1.5em; } }
   @media screen and (min-width: 48em) {
     .pagination {
-      width: 48em;
-      padding-bottom: 15em; } }
+      width: 48em; } }
 
 [class*="page"] {
-  display: block;
-  text-align: center;
-  font-size: 1.125em;
-  line-height: 1.3333333333em;
-  grid-column: 2 / 8; }
+  grid-column: 1 / 9;
+  text-align: center; }
+  [class*="page"] a {
+    display: block;
+    font-size: 1.125em;
+    line-height: 1.3333333333em; }
+  [class*="page"] .arrow {
+    width: 2.2222222222em;
+    height: 1.6666666667em; }
+  [class*="page"] strong,
+  [class*="page"] span {
+    display: block; }
   [class*="page"] strong:after {
     font-weight: 400;
     margin-left: 0.1em;
@@ -1760,37 +1781,41 @@ video {
     content: "["; }
   [class*="page"]:hover strong:before {
     content: "]"; }
-  @media screen and (min-width: 36em) {
+  [class*="page"]:not(:first-child):before {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 25%;
+    height: 1.5px;
+    margin-right: auto;
+    margin-left: auto;
+    content: "";
+    border-top: 1.5px solid rgba(0, 0, 0, 0.4); }
+  @media screen and (min-width: 32em) {
     [class*="page"] {
-      font-size: 1.25em;
-      line-height: 1.6em; }
-      [class*="page"]:after {
-        position: absolute;
-        top: 0.2em;
-        width: 3.2em;
-        height: 1.5px;
-        content: "";
-        border-top: 1.5px solid rgba(0, 0, 0, 0.4); } }
-  @media screen and (max-width: 36em) {
-    [class*="page"]:not(:first-child):after {
-      position: absolute;
-      top: -1em;
-      right: 0;
-      left: 0;
-      width: 25%;
-      height: 1.5px;
-      margin-right: auto;
-      margin-left: auto;
-      content: "";
-      border-top: 1.5px solid rgba(0, 0, 0, 0.4); } }
+      grid-column: 2 / 8; }
+      [class*="page"] a {
+        font-size: 1.25em;
+        line-height: 1.6em; }
+      [class*="page"] .arrow {
+        width: 2.4em;
+        height: 1.8em; }
+      [class*="page"]:not(:first-child):before {
+        top: -1em; } }
 
-.page-next:before {
-  top: 0;
-  transform: rotate(-90deg); }
+.page-next .arrow {
+  margin-bottom: 0.3333333333em; }
 
-.page-prev:before {
-  bottom: 0;
-  transform: rotate(90deg); }
+@media screen and (min-width: 32em) {
+  .page-next .arrow {
+    margin-bottom: 0.4em; } }
+
+.page-prev .arrow {
+  margin-top: 0.3333333333em; }
+
+@media screen and (min-width: 32em) {
+  .page-prev .arrow {
+    margin-top: 0.4em; } }
 
 /* Copyright (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
@@ -1826,9 +1851,8 @@ video {
       font-weight: 400;
       margin-right: 0.1em;
       content: "["; }
-  .reference .subtitle {
+  .reference .excerpt {
     display: block;
-    margin-top: 0.3333333333em;
     text-align: center;
     font-size: 1.125em;
     line-height: 1.3333333333em; }
@@ -1840,8 +1864,7 @@ video {
     .reference .title {
       font-size: 1.5em;
       line-height: 1.6666666667em; }
-    .reference .subtitle {
-      margin-top: 0.4em;
+    .reference .excerpt {
       font-size: 1.25em;
       line-height: 1.6em; } }
 

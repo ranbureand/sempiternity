@@ -1,22 +1,44 @@
       {%- assign posts = site.posts | where: 'publish', include.publish %}
-      {% for post in posts %}
-        {% if post.title == page.title %}
-          {% assign currentPostIndex = forloop.index %}
-        {% endif %}
-      {% endfor %}
-
-      {% assign prevPostIndex = currentPostIndex | plus: 1 %}
-      {% assign nextPostIndex = currentPostIndex | minus: 1 %}
-
+      {%- for post in posts %}
+        {%- if page.url == '/' %}
+          {%- assign currentPostIndex = 1 %}
+        {%- elsif post.title == page.title %}
+          {%- assign currentPostIndex = forloop.index %}
+        {%- endif %}
+      {%- endfor %}
+      {%- assign prevPostIndex = currentPostIndex | plus: 1 %}
+      {%- assign nextPostIndex = currentPostIndex | minus: 1 %}
       <div class="pagination-canvas">
         <div class="pagination">
-        {% for post in posts %}
-          {% if forloop.index == prevPostIndex %}
-            <a class="page-prev" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong><br />{{ post.description }}</a>
-          {% endif %}
-          {% if forloop.index == nextPostIndex %}
-            <a class="page-next" href="{{ post.url | prepend: site.baseurl }}"><strong>{{ post.title }}</strong><br />{{ post.description }}</a>
-          {% endif %}
-        {% endfor %}
+          {%- for post in posts %}
+          {%- if forloop.index == prevPostIndex %}
+          <div class="page-prev">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <strong>{{ post.title }}</strong>
+              <span>{{ post.description }}</span>
+              <svg class="arrow" height="12" viewBox="0 0 16 12" width="16" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path class="d-vector" d="m9 4h-1v-1h3v1 2h-1v-1h-1zm-1 1h1v1h-1zm-1 1h1v1h-1zm-1 1h1v1h-1zm-1 1h1v1h-1z" fill="#000" transform="matrix(-1 0 0 -1 16 12)"/>
+                  <path class="l-vector" d="m7 4h1v1h-1zm2 2h1v1h-1z" fill="#b8b8b8" transform="matrix(-1 0 0 -1 17 11)"/>
+                </g>
+              </svg>
+            </a>
+          </div>
+          {%- endif %}
+          {%- if forloop.index == nextPostIndex %}
+          <div class="page-next">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <svg class="arrow" height="12" viewBox="0 0 16 12" width="16" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none" fill-rule="evenodd">
+                  <path  class="d-vector" d="m9 4h-1v-1h3v1 2h-1v-1h-1zm-1 1h1v1h-1zm-1 1h1v1h-1zm-1 1h1v1h-1zm-1 1h1v1h-1z" fill="#000"/>
+                  <path  class="l-vector" d="m6 5h1v1h-1zm2 2h1v1h-1z" fill="#b8b8b8"/>
+                </g>
+              </svg>
+              <strong>{{ post.title }}</strong>
+              <span>{{ post.description }}</span>
+            </a>
+          </div>
+          {%- endif %}
+          {%- endfor %}
         </div>
       </div>

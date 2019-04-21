@@ -3,7 +3,7 @@ layout: piece
 
 title: 'Cinquantamila al doppio drago'
 
-description: '«Abbiamo trovato un reperto durante le nostre ricerche nel deserto dei Gobi….»'
+description: '«Abbiamo trovato un reperto durante le nostre ricerche nel deserto dei Gobi…»'
 
 date: 2014-10-31 22:45:00 +0300
 motif: 'controller_00'

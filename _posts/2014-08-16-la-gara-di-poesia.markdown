@@ -3,7 +3,7 @@ layout: piece
 
 title: 'La gara di poesia'
 
-description: 'Era un bravo poeta, seppur alquanto distratto….'
+description: 'Era un bravo poeta, seppur alquanto distratto…'
 
 date: 2014-08-16 04:05:00 +0300
 motif: 'scroll_00'

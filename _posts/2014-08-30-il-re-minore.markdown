@@ -3,7 +3,7 @@ layout: piece
 
 title: 'Il nuovo re'
 
-description: 'In una fredda giornata di settembre, il vecchio re del regno di T. spirò….'
+description: 'In una fredda giornata di settembre, il vecchio re del regno di T. spirò…'
 
 date: 2014-08-30 02:05:00 +0300
 motif: 'crown_00'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="12px" viewBox="0 0 16 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>arrow_up_00</title>
+    <desc>Created with Sketch.</desc>
+    <g id="arrow_up_00" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M9,4 L8,4 L8,3 L11,3 L11,4 L11,6 L10,6 L10,5 L9,5 L9,4 Z M8,5 L9,5 L9,6 L8,6 L8,5 Z M7,6 L8,6 L8,7 L7,7 L7,6 Z M6,7 L7,7 L7,8 L6,8 L6,7 Z M5,8 L6,8 L6,9 L5,9 L5,8 Z" id="Combined-Shape" fill="#000000"></path>
+        <path d="M6,5 L7,5 L7,6 L6,6 L6,5 Z M8,7 L9,7 L9,8 L8,8 L8,7 Z" id="Combined-Shape" fill="#B8B8B8"></path>
+    </g>
+</svg>
