@@ -330,10 +330,14 @@ blockquote {
 hr {
   display: block;
   width: 100%;
-  height: 1.5px;
+  height: 2.5px;
   padding: 0;
   border: 0;
-  border-top: 1.5px solid rgba(0, 0, 0, 0.4); }
+  border-top: 2.5px dotted rgba(0, 0, 0, 0.4); }
+  @media screen and (min-width: 32em) {
+    hr {
+      height: 3px;
+      border-top-width: 3px; } }
 
 /*
 ** Embedded content
@@ -398,8 +402,8 @@ video {
     margin-bottom: 0;
     padding-left: 1em; }
   [class*="typo"] blockquote {
-    border-left-width: 1.5px;
-    border-left-style: solid; }
+    border-left-width: 2.5px;
+    border-left-style: dotted; }
   [class*="typo"] .indent {
     font-style: italic; }
   [class*="typo"] a {
@@ -435,6 +439,8 @@ video {
     [class*="typo"] blockquote,
     [class*="typo"] .indent {
       padding-left: 1.5em; }
+    [class*="typo"] blockquote {
+      border-left-width: 3px; }
     [class*="typo"] hr {
       width: 8em; } }
 
@@ -723,8 +729,8 @@ video {
     top: 0;
     left: 0;
     right: 0;
-    height: 1.5px;
-    border-top: 1.5px solid rgba(0, 0, 0, 0.4);
+    height: 2.5px;
+    border-top: 2.5px dotted rgba(0, 0, 0, 0.4);
     width: 25%;
     margin-right: auto;
     margin-left: auto; }
@@ -743,7 +749,9 @@ video {
       margin-top: 3em;
       padding-top: 3em; }
       .footnotes:before {
-        width: 8em; }
+        width: 8em;
+        height: 2.5px;
+        border-top-width: 2.5px; }
       .footnotes > ol > li {
         font-size: 1em; }
         .footnotes > ol > li:before {
@@ -783,6 +791,8 @@ video {
     background-color: rgba(245, 0, 0, 0.16); }
   #h0 pre code {
     background-color: transparent; }
+  #h0 .page-prev:before {
+    border-top-color: rgba(26, 15, 15, 0.8); }
 
 #h1 {
   color: #d2e8ef;
@@ -810,6 +820,8 @@ video {
     background-color: rgba(245, 61, 0, 0.16); }
   #h1 pre code {
     background-color: transparent; }
+  #h1 .page-prev:before {
+    border-top-color: rgba(26, 18, 15, 0.8); }
 
 #h2 {
   color: #d2e0ef;
@@ -837,6 +849,8 @@ video {
     background-color: rgba(245, 122, 0, 0.16); }
   #h2 pre code {
     background-color: transparent; }
+  #h2 .page-prev:before {
+    border-top-color: rgba(26, 20, 15, 0.8); }
 
 #h3 {
   color: #d2d9ef;
@@ -864,6 +878,8 @@ video {
     background-color: rgba(245, 184, 0, 0.16); }
   #h3 pre code {
     background-color: transparent; }
+  #h3 .page-prev:before {
+    border-top-color: rgba(26, 23, 15, 0.8); }
 
 #h4 {
   color: #d2d2ef;
@@ -891,6 +907,8 @@ video {
     background-color: rgba(245, 245, 0, 0.16); }
   #h4 pre code {
     background-color: transparent; }
+  #h4 .page-prev:before {
+    border-top-color: rgba(26, 26, 15, 0.8); }
 
 #h5 {
   color: #d9d2ef;
@@ -918,6 +936,8 @@ video {
     background-color: rgba(184, 245, 0, 0.16); }
   #h5 pre code {
     background-color: transparent; }
+  #h5 .page-prev:before {
+    border-top-color: rgba(23, 26, 15, 0.8); }
 
 #h6 {
   color: #e0d2ef;
@@ -945,6 +965,8 @@ video {
     background-color: rgba(122, 245, 0, 0.16); }
   #h6 pre code {
     background-color: transparent; }
+  #h6 .page-prev:before {
+    border-top-color: rgba(20, 26, 15, 0.8); }
 
 #h7 {
   color: #e8d2ef;
@@ -972,6 +994,8 @@ video {
     background-color: rgba(61, 245, 0, 0.16); }
   #h7 pre code {
     background-color: transparent; }
+  #h7 .page-prev:before {
+    border-top-color: rgba(18, 26, 15, 0.8); }
 
 #h8 {
   color: #efd2ef;
@@ -999,6 +1023,8 @@ video {
     background-color: rgba(0, 245, 0, 0.16); }
   #h8 pre code {
     background-color: transparent; }
+  #h8 .page-prev:before {
+    border-top-color: rgba(15, 26, 15, 0.8); }
 
 #h9 {
   color: #efd2e8;
@@ -1026,6 +1052,8 @@ video {
     background-color: rgba(0, 245, 61, 0.16); }
   #h9 pre code {
     background-color: transparent; }
+  #h9 .page-prev:before {
+    border-top-color: rgba(15, 26, 18, 0.8); }
 
 #h10 {
   color: #efd2e0;
@@ -1053,6 +1081,8 @@ video {
     background-color: rgba(0, 245, 122, 0.16); }
   #h10 pre code {
     background-color: transparent; }
+  #h10 .page-prev:before {
+    border-top-color: rgba(15, 26, 20, 0.8); }
 
 #h11 {
   color: #efd2d9;
@@ -1080,6 +1110,8 @@ video {
     background-color: rgba(0, 245, 184, 0.16); }
   #h11 pre code {
     background-color: transparent; }
+  #h11 .page-prev:before {
+    border-top-color: rgba(15, 26, 23, 0.8); }
 
 #h12 {
   color: #efd2d2;
@@ -1107,6 +1139,8 @@ video {
     background-color: rgba(0, 245, 245, 0.16); }
   #h12 pre code {
     background-color: transparent; }
+  #h12 .page-prev:before {
+    border-top-color: rgba(15, 26, 26, 0.8); }
 
 #h13 {
   color: #efd9d2;
@@ -1134,6 +1168,8 @@ video {
     background-color: rgba(0, 184, 245, 0.16); }
   #h13 pre code {
     background-color: transparent; }
+  #h13 .page-prev:before {
+    border-top-color: rgba(15, 23, 26, 0.8); }
 
 #h14 {
   color: #efe0d2;
@@ -1161,6 +1197,8 @@ video {
     background-color: rgba(0, 122, 245, 0.16); }
   #h14 pre code {
     background-color: transparent; }
+  #h14 .page-prev:before {
+    border-top-color: rgba(15, 20, 26, 0.8); }
 
 #h15 {
   color: #efe8d2;
@@ -1188,6 +1226,8 @@ video {
     background-color: rgba(0, 61, 245, 0.16); }
   #h15 pre code {
     background-color: transparent; }
+  #h15 .page-prev:before {
+    border-top-color: rgba(15, 18, 26, 0.8); }
 
 #h16 {
   color: #efefd2;
@@ -1215,6 +1255,8 @@ video {
     background-color: rgba(0, 0, 245, 0.16); }
   #h16 pre code {
     background-color: transparent; }
+  #h16 .page-prev:before {
+    border-top-color: rgba(15, 15, 26, 0.8); }
 
 #h17 {
   color: #e8efd2;
@@ -1242,6 +1284,8 @@ video {
     background-color: rgba(61, 0, 245, 0.16); }
   #h17 pre code {
     background-color: transparent; }
+  #h17 .page-prev:before {
+    border-top-color: rgba(18, 15, 26, 0.8); }
 
 #h18 {
   color: #e0efd2;
@@ -1269,6 +1313,8 @@ video {
     background-color: rgba(122, 0, 245, 0.16); }
   #h18 pre code {
     background-color: transparent; }
+  #h18 .page-prev:before {
+    border-top-color: rgba(20, 15, 26, 0.8); }
 
 #h19 {
   color: #d9efd2;
@@ -1296,6 +1342,8 @@ video {
     background-color: rgba(184, 0, 245, 0.16); }
   #h19 pre code {
     background-color: transparent; }
+  #h19 .page-prev:before {
+    border-top-color: rgba(23, 15, 26, 0.8); }
 
 #h20 {
   color: #d2efd2;
@@ -1323,6 +1371,8 @@ video {
     background-color: rgba(245, 0, 245, 0.16); }
   #h20 pre code {
     background-color: transparent; }
+  #h20 .page-prev:before {
+    border-top-color: rgba(26, 15, 26, 0.8); }
 
 #h21 {
   color: #d2efd9;
@@ -1350,6 +1400,8 @@ video {
     background-color: rgba(245, 0, 184, 0.16); }
   #h21 pre code {
     background-color: transparent; }
+  #h21 .page-prev:before {
+    border-top-color: rgba(26, 15, 23, 0.8); }
 
 #h22 {
   color: #d2efe0;
@@ -1377,6 +1429,8 @@ video {
     background-color: rgba(245, 0, 122, 0.16); }
   #h22 pre code {
     background-color: transparent; }
+  #h22 .page-prev:before {
+    border-top-color: rgba(26, 15, 20, 0.8); }
 
 #h23 {
   color: #d2efe8;
@@ -1404,6 +1458,8 @@ video {
     background-color: rgba(245, 0, 61, 0.16); }
   #h23 pre code {
     background-color: transparent; }
+  #h23 .page-prev:before {
+    border-top-color: rgba(26, 15, 18, 0.8); }
 
 #h24 {
   color: #d2efef;
@@ -1431,6 +1487,8 @@ video {
     background-color: rgba(245, 0, 0, 0.16); }
   #h24 pre code {
     background-color: transparent; }
+  #h24 .page-prev:before {
+    border-top-color: rgba(26, 15, 15, 0.8); }
 
 /* Copyright (c) 2019 Andrea Buran [www.andreaburan.com] All rights reserved */
 /*
@@ -1757,8 +1815,8 @@ video {
       width: 48em; } }
 
 [class*="page"] {
-  grid-column: 1 / 9;
-  text-align: center; }
+  text-align: center;
+  grid-column: 1 / 9; }
   [class*="page"] a {
     display: block;
     font-size: 1.125em;
@@ -1783,14 +1841,14 @@ video {
     content: "]"; }
   [class*="page"]:not(:first-child):before {
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
     width: 25%;
-    height: 1.5px;
+    height: 2.5px;
+    margin-top: 2em;
     margin-right: auto;
+    margin-bottom: 2em;
     margin-left: auto;
     content: "";
-    border-top: 1.5px solid rgba(0, 0, 0, 0.4); }
+    border-top: 2.5px dotted rgba(0, 0, 0, 0.4); }
   @media screen and (min-width: 32em) {
     [class*="page"] {
       grid-column: 2 / 8; }
@@ -1801,7 +1859,9 @@ video {
         width: 2.4em;
         height: 1.8em; }
       [class*="page"]:not(:first-child):before {
-        top: -1em; } }
+        top: -1.2em;
+        height: 3px;
+        border-top-width: 3px; } }
 
 .page-next .arrow {
   margin-bottom: 0.3333333333em; }

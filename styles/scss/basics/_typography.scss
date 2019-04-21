@@ -53,8 +53,8 @@
     padding-left: em($m-gut);
   }
   blockquote {
-    border-left-width: $border-width;
-    border-left-style: solid;
+    border-left-width: $m-border-width;
+    border-left-style: dotted;
   }
   .indent {
     font-style: italic;
@@ -89,6 +89,9 @@
     blockquote,
     .indent {
       padding-left: em($d-gut);
+    }
+    blockquote {
+      border-left-width: $d-border-width;
     }
     hr {
       width: col(2);
@@ -372,8 +375,8 @@
     top: 0;
     left: 0;
     right: 0;
-    height: $border-width;
-    border-top: $border-width solid $border-color;
+    height: $m-border-width;
+    border-top: $m-border-width dotted $border-color;
     width: 25%;
     margin-right: auto;
     margin-left: auto;
@@ -397,6 +400,8 @@
     padding-top: em($d-large-line);
     &:before {
       width: col(2);
+      height: $m-border-width;
+      border-top-width: $m-border-width;
     }
      > ol {
        > li {

@@ -294,11 +294,15 @@ hr {
   display: block;
 
   width: 100%;
-  height: $border-width;
+  height: $m-border-width;
   padding: 0;
 
   border: 0;
-  border-top: $border-width solid $border-color;
+  border-top: $m-border-width dotted $border-color;
+  @include min-screen(col(8)) {
+    height: $d-border-width;
+    border-top-width: $d-border-width;
+  }
 }
 
 /*

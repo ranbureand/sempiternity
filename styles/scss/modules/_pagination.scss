@@ -24,7 +24,6 @@
   grid-template-rows: auto;
   @include min-screen(col(8)) {
     padding-right: em($d-gut);
-
     padding-left: em($d-gut);
 
     grid-column-gap: em($d-gut);
@@ -35,12 +34,13 @@
 }
 
 [class*="page"] {
-  grid-column: 1 / 9;
-
   text-align: center;
+
+  grid-column: 1 / 9;
 
   a {
     display: block;
+
     @include font-size($m-small-size, $m-small-line);
   }
   .arrow {
@@ -80,17 +80,17 @@
   &:not(:first-child) {
     &:before {
       display: block;
-      margin-top: em($d-small-line);
-      margin-bottom: em($d-small-line);
 
       width: 25%;
-      height: $border-width;
+      height: $m-border-width;
+      margin-top: em($d-small-line);
       margin-right: auto;
+      margin-bottom: em($d-small-line);
       margin-left: auto;
 
       content: "";
 
-      border-top: $border-width solid $border-color;
+      border-top: $m-border-width dotted $border-color;
     }
   }
   @include min-screen(col(8)) {
@@ -105,7 +105,11 @@
     }
     &:not(:first-child) {
       &:before {
-        top: em(-$m-small-line*3/4, $m-small-size);
+        top: em(-$d-small-line*3/4, $d-small-size);
+
+        height: $d-border-width;
+
+        border-top-width: $d-border-width;
       }
     }
   }

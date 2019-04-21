@@ -83,5 +83,10 @@
         background-color: transparent;
       }
     }
+    .page-prev {
+      &:before {
+        border-top-color: $d-foreground-transparent;
+      }
+    }
   }
 }
