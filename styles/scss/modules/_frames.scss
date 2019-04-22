@@ -21,6 +21,7 @@
 
 .header-canvas {
   margin-bottom: em($m-base-rhythm*2);
+
   @include min-screen(col(8)) {
     margin-bottom: em($m-base-rhythm*2);
   }
@@ -31,6 +32,7 @@
 
 .footer-canvas {
   padding-top: em($m-base-rhythm*4);
+
   @include min-screen(col(8)) {
     padding-top: em($d-base-rhythm*2.5);
   }
@@ -41,22 +43,25 @@
 
 .header,
 .footer {
-  animation-name: element-in;
-  animation-duration: $duration*4;
-
-  animation-fill-mode: both;
   display: grid;
+
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-right: em($m-gut);
   padding-left: em($m-gut);
+
+  animation-name: element-in;
+  animation-duration: $duration*4;
+
+  animation-fill-mode: both;
   grid-column-gap: em($m-gut);
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   @include min-screen(col(8)) {
     padding-right: em($d-gut);
     padding-left: em($d-gut);
+
     grid-column-gap: em($d-gut);
   }
   @include min-screen(col(20)) {
@@ -69,8 +74,10 @@
 .footer-copyright,
 .footer-scroll {
   @include font-size($m-small-size, $m-small-line);
-  a, div {
+  a,
+  div {
     display: block;
+
     padding-top: em($m-small-line/2, $m-small-size);
     padding-bottom: em($m-small-line/2, $m-small-size);
   }
@@ -82,34 +89,35 @@
   }
   @include min-screen(col(8)) {
     @include font-size($d-small-size, $d-small-line);
-    a, div {
+    a,
+    div {
       padding-top: em($d-small-line/2, $d-small-size);
       padding-bottom: em($d-small-line/2, $d-small-size);
     }
-
   }
 }
 
 .header-title {
   grid-column: 1 / 2;
   .logo {
+    width: em($base-unit*4, $m-small-size);
+    height: em($base-unit*4, $m-small-size);
     margin-top: em(-$base-unit/2, $m-small-size);
     margin-right: em($base-unit, $m-small-size);
-    height: em($base-unit*4, $m-small-size);
-    width: em($base-unit*4, $m-small-size);
   }
   @include min-screen(col(8)) {
     .logo {
+      width: em($base-unit*5, $d-small-size);
+      height: em($base-unit*5, $d-small-size);
       margin-top: em(-$base-unit/2, $d-small-size);
       margin-right: em($base-unit, $d-small-size);
-      height: em($base-unit*5, $d-small-size);
-      width: em($base-unit*5, $d-small-size);
     }
   }
 }
 
 .header-index {
   text-align: right;
+
   grid-column: 2 / 3;
 }
 
@@ -127,6 +135,7 @@
 
 .footer-scroll {
   text-align: right;
+
   grid-column: 2 / 3;
 }
 
