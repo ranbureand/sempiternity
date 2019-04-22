@@ -3,7 +3,7 @@ layout: piece
 
 title: 'Il procione e l’orso: una storia con animali e morale'
 
-description: '…'
+description: 'Un procione sgambettava lungo il sentiero che portava al fiume…'
 
 date: 2017-11-05 12:00:00 +0300
 motif: 'controller_00'
