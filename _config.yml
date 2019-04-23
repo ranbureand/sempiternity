@@ -7,7 +7,7 @@ version: '2019-01-01'
 
 #baseurl: http://ranbureand.github.io/jots
 baseurl: /
-permalink: /pezzo/:title
+permalink: /pezzo/:title/
 
 timezone: Europe/Rome
 encoding: utf-8
@@ -21,10 +21,3 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 2..3
-
-# Plugins
-# plugins: [jekyll-paginate]
-
-# Pagination
-# paginate: 48
-# paginate_path: '/jots/page:num/'
