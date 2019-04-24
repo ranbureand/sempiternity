@@ -1775,7 +1775,7 @@ video {
     .body {
       padding-top: 5em; } }
 
-.flower {
+.closure {
   position: absolute;
   bottom: 3em;
   right: 0;
@@ -1785,7 +1785,7 @@ video {
   margin-right: auto;
   margin-left: auto; }
   @media screen and (min-width: 32em) {
-    .flower {
+    .closure {
       bottom: 5em;
       width: 6em;
       height: 4.5em; } }

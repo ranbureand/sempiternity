@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="24px" viewBox="0 0 32 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>separator_01</title>
+    <desc>Created with Sketch.</desc>
+    <g id="separator_01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,7 L14,7 L14,8 L12,8 L12,7 Z M18,7 L20,7 L20,8 L18,8 L18,7 Z M12,16 L14,16 L14,17 L12,17 L12,16 Z M18,16 L20,16 L20,17 L18,17 L18,16 Z M14,6 L18,6 L18,7 L14,7 L14,6 Z M14,17 L18,17 L18,18 L14,18 L14,17 Z M11,8 L12,8 L12,10 L11,10 L11,8 Z M20,8 L21,8 L21,10 L20,10 L20,8 Z M11,14 L12,14 L12,16 L11,16 L11,14 Z M20,14 L21,14 L21,16 L20,16 L20,14 Z M10,10 L11,10 L11,14 L10,14 L10,10 Z M21,10 L22,10 L22,14 L21,14 L21,10 Z" id="Combined-Shape" fill="#000000"></path>
+        <path d="M11,10 L12,10 L12,8 L14,8 L14,7 L18,7 L18,8 L20,8 L20,10 L21,10 L21,14 L16,14 L16,13 L13,13 L13,12 L12,12 L12,11 L11,11 L11,10 Z M15,8 L15,10 L17,10 L17,8 L15,8 Z" id="Combined-Shape" fill="#B8B8B8"></path>
+    </g>
+</svg>
