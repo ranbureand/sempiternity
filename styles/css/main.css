@@ -138,10 +138,11 @@ html {
   box-sizing: border-box;
   height: 100%;
   letter-spacing: -0.00625em;
+  font-variant-numeric: oldstyle-nums;
   font-size: 1em;
   line-height: 1.5em;
   font-family: "Spectral", Georgia, serif;
-  font-variant-numeric: oldstyle-nums;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 

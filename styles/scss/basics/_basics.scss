@@ -40,11 +40,13 @@ html {
 
   box-sizing: border-box;
   height: 100%;
+
   letter-spacing: em(-0.1);
 
+  font-variant-numeric: oldstyle-nums;
   @include font-size($base-font-size, $base-font-line);
   @include face(serif); // normalize.css
-  font-variant-numeric: oldstyle-nums;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%; // normalize.css
       -ms-text-size-adjust: 100%; // normalize.css
 }
