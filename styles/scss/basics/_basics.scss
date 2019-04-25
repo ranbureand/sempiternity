@@ -300,7 +300,7 @@ hr {
   padding: 0;
 
   border: 0;
-  border-top: $m-border-width dotted $border-color;
+  border-top: $m-border-width $border-style $border-color;
   @include min-screen(col(8)) {
     height: $d-border-width;
     border-top-width: $d-border-width;

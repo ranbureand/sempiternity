@@ -40,7 +40,7 @@
 ** Guts and indents
 */
 /*
-** Border widths
+** Borders
 */
 /*
 ** Strip units
@@ -334,7 +334,7 @@ hr {
   height: 2.5px;
   padding: 0;
   border: 0;
-  border-top: 2.5px dotted rgba(0, 0, 0, 0.4); }
+  border-top: 2.5px dashed rgba(0, 0, 0, 0.4); }
   @media screen and (min-width: 32em) {
     hr {
       height: 3px;
@@ -404,7 +404,7 @@ video {
     padding-left: 1em; }
   [class*="typo"] blockquote {
     border-left-width: 2.5px;
-    border-left-style: dotted; }
+    border-left-style: dashed; }
   [class*="typo"] .indent {
     font-style: italic; }
   [class*="typo"] a {
@@ -731,7 +731,7 @@ video {
     left: 0;
     right: 0;
     height: 2.5px;
-    border-top: 2.5px dotted rgba(0, 0, 0, 0.4);
+    border-top: 2.5px dashed rgba(0, 0, 0, 0.4);
     width: 25%;
     margin-right: auto;
     margin-left: auto; }
@@ -1851,7 +1851,7 @@ video {
     margin-bottom: 2em;
     margin-left: auto;
     content: "";
-    border-top: 2.5px dotted rgba(0, 0, 0, 0.4); }
+    border-top: 2.5px dashed rgba(0, 0, 0, 0.4); }
   @media screen and (min-width: 32em) {
     [class*="page"] {
       grid-column: 2 / 8; }

@@ -54,7 +54,7 @@
   }
   blockquote {
     border-left-width: $m-border-width;
-    border-left-style: dotted;
+    border-left-style: $border-style;
   }
   .indent {
     font-style: italic;
@@ -376,7 +376,7 @@
     left: 0;
     right: 0;
     height: $m-border-width;
-    border-top: $m-border-width dotted $border-color;
+    border-top: $m-border-width $border-style $border-color;
     width: 25%;
     margin-right: auto;
     margin-left: auto;

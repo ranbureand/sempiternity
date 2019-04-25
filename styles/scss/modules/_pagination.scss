@@ -90,7 +90,7 @@
 
       content: "";
 
-      border-top: $m-border-width dotted $border-color;
+      border-top: $m-border-width $border-style $border-color;
     }
   }
   @include min-screen(col(8)) {
