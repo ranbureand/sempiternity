@@ -1,7 +1,7 @@
 ---
 layout: piece
 
-title: 'DND NIGHT'
+title: 'DnD night'
 
 description: 'Malena sits at the table in the kitchen, a dice with twenty sides in her hand'
 
