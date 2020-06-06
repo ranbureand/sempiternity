@@ -11,26 +11,26 @@ motif: 'scroll_00'
 publish: 'yes'
 ---
 
-Malena sits at the table in the kitchen, a dice with twenty sides in her hand. Platypus lies on their belly in the middle of the table and looks at the dice with curiosity.
-«So,» says Malena, «when you need to see what happens, you roll the dice.»
-«If the number is high,» she keeps going, «it is likely that what you attempt to do will go well.»
-«What if the number is low?» asks Blueberry, who is sitting on a chair.
-«If the number is low,» answers Malena, «it is likely that your attempt will go bad.»
+Malena sits at the table in the kitchen, a dice with twenty sides in her hand. Platypus lies on their belly in the middle of the table and looks at the dice with curiosity.<br>
+«So,» says Malena, «when you need to see what happens, you roll the dice.»<br>
+«If the number is high,» she keeps going, «it is likely that what you attempt to do will go well.»<br>
+«What if the number is low?» asks Blueberry, who is sitting on a chair.<br>
+«If the number is low,» answers Malena, «it is likely that your attempt will go bad.»<br>
 «How do we roll the dice?» asks Platypus.
 
-Blueberry jumps on the table.
-«I don’t like games with dices,» he says while looking at Malena’s hands, «because I cannot throw them.»
-Malena stays absorbed a few moments. «Maybe I have an idea,» she says.
-«Look,» she picks a bowl, covers the dice and shakes it.
-«Say ‘stop’, Platypus.»
-«Stop,» says Platypus.
+Blueberry jumps on the table.<br>
+«I don’t like games with dices,» he says while looking at Malena’s hands, «because I cannot throw them.»<br>
+Malena stays absorbed a few moments. «Maybe I have an idea,» she says.<br>
+«Look,» she picks a bowl, covers the dice and shakes it.<br>
+«Say ‘stop’, Platypus.»<br>
+«Stop,» says Platypus.<br>
 Malena stops and raise the bowl. The dice is in the middle of the table.
 
-«See?» asks Malena.
-Platypus is covering their eyes. Blueberry stretches his snout towards the dice.
-«What is the number?» asks Platypus with their eyes still covered.
-«Nine,» answers Malena.
-«Does something good or bad happen?» asks Blueberry.
-Malena smiles. «It depends on what you had to do, and on how difficult that was.»
-Platypus puts their paws on the character sheets in front of them.
+«See?» asks Malena.<br>
+Platypus is covering their eyes. Blueberry stretches his snout towards the dice.<br>
+«What is the number?» asks Platypus with their eyes still covered.<br>
+«Nine,» answers Malena.<br>
+«Does something good or bad happen?» asks Blueberry.<br>
+Malena smiles. «It depends on what you had to do, and on how difficult that was.»<br>
+Platypus puts their paws on the character sheets in front of them.<br>
 «Let’s do these!» they say with enthusiasm.
