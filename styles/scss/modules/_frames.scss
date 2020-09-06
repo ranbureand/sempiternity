@@ -65,7 +65,7 @@
     grid-column-gap: em($d-gut);
   }
   @include min-screen(col(20)) {
-    width: col(20);
+    width: calc(#{col(20)} - #{em($d-gut)});
   }
 }
 

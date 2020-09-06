@@ -1,4 +1,12 @@
 _site
-.sass-cache
+
+*.codekit3
+*.codekit-cache
+*.sql
+*.sublime-project
+*.sublime-workspace
+
 .jekyll-cache
-.jekyll-metadata
+.sass-cache
+
+.DS_Store

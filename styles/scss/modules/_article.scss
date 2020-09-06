@@ -29,7 +29,7 @@
     grid-column-gap: em($d-gut);
   }
   @include min-screen(col(12)) {
-    width: col(12);
+    width: calc(#{col(12)} - #{em($d-gut)});
     padding-bottom: em($d-base-rhythm*6);
   }
 }
