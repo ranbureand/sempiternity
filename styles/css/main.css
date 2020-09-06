@@ -2167,9 +2167,9 @@ video {
     grid-column-gap: 1.5em;
   }
 }
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 49.5em) {
   .article {
-    width: calc(48em - 1.5em);
+    width: 48em;
     padding-bottom: 15em;
   }
 }
